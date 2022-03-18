@@ -3,11 +3,11 @@
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
 /FilmNoir/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
+/FilmNoir/[Tt]emp/
+/FilmNoir/[Oo]bj/
+/FilmNoir/[Bb]uild/
+/FilmNoir/[Bb]uilds/
+/FilmNoir/[Ll]ogs/
 /[Mm]emoryCaptures/
  
 # Asset meta data should only be ignored when the corresponding asset is also ignored
