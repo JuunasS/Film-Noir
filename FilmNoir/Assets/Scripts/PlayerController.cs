@@ -3,43 +3,70 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
-    NavMeshAgent agent;
-    bool clicked;           // bool jolla seurataan onko painettu interactablea
+    // Start is called before the first frame update
+    Camera cam;
+    PlayerMotor motor;
+
+    public Interactable focus;
+
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        clicked = false;
+        cam = Camera.main;
+        motor = GetComponent<PlayerMotor>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // jos hiiren vasemmanpuolinen on painettu, suoritetaan
+        if (Input.GetMouseButtonDown(0))
         {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);    // luodaan ray jolla katsotaan mihin kohtaan ruudulla on painettu
+
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                agent.SetDestination(hit.point);                            //asetetaan sijainti navmesh agentille ja se liikkuu
+                // liikutetaan pelaaja sen luokse mihin klikataan
 
-                if (hit.collider.CompareTag("Interactable"))
+                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                if (interactable != null)
                 {
-                    clicked = true;
-                    Debug.Log("Olet klikannut interactablea, yay! et‰isyys ");
-
+                    SetFocus(interactable);
                 }
+                else
+                {
+                    motor.MoveToPoint(hit.point);
+                    RemoveFocus();
+                }
+
             }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void SetFocus(Interactable newFocus)
     {
-        if (other.CompareTag("Interactable") && clicked)    // t‰ll‰ pidet‰‰n huoli ettei ohi k‰velless‰ voi osua interactableen ja vahingossa saada interaction
+        if (newFocus != focus)       // jos klikataan uutta interactable objektia
         {
-            Debug.Log("Olet saapunut interactablen luo!");
+            if (focus != null)
+                focus.OnDefocused();    // otetaan edellinen interactable pois fokusoinnista
+
+            focus = newFocus;       // asetetaan uusi interactable
+            motor.FollowTarget(newFocus);      //ryhdyt‰‰n seuraamaan uutta interactablea
         }
-        clicked = false;
+        newFocus.OnFocused(transform);
+
     }
+
+    void RemoveFocus()
+    {
+        if (focus != null)
+            focus.OnDefocused();
+
+        focus = null;
+        motor.StopFollowingTarget();
+    }
+
+
 }
