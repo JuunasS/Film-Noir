@@ -8,12 +8,11 @@ public class DialogueNode : ScriptableObject
 {
     public event System.Action DialogComplete;
 
-    public Queue<string> DialogueText;
+    public DialogCharacter Speaker;
+    public string DialogueText;
+
+    public List<DialogueNode> ChoiceDialogs = new List<DialogueNode>();
 
     public bool IsLoopable;
     public bool IsOrdered;
-
-    public DialogueNode NextDialogue;
-
-
 }

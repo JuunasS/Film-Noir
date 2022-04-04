@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager manager;
 
-    public Text dialogueBox;
+    public GameObject DialogCanvas;
 
     private void Awake()
     {
@@ -23,30 +23,36 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    public void SetDialogue(Queue<string> texts)
-    {
-        foreach(string text in texts)
-        {
-            StartCoroutine(AddText(text));
-        }
-    }
-
-    IEnumerator AddText(string text)
-    {
-        dialogueBox.text += text;
-        yield return new WaitForSeconds(0.5f);
-    }
-
-    // Start is called before the first frame update
     void Start()
     {
-        
+        DialogCanvas = GameObject.Find("DialogueCanvas");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
+    public void SetDialogue(DialogueNode node)
+    {
+        DialogCanvas.GetComponent<DialogueController>().SetDialogue(node);
+        /*
+        foreach(string text in texts)
+        {
+            StartCoroutine(AddText(text));
+        }
+        */
+    }
+
+    /*
+    IEnumerator AddText(string text)
+    {
+        dialogueBox.text += text;
+        yield return new WaitForSeconds(0.5f);
+    }
+    */
+
+    // Start is called before the first frame update
+   
 }
