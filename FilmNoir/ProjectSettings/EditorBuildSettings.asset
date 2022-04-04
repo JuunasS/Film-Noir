@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0a881d102a722814fb510e4420248e14
+  - enabled: 1
+    path: Assets/Scenes/Panttilainaamo.unity
+    guid: fa37caf308134cd438d513662f824d7e
   m_configObjects: {}
