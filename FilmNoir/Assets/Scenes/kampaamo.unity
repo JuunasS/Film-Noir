@@ -312,13 +312,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239323296}
   m_LocalRotation: {x: 0.22876158, y: -0, z: -0, w: 0.9734825}
-  m_LocalPosition: {x: -3.77, y: 2.34, z: -1.83}
-  m_LocalScale: {x: 2.3922694, y: 2.4586158, z: 1.0564694}
+  m_LocalPosition: {x: -3.77, y: -1.3300002, z: -1.83}
+  m_LocalScale: {x: 2.3922694, y: 2.458616, z: 1.0564694}
   m_Children:
   - {fileID: 2118202949}
   - {fileID: 1985047331}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 805651911}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 26.448, y: 0, z: 0}
 --- !u!4 &250248963 stripped
 Transform:
@@ -454,6 +454,9 @@ Transform:
   m_Children:
   - {fileID: 655046666}
   - {fileID: 1514174693}
+  - {fileID: 239323301}
+  - {fileID: 1538262438}
+  - {fileID: 1730244946}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1088,13 +1091,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538262433}
   m_LocalRotation: {x: 0.22876158, y: -0, z: -0, w: 0.9734825}
-  m_LocalPosition: {x: -2.6, y: 1.87, z: 3.81}
+  m_LocalPosition: {x: -2.6, y: -1.8000001, z: 3.81}
   m_LocalScale: {x: 2.1079242, y: 2.1663847, z: 0.9308975}
   m_Children:
   - {fileID: 2098733732}
   - {fileID: 1423144576}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 805651911}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 26.448, y: 0, z: 0}
 --- !u!1 &1652483580
 GameObject:
@@ -1253,13 +1256,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730244943}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 1.8813349, y: -0.4, z: 3.66}
+  m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
+  m_LocalPosition: {x: 1.8813349, y: -4.07, z: 3.66}
   m_LocalScale: {x: 0.48528, y: 0.48528, z: 0.48528}
   m_Children:
   - {fileID: 857162265}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 805651911}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1 &1752877458
 GameObject:
