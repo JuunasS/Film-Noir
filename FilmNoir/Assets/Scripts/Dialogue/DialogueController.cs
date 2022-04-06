@@ -24,7 +24,10 @@ public class DialogueController : MonoBehaviour
 
     public void SetDialogue(DialogueNode node)
     {
+        Debug.Log("Start setting dialogue");
+
         panel.SetActive(true);
+
         Debug.Log(node.DialogueText);
         this.DialogueText.text = node.DialogueText;
 
@@ -33,14 +36,11 @@ public class DialogueController : MonoBehaviour
             button.gameObject.SetActive(false);
         }
 
-
         for (int i = 0; i < node.ChoiceDialogs.Count; i++)
         {
             DialogueOptions[i].gameObject.SetActive(true);
-            DialogueOptions[i].GetComponentInChildren<Text>().text = node.ChoiceDialogs[i].DialogueText;
-            DialogueOptions[i].onClick.AddListener(delegate { SetDialogue(node.ChoiceDialogs[i]); });
-
+            DialogueOptions[i].GetComponentInChildren<Text>().text = node.ChoiceDialogs[i].Text;
+            DialogueOptions[i].onClick.AddListener(node.ChoiceDialogs[i].SetNextNode);
         }
-
     }
 }

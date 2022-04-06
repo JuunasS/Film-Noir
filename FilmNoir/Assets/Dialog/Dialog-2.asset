@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: Dialog-1
+  m_Name: Dialog-2
   m_EditorClassIdentifier: 
   Speaker: {fileID: 0}
-  DialogueText: Hello
+  DialogueText: Works
   ChoiceDialogs:
-  - {fileID: 11400000, guid: e87c66b84af55a04da424ca690f76990, type: 2}
+  - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}
+  - {fileID: 11400000, guid: 52cb2e5d112059f4da05a687a9e699e5, type: 2}

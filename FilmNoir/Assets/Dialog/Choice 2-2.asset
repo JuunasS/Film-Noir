@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: Dialog-1
+  m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
+  m_Name: Choice 2-2
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 0}
-  DialogueText: Hello
-  ChoiceDialogs:
-  - {fileID: 11400000, guid: e87c66b84af55a04da424ca690f76990, type: 2}
+  Text: Back to 1
+  NextNode: {fileID: 11400000, guid: b822934d31294694d9055a360f76c427, type: 2}

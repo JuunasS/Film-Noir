@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName ="Dialog Object", menuName = "Dialog System")]
+[CreateAssetMenu(fileName = "Dialog Object", menuName = "Dialog System")]
 public class DialogueNode : ScriptableObject
 {
     public event System.Action DialogComplete;
@@ -11,8 +11,6 @@ public class DialogueNode : ScriptableObject
     public DialogCharacter Speaker;
     public string DialogueText;
 
-    public List<DialogueNode> ChoiceDialogs = new List<DialogueNode>();
+    public List<ChoiceDialogueNode> ChoiceDialogs = new List<ChoiceDialogueNode>();
 
-    public bool IsLoopable;
-    public bool IsOrdered;
 }
