@@ -12,14 +12,5 @@ public class ActivateDialogue : Interactable
         GameManager.manager.SetDialogue(start);
     }
 
-    /*
-    private void OnMouseOver()
-    {
-        Debug.Log("Dialogue character clicked");
-        if(Input.GetMouseButtonDown(0))
-        {
-            GameManager.manager.SetDialogue(start);
-        }
-    }
-    */
+
 }

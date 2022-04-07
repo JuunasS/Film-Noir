@@ -452,8 +452,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb995e978cdb93a4797b63e512693fe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2
-  interactionTransform: {fileID: 518764230}
+  radius: 3.5
+  interactionTransform: {fileID: 929074660}
   start: {fileID: 11400000, guid: b822934d31294694d9055a360f76c427, type: 2}
 --- !u!65 &518764232
 BoxCollider:
@@ -1392,8 +1392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb995e978cdb93a4797b63e512693fe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2
-  interactionTransform: {fileID: 1155746413}
+  radius: 3.5
+  interactionTransform: {fileID: 2120060757}
   start: {fileID: 11400000, guid: b822934d31294694d9055a360f76c427, type: 2}
 --- !u!65 &1155746415
 BoxCollider:
@@ -1808,8 +1808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb995e978cdb93a4797b63e512693fe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2
-  interactionTransform: {fileID: 1421174652}
+  radius: 3.5
+  interactionTransform: {fileID: 572497435}
   start: {fileID: 11400000, guid: b822934d31294694d9055a360f76c427, type: 2}
 --- !u!65 &1421174654
 BoxCollider:
