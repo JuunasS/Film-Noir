@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public DialogueNode start;
+
 
     public float radius = 2f;
 
@@ -16,12 +16,11 @@ public class Interactable : MonoBehaviour
     public Transform interactionTransform; //siltä varalta että haluaa muuttaa kohtaa josta interaction tapahtuu
 
     
-    public void Interact()
+    public virtual void Interact()
     {
        
         Debug.Log("Interacting with " + transform.name);
         hasInteracted = true;
-        GameManager.manager.SetDialogue(start);
     }
 
     void Update()
