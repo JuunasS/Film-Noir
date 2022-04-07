@@ -40,7 +40,26 @@ public class DialogueController : MonoBehaviour
         {
             DialogueOptions[i].gameObject.SetActive(true);
             DialogueOptions[i].GetComponentInChildren<Text>().text = node.ChoiceDialogs[i].Text;
-            DialogueOptions[i].onClick.AddListener(node.ChoiceDialogs[i].SetNextNode);
+            if(node.ChoiceDialogs[i].IsExit)
+            {
+                DialogueOptions[i].onClick.AddListener(ExitDialogue);
+            } 
+            else
+            {
+                DialogueOptions[i].onClick.AddListener(node.ChoiceDialogs[i].SetNextNode);
+            }
+            
         }
+    }
+
+    public void ExitDialogue()
+    {
+
+        foreach (Button button in DialogueOptions)
+        {
+            button.gameObject.SetActive(false);
+        }
+
+        panel.SetActive(false);
     }
 }

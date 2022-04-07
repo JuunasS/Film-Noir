@@ -8,6 +8,7 @@ public class ChoiceDialogueNode : ScriptableObject
 {
     public string Text;
     public DialogueNode NextNode;
+    public bool IsExit;
 
     public void SetNextNode()
     {
