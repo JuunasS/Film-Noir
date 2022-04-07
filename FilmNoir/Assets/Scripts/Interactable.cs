@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
+    public DialogueNode start;
+
     public float radius = 2f;
 
     bool isFocus = false;
@@ -13,14 +15,15 @@ public class Interactable : MonoBehaviour
 
     public Transform interactionTransform; //silt‰ varalta ett‰ haluaa muuttaa kohtaa josta interaction tapahtuu
 
-    /*
-    public virtual void Interact()
+    
+    public void Interact()
     {
-        // katsotaan miten tehd‰‰n, mutta tutoriaalissa t‰st‰ tehtiin virtuaalifunktio koska t‰m‰n koodin on tarkoitus olla
-        // yhteinen kaikille interactable objekteille, joten pit‰isi tehd‰ erikseen skriptit eri objekteille, mutta katsotaan
+       
         Debug.Log("Interacting with " + transform.name);
+        hasInteracted = true;
+        GameManager.manager.SetDialogue(start);
     }
-    */
+
     void Update()
     {
 
@@ -29,7 +32,8 @@ public class Interactable : MonoBehaviour
             float distance = Vector3.Distance(player.position, interactionTransform.position);
             if (distance <= radius)
             {
-                Debug.Log("Interacting with " + transform.name);
+                Interact();
+                //Debug.Log("Interacting with " + transform.name);
                 hasInteracted = true;
             }
         }
