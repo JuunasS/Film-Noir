@@ -11,9 +11,12 @@ public class PlayerMotor : MonoBehaviour
     Transform target;
     NavMeshAgent agent;
 
+    public Animator animator;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -22,10 +25,21 @@ public class PlayerMotor : MonoBehaviour
             agent.SetDestination(target.position);
             FaceTarget();                           //pit‰‰ huolen ett‰ agentti osoittaa esineen suuntaan
         }
+
+        if(agent.velocity.sqrMagnitude <= 1f)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        if (agent.velocity.sqrMagnitude > 1f)
+        {
+            animator.SetBool("isWalking", true);
+        }
+
     }
 
     public void MoveToPoint(Vector3 point)
     {
+
         agent.SetDestination(point);
     }
 
