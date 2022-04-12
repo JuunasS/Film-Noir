@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager manager;
 
     public GameObject DialogCanvas;
+    public GameObject InventoryCanvas;
 
     private void Awake()
     {
@@ -26,33 +27,27 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DialogCanvas = GameObject.Find("DialogueCanvas");
+        InventoryCanvas = GameObject.Find("InventoryCanvas");
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            InventoryCanvas.GetComponent<InventoryController>().ToggleInventory();
+        }
     }
 
     public void SetDialogue(DialogueNode node)
     {
         DialogCanvas.GetComponent<DialogueController>().SetDialogue(node);
-        /*
-        foreach(string text in texts)
-        {
-            StartCoroutine(AddText(text));
-        }
-        */
     }
 
-    /*
-    IEnumerator AddText(string text)
+
+    public void AddItemToInventory(InventoryObject obj)
     {
-        dialogueBox.text += text;
-        yield return new WaitForSeconds(0.5f);
+        InventoryCanvas.GetComponent<InventoryController>().AddItem(obj);
     }
-    */
 
-    // Start is called before the first frame update
-   
 }
