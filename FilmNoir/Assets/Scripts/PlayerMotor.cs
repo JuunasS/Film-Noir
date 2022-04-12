@@ -11,9 +11,12 @@ public class PlayerMotor : MonoBehaviour
     Transform target;
     NavMeshAgent agent;
 
+    public Animator animator;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -22,10 +25,21 @@ public class PlayerMotor : MonoBehaviour
             agent.SetDestination(target.position);
             FaceTarget();                           //pit‰‰ huolen ett‰ agentti osoittaa esineen suuntaan
         }
+
+        if(agent.velocity.sqrMagnitude <= 1f)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        if (agent.velocity.sqrMagnitude > 1f)
+        {
+            animator.SetBool("isWalking", true);
+        }
+
     }
 
     public void MoveToPoint(Vector3 point)
     {
+
         agent.SetDestination(point);
     }
 
@@ -46,7 +60,7 @@ public class PlayerMotor : MonoBehaviour
     void FaceTarget()
     {
         Vector3 direction = (target.position - transform.position).normalized;                          //get direction towards target
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));   //find how to rotate ourself to look in the direction
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0.0001f, direction.z));   //find how to rotate ourself to look in the direction
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);   // rotate
     }
 }

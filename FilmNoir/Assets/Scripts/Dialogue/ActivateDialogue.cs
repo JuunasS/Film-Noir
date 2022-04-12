@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivateDialogue : MonoBehaviour
+public class ActivateDialogue : Interactable
 {
     public DialogueNode start;
 
-    private void OnMouseOver()
+    public override void Interact() // tämä koodi on nyt tarkoitettu objekteille, joiden ainoa ominaisuus on dialogin tuottaminen
     {
-        Debug.Log("Dialogue character clicked");
-        if(Input.GetMouseButtonDown(0))
-        {
-            GameManager.manager.SetDialogue(start);
-        }
+        base.Interact();
+        GameManager.manager.SetDialogue(start);
     }
+
+
 }
