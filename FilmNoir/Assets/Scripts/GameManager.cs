@@ -25,13 +25,13 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        DialogCanvas = GameObject.Find("DialogueCanvas");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        DialogCanvas = GameObject.Find("DialogueCanvas");   //en tied‰ onko paras vaihtoehto, mutta ilman t‰t‰ dialogiboksi ei toimi kun se j‰‰ edelliseen
     }
 
     public void SetDialogue(DialogueNode node)
