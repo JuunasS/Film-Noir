@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "Dialog Object", menuName = "Dialog System")]
+[CreateAssetMenu(fileName = "Dialog Object", menuName = "Dialog/Dialog Node")]
 public class DialogueNode : ScriptableObject
 {
     public event System.Action DialogComplete;

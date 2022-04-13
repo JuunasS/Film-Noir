@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager manager;
 
     public GameObject DialogCanvas;
+    public GameObject InventoryCanvas;
 
     private void Awake()
     {
@@ -25,34 +26,33 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
+        DialogCanvas = GameObject.Find("DialogueCanvas");
+        InventoryCanvas = GameObject.Find("InventoryCanvas");
     }
 
     // Update is called once per frame
     void Update()
     {
-        DialogCanvas = GameObject.Find("DialogueCanvas");   //en tied‰ onko paras vaihtoehto, mutta ilman t‰t‰ dialogiboksi ei toimi kun se j‰‰ edelliseen
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            InventoryCanvas.GetComponent<InventoryController>().ToggleInventory();
+        }
     }
 
     public void SetDialogue(DialogueNode node)
     {
         DialogCanvas.GetComponent<DialogueController>().SetDialogue(node);
-        /*
-        foreach(string text in texts)
-        {
-            StartCoroutine(AddText(text));
-        }
-        */
     }
 
-    /*
-    IEnumerator AddText(string text)
+
+    public void AddItemToInventory(InventoryObject obj)
     {
-        dialogueBox.text += text;
-        yield return new WaitForSeconds(0.5f);
+        InventoryCanvas.GetComponent<InventoryController>().AddItem(obj);
     }
-    */
 
-    // Start is called before the first frame update
-   
+    public void SetDescription(string name, string description, Sprite image)
+    {
+        InventoryCanvas.GetComponent<InventoryController>().DisplayDescription(name, description, image);
+    }
+
 }
