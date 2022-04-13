@@ -12,4 +12,9 @@ public class InventoryObject : ScriptableObject
     [TextArea(5, 10)]
     public string Description;
     public DialogCharacter Connection;
+
+    public void DisplayDescription()
+    {
+        GameManager.manager.SetDescription(ItemName, Description, sprite);
+    }
 }

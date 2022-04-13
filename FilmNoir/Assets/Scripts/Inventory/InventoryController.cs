@@ -9,8 +9,18 @@ public class InventoryController : MonoBehaviour
     public List<GameObject> Panels = new List<GameObject>(); // 16 Panels
     public List<InventoryObject> PlayerInventory = new List<InventoryObject>();
 
-    // Start is called before the first frame update
-    void Start()
+    public GameObject DescriptionPanel;
+    public Text DescriptionItemName;
+    public GameObject ImagePanel;
+    public GameObject DescriptionText;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+        // Start is called before the first frame update
+        void Start()
     {
         
     }
@@ -48,4 +58,16 @@ public class InventoryController : MonoBehaviour
             Panels[i].GetComponentInChildren<Image>().sprite = PlayerInventory[i].sprite;
         }
     }
+
+
+    public void DisplayDescription(string name, string description, Sprite image)
+    {
+        DescriptionPanel.SetActive(true);
+
+        DescriptionItemName.text = name;
+        ImagePanel.AddComponent<Image>().sprite = image;
+        DescriptionText.AddComponent<Text>().text = description;
+    }
+
+    
 }

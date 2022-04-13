@@ -34,7 +34,6 @@ public class PlayerMotor : MonoBehaviour
         {
             animator.SetBool("isWalking", true);
         }
-
     }
 
     public void MoveToPoint(Vector3 point)
