@@ -60,4 +60,9 @@ public class Interactable : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(interactionTransform.position, radius);
     }
+
+    public Transform GetLocation()
+    {
+        return interactionTransform;
+    }
 }
