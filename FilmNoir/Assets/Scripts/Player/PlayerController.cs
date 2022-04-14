@@ -11,12 +11,12 @@ public class PlayerController : MonoBehaviour
     PlayerMotor motor;
 
     public Interactable focus;
-
+    public static bool canMove = true;
     void Start()
     {
         cam = Camera.main;
         motor = GetComponent<PlayerMotor>();
-        
+
     }
 
     // Update is called once per frame
@@ -27,10 +27,9 @@ public class PlayerController : MonoBehaviour
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity) && canMove)
             {
                 // liikutetaan pelaaja sen luokse mihin klikataan
-
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
                 if (interactable != null)
                 {
