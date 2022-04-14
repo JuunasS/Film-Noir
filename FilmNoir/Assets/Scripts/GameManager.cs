@@ -55,4 +55,9 @@ public class GameManager : MonoBehaviour
         InventoryCanvas.GetComponent<InventoryController>().DisplayDescription(name, description, image);
     }
 
+    public void DisableDescriptionPanel()
+    {
+        InventoryCanvas.GetComponent<InventoryController>().DisableDescription();
+    }
+
 }
