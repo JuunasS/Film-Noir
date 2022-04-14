@@ -57,7 +57,7 @@ public class InventoryController : MonoBehaviour
     {
         for (int i = 0; i < PlayerInventory.Count; i++)
         {
-            Panels[i].GetComponentInChildren<Image>().sprite = PlayerInventory[i].sprite;
+            Panels[i].GetComponent<InventoryPanel>().SetInventoryObject(PlayerInventory[i]);
         }
     }
 
@@ -67,9 +67,12 @@ public class InventoryController : MonoBehaviour
         DescriptionPanel.SetActive(true);
 
         DescriptionItemName.text = name;
-        ImagePanel.AddComponent<Image>().sprite = image;
-        DescriptionText.AddComponent<Text>().text = description;
+        ImagePanel.GetComponent<Image>().sprite = image;
+        DescriptionText.GetComponentInChildren<Text>().text = description;
     }
 
-    
+    public void DisableDescription()
+    {
+        DescriptionPanel.SetActive(false);
+    }
 }
