@@ -37,11 +37,13 @@ public class InventoryController : MonoBehaviour
         {
             Debug.Log("Inventory hidden");
             InventoryPanel.SetActive(false);
+            GameObject.Find("Player").GetComponent<PlayerController>().enabled = true; //pys‰ytt‰‰ pelaajan liikkeen inventoryn avaamisen ajaksi
         }
         else
         {
             Debug.Log("Inventory revealed");
             InventoryPanel.SetActive(true);
+            GameObject.Find("Player").GetComponent<PlayerController>().enabled = false;
         }
     }
 
