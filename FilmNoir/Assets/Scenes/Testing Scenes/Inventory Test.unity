@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 1097620487}
   m_Layer: 0
   m_Name: office_Photoframe
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1902,7 +1902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1647249866
 RectTransform:
   m_ObjectHideFlags: 0
