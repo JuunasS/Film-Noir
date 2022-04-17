@@ -46,7 +46,7 @@ public class PlayerMotor : MonoBehaviour
     {
         agent.stoppingDistance = newTarget.radius * .8f;    //et‰isyys jolla agentti lopettaa liikkumisen (jotta ei mene interactablen sis‰‰n
         agent.updateRotation = false;
-        target = newTarget.transform;
+        target = newTarget.GetLocation();
     }
 
     public void StopFollowingTarget()

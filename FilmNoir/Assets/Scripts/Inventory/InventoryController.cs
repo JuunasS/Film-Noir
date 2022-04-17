@@ -37,11 +37,13 @@ public class InventoryController : MonoBehaviour
         {
             Debug.Log("Inventory hidden");
             InventoryPanel.SetActive(false);
+            PlayerController.canMove = true; 
         }
         else
         {
             Debug.Log("Inventory revealed");
             InventoryPanel.SetActive(true);
+            PlayerController.canMove = false; //pys‰ytt‰‰ pelaajan liikkeen inventoryn avaamisen ajaksi
         }
     }
 

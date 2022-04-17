@@ -32,7 +32,8 @@ public class DialogueController : MonoBehaviour
 
         panel.SetActive(true);
 
-        GameObject.Find("Player").GetComponent<PlayerController>().enabled = false; //lopettaa pelaajan liikkumisen sen ajaksi kunnes dialogi-ikkuna suljetaan
+        PlayerController.canMove = false; //lopettaa pelaajan liikkumisen sen ajaksi kunnes dialogi-ikkuna suljetaan
+        
 
         Debug.Log(node.DialogueText);
         this.DialogueText.text = node.DialogueText;
@@ -68,6 +69,7 @@ public class DialogueController : MonoBehaviour
 
         panel.SetActive(false);
 
-        GameObject.Find("Player").GetComponent<PlayerController>().enabled = true;  //antaa pelaajan taas liikkua dialogiboksin sulkemisen jälkeen
+        PlayerController.canMove = true; //antaa pelaajan taas liikkua dialogiboksin sulkemisen jälkeen
+
     }
 }
