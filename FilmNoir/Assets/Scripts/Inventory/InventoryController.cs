@@ -16,19 +16,26 @@ public class InventoryController : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (GameManager.manager.InventoryCanvas != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
-        // Start is called before the first frame update
-        void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ToggleInventory()
@@ -37,7 +44,7 @@ public class InventoryController : MonoBehaviour
         {
             Debug.Log("Inventory hidden");
             InventoryPanel.SetActive(false);
-            PlayerController.canMove = true; 
+            PlayerController.canMove = true;
         }
         else
         {

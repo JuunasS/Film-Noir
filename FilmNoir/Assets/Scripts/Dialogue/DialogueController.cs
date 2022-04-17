@@ -11,7 +11,14 @@ public class DialogueController : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if(GameManager.manager.DialogCanvas != null)
+        {
+            Destroy(gameObject);
+        } 
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     // Start is called before the first frame update

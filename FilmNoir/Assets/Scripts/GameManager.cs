@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,6 +25,31 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    // Used for adding checking items in scene
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
+
+        foreach (GameObject obj in interactables)
+        {
+            Debug.Log("Interactables foreaach loop");
+            if (obj.GetComponent<InventoryObject>() != null)
+            {
+                if (PlayerPrefs.GetString(obj.gameObject.GetComponent<InventoryObject>().ItemName) != null)
+                {
+                    Destroy(obj);
+                }
+            }
+        }
+    }
+
     void Start()
     {
         DialogCanvas = GameObject.Find("DialogueCanvas");
@@ -33,7 +59,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             InventoryCanvas.GetComponent<InventoryController>().ToggleInventory();
         }
@@ -48,6 +74,9 @@ public class GameManager : MonoBehaviour
     public void AddItemToInventory(InventoryObject obj)
     {
         InventoryCanvas.GetComponent<InventoryController>().AddItem(obj);
+
+        // Siirrä?
+        PlayerPrefs.SetString(obj.ItemName, "Collected");
     }
 
     public void SetDescription(string name, string description, Sprite image)

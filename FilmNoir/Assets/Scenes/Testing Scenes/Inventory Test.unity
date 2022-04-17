@@ -358,7 +358,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -453,8 +453,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1097620485}
   - component: {fileID: 1097620484}
-  - component: {fileID: 1097620486}
   - component: {fileID: 1097620487}
+  - component: {fileID: 1097620486}
   m_Layer: 0
   m_Name: office_Photoframe
   m_TagString: Interactable
@@ -525,7 +525,7 @@ Transform:
   m_LocalScale: {x: 0.5716, y: 0.602, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1097620486
 MonoBehaviour:
@@ -536,9 +536,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1097620483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 296676e85d91cd54abd550b754198ece, type: 3}
+  m_Script: {fileID: 11500000, guid: 146357607392fcd46a86e7105371ebe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  radius: 2
+  interactionTransform: {fileID: 1097620485}
   InventoryObject: {fileID: 11400000, guid: adbc6d8c5202180419b61976c8b2f232, type: 2}
 --- !u!65 &1097620487
 BoxCollider:
@@ -647,7 +649,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1720623606 stripped
 GameObject:

@@ -24,6 +24,6 @@ public class LoadLevel : MonoBehaviour
 
     public void LoadTheLevel()
     {
-        SceneManager.LoadScene(levelToLoad);
+        GameManager.manager.LoadScene(levelToLoad);
     }
 }
