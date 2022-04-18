@@ -38,6 +38,18 @@ public class InventoryController : MonoBehaviour
 
     }
 
+    public bool InventoryContains(InventoryObject obj)
+    {
+        foreach(InventoryObject invObj in PlayerInventory)
+        {
+            if(obj == invObj)
+            {
+                return true;    
+            }
+        }
+        return false;
+    }
+
     public void ToggleInventory()
     {
         if (InventoryPanel.activeInHierarchy)

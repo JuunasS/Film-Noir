@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public GameObject DialogCanvas;
     public GameObject InventoryCanvas;
 
+    public GameObject[] interactables;
+
     private void Awake()
     {
         if (manager == null)
@@ -35,15 +37,22 @@ public class GameManager : MonoBehaviour
     // Used for adding checking items in scene
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
+        CheckInteractables();
+    }
+
+    public void CheckInteractables()
+    {
+        interactables = GameObject.FindGameObjectsWithTag("Interactable");
 
         foreach (GameObject obj in interactables)
         {
-            Debug.Log("Interactables foreaach loop");
-            if (obj.GetComponent<InventoryObject>() != null)
+            Debug.Log("Interactables foreach loop 1");
+
+            if(obj.gameObject.GetComponent<PickableItem>() != null)
             {
-                if (PlayerPrefs.GetString(obj.gameObject.GetComponent<InventoryObject>().ItemName) != null)
+                if (InventoryCanvas.GetComponent<InventoryController>().InventoryContains(obj.gameObject.GetComponent<PickableItem>().InventoryObject))
                 {
+                    Debug.Log("Interactables foreach loop 3");
                     Destroy(obj);
                 }
             }
@@ -54,6 +63,7 @@ public class GameManager : MonoBehaviour
     {
         DialogCanvas = GameObject.Find("DialogueCanvas");
         InventoryCanvas = GameObject.Find("InventoryCanvas");
+        CheckInteractables();
     }
 
     // Update is called once per frame
@@ -74,9 +84,6 @@ public class GameManager : MonoBehaviour
     public void AddItemToInventory(InventoryObject obj)
     {
         InventoryCanvas.GetComponent<InventoryController>().AddItem(obj);
-
-        // Siirrä?
-        PlayerPrefs.SetString(obj.ItemName, "Collected");
     }
 
     public void SetDescription(string name, string description, Sprite image)

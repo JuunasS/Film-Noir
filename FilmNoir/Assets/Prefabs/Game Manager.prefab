@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051b91b28d714c847a971a85f250ef7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogCanvas: {fileID: 2086391933614329145, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
-  InventoryCanvas: {fileID: 5562978363848181166, guid: 91b1fa5cf0032ce4aac4f27e034ded8b, type: 3}
+  DialogCanvas: {fileID: 0}
+  InventoryCanvas: {fileID: 0}
+  interactables: []
