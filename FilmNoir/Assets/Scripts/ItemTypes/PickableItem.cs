@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickableItem : Interactable
 {
     public InventoryObject InventoryObject;
+    public DialogueNode start;
 
     public override void Interact()
     {
@@ -18,5 +19,6 @@ public class PickableItem : Interactable
     {
         // Send Scriptable Object to  GameManager and from there to inventory controller
         GameManager.manager.AddItemToInventory(InventoryObject);
+        GameManager.manager.SetDialogue(start);
     }
 }
