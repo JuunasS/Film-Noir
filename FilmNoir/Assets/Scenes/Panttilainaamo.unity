@@ -674,7 +674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715518691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.44, y: 0.82, z: 4.02}
+  m_LocalPosition: {x: -0.44, y: 0.82, z: 5.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1802880457}
@@ -771,7 +771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c42860c3cf27e21408b89901ac888553, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c42860c3cf27e21408b89901ac888553, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1382,8 +1382,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1802880457}
   - component: {fileID: 1802880459}
-  - component: {fileID: 1802880458}
   - component: {fileID: 1802880460}
+  - component: {fileID: 1802880458}
   m_Layer: 0
   m_Name: PawnshopNPC
   m_TagString: Interactable
@@ -1399,7 +1399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802880456}
   m_LocalRotation: {x: -0, y: -0.9936899, z: 0, w: -0.112162605}
-  m_LocalPosition: {x: -0.87, y: -0.99, z: 10.73}
+  m_LocalPosition: {x: -1.11, y: -1.78, z: 11.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 728999330}
@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  dialogueWindow: {fileID: 0}
+  startingDialogue: {fileID: 11400000, guid: b822934d31294694d9055a360f76c427, type: 2}
 --- !u!65 &1802880459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1448,7 +1448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   interactionTransform: {fileID: 715518692}
-  start: {fileID: 11400000, guid: b822934d31294694d9055a360f76c427, type: 2}
+  instance: {fileID: 0}
 --- !u!1001 &1873171038
 PrefabInstance:
   m_ObjectHideFlags: 0

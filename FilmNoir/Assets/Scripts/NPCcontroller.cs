@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPCcontroller : MonoBehaviour
 {
     public Animator animator;
-    public static bool dialogueStarted = false;
+    public DialogueNode startingDialogue;
 
     private void Start()
     {
@@ -14,14 +14,15 @@ public class NPCcontroller : MonoBehaviour
 
     private void Update()
     {
-        if(DialogueController.isConversationActive)
+        if (!DialogueController.isConversationActive && animator.GetBool("isTalking") == true)
         {
-            animator.SetBool("isTalking", true);
-        }
-        if (!DialogueController.isConversationActive)
-        {
-            dialogueStarted = false;
             animator.SetBool("isTalking", false);
         }
     }
+    public void haveDialogue()
+    {
+        animator.SetBool("isTalking", true);
+        GameManager.manager.SetDialogue(startingDialogue);
+    }
+
 }

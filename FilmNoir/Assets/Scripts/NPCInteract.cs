@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class NPCInteract : Interactable
 {
-    public DialogueNode start;
+    public NPCcontroller instance;
 
+    private void Start()
+    {
+        instance = gameObject.GetComponent<NPCcontroller>();
+    }
     public override void Interact()
     {
         base.Interact();
         Debug.Log("Juteltu NPC:lle!");
-        haveDialogue();
-
+        instance.haveDialogue();
     }
-
-    public void haveDialogue()
-    {
-        NPCcontroller.dialogueStarted = true;
-        GameManager.manager.SetDialogue(start);
-    }
-
 }
