@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager manager;
 
-    public GameObject DialogCanvas;
-    public GameObject InventoryCanvas;
+    private GameObject DialogCanvas;
+    private GameObject InventoryCanvas;
 
     public GameObject[] interactables;
 
@@ -94,6 +94,16 @@ public class GameManager : MonoBehaviour
     public void DisableDescriptionPanel()
     {
         InventoryCanvas.GetComponent<InventoryController>().DisableDescription();
+    }
+
+    public GameObject GetInventoryCanvas()
+    {
+        return InventoryCanvas;
+    }
+
+    public GameObject GetDialogCanvas()
+    {
+        return DialogCanvas;
     }
 
 }
