@@ -555,6 +555,7 @@ MonoBehaviour:
   radius: 2
   interactionTransform: {fileID: 1199667444}
   InventoryObject: {fileID: 11400000, guid: 17a9dd7e70ac41e46840facbbc527f98, type: 2}
+  start: {fileID: 11400000, guid: b822934d31294694d9055a360f76c427, type: 2}
 --- !u!1 &323055281
 GameObject:
   m_ObjectHideFlags: 0

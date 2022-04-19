@@ -8,6 +8,7 @@ public class DialogueController : MonoBehaviour
     public List<Button> DialogueOptions = new List<Button>();
     public Text DialogueText;
     public GameObject panel;
+    public static bool isConversationActive = false;
 
     private void Awake()
     {
@@ -36,7 +37,7 @@ public class DialogueController : MonoBehaviour
     public void SetDialogue(DialogueNode node)
     {
         Debug.Log("Start setting dialogue");
-
+        isConversationActive = true;    //laitetaan bool joka vahtii onko jokin keskustelu käynnissä trueksi
         panel.SetActive(true);
 
         PlayerController.canMove = false; //lopettaa pelaajan liikkumisen sen ajaksi kunnes dialogi-ikkuna suljetaan
@@ -74,6 +75,7 @@ public class DialogueController : MonoBehaviour
             button.gameObject.SetActive(false);
         }
 
+        isConversationActive = false;
         panel.SetActive(false);
 
         PlayerController.canMove = true; //antaa pelaajan taas liikkua dialogiboksin sulkemisen jälkeen
