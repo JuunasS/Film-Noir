@@ -2,20 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChoiceDialogueNode : MonoBehaviour
+
+[CreateAssetMenu(fileName = "Dialog Object", menuName = "Dialog/Dialog Choice")]
+public class ChoiceDialogueNode : ScriptableObject
 {
-    [SerializeField]
-    private List<DialogueNode> nodes;
+    public string Text;
+    public DialogueNode NextNode;
+    public bool IsExit;
 
-    // Start is called before the first frame update
-    void Start()
+    public void SetNextNode()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameManager.manager.SetDialogue(NextNode);
     }
 }

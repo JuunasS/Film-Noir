@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager manager;
 
-    public Text dialogueBox;
+    private GameObject DialogCanvas;
+    private GameObject InventoryCanvas;
+
+    public GameObject[] interactables;
 
     private void Awake()
     {
@@ -24,29 +28,82 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetDialogue(Queue<string> texts)
+    public void LoadScene(string sceneName)
     {
-        foreach(string text in texts)
+        SceneManager.LoadScene(sceneName);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    // Used for adding checking items in scene
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        CheckInteractables();
+    }
+
+    public void CheckInteractables()
+    {
+        interactables = GameObject.FindGameObjectsWithTag("Interactable");
+
+        foreach (GameObject obj in interactables)
         {
-            StartCoroutine(AddText(text));
+            Debug.Log("Interactables foreach loop 1");
+
+            if(obj.gameObject.GetComponent<PickableItem>() != null)
+            {
+                if (InventoryCanvas.GetComponent<InventoryController>().InventoryContains(obj.gameObject.GetComponent<PickableItem>().InventoryObject))
+                {
+                    Debug.Log("Interactables foreach loop 3");
+                    Destroy(obj);
+                }
+            }
         }
     }
 
-    IEnumerator AddText(string text)
-    {
-        dialogueBox.text += text;
-        yield return new WaitForSeconds(0.5f);
-    }
-
-    // Start is called before the first frame update
     void Start()
     {
-        
+        DialogCanvas = GameObject.Find("DialogueCanvas");
+        InventoryCanvas = GameObject.Find("InventoryCanvas");
+        CheckInteractables();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            InventoryCanvas.GetComponent<InventoryController>().ToggleInventory();
+        }
     }
+
+    public void SetDialogue(DialogueNode node)
+    {
+        DialogCanvas.GetComponent<DialogueController>().SetDialogue(node);
+    }
+
+
+    public void AddItemToInventory(InventoryObject obj)
+    {
+        InventoryCanvas.GetComponent<InventoryController>().AddItem(obj);
+    }
+
+    public void SetDescription(string name, string description, Sprite image)
+    {
+        InventoryCanvas.GetComponent<InventoryController>().DisplayDescription(name, description, image);
+    }
+
+    public void DisableDescriptionPanel()
+    {
+        InventoryCanvas.GetComponent<InventoryController>().DisableDescription();
+    }
+
+    public GameObject GetInventoryCanvas()
+    {
+        return InventoryCanvas;
+    }
+
+    public GameObject GetDialogCanvas()
+    {
+        return DialogCanvas;
+    }
+
 }
