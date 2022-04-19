@@ -16,7 +16,7 @@ public class InventoryController : MonoBehaviour
 
     private void Awake()
     {
-        if (GameManager.manager.InventoryCanvas != null)
+        if (GameManager.manager.GetInventoryCanvas() != null)
         {
             Destroy(gameObject);
         }

@@ -12,7 +12,7 @@ public class DialogueController : MonoBehaviour
 
     private void Awake()
     {
-        if(GameManager.manager.DialogCanvas != null)
+        if(GameManager.manager.GetDialogCanvas() != null)
         {
             Destroy(gameObject);
         } 
