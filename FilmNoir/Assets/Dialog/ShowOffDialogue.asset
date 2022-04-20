@@ -16,4 +16,3 @@ MonoBehaviour:
   DialogueText: This is just a detective novel I read when it gets quiet in the office.
   ChoiceDialogs:
   - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}
-  - {fileID: 11400000, guid: 52cb2e5d112059f4da05a687a9e699e5, type: 2}

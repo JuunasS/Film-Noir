@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class InventoryPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class InventoryPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
 {
     public InventoryObject obj;
     public BoxCollider2D collider;
@@ -15,12 +15,6 @@ public class InventoryPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         collider = gameObject.AddComponent<BoxCollider2D>();
         collider.isTrigger = true;
         collider.size = new Vector2(60, 60);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void SetInventoryObject(InventoryObject obj)
@@ -42,6 +36,13 @@ public class InventoryPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         Debug.Log("Panel exited");
         GameManager.manager.DisableDescriptionPanel();
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+
+        Debug.Log("Held object set as: " + this.obj);
+        GameManager.manager.SetHeldObject(this.obj);
     }
 
 }
