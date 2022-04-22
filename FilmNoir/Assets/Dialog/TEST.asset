@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: ShowOffDialogue
+  m_Name: TEST
   m_EditorClassIdentifier: 
   Speaker: {fileID: 0}
-  DialogueText: This is just a detective novel I read when it gets quiet in the office.
+  DialogueText: Third dialogue
   ChoiceDialogs:
   - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}
   - {fileID: 11400000, guid: 52cb2e5d112059f4da05a687a9e699e5, type: 2}

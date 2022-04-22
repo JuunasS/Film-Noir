@@ -8,10 +8,32 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager manager;
 
+    public NPCInfo[] NPCList = new NPCInfo[20];
+
     private GameObject DialogCanvas;
     private GameObject InventoryCanvas;
 
     public GameObject[] interactables;
+
+    void Start()
+    {
+        DialogCanvas = GameObject.Find("DialogueCanvas");
+        InventoryCanvas = GameObject.Find("InventoryCanvas");
+        CheckInteractables();
+
+        //lis‰t‰‰n NPC:it‰ listalle johon tallennetaan keskusteluiden kulku
+        NPCList[0] = new NPCInfo("PawnshopNPC", DialogueMode.FIRST_DIALOGUE);
+        NPCList[1] = new NPCInfo("testNPC", DialogueMode.FIRST_DIALOGUE);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            InventoryCanvas.GetComponent<InventoryController>().ToggleInventory();
+        }
+    }
 
     private void Awake()
     {
@@ -59,21 +81,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        DialogCanvas = GameObject.Find("DialogueCanvas");
-        InventoryCanvas = GameObject.Find("InventoryCanvas");
-        CheckInteractables();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            InventoryCanvas.GetComponent<InventoryController>().ToggleInventory();
-        }
-    }
 
     public void SetDialogue(DialogueNode node)
     {

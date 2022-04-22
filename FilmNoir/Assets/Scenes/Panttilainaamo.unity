@@ -1421,6 +1421,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   startingDialogue: {fileID: 11400000, guid: b822934d31294694d9055a360f76c427, type: 2}
+  secondDialogue: {fileID: 11400000, guid: f3a0b023ae9398541ac3272030ae7d40, type: 2}
+  inBetweenDialogue: {fileID: 11400000, guid: 0ffd89c9d89694f419665ee0e035ee7b, type: 2}
+  thirdDialogue: {fileID: 11400000, guid: dc0d4bfcd98acf649bc0f7d482c5ee7b, type: 2}
+  wantedObject: {fileID: 11400000, guid: 17a9dd7e70ac41e46840facbbc527f98, type: 2}
+  nameOfNPC: 0
+  hasMoreToSay: 1
 --- !u!65 &1802880459
 BoxCollider:
   m_ObjectHideFlags: 0
