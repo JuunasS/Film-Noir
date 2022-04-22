@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     private GameObject DialogCanvas;
     private GameObject InventoryCanvas;
 
+    [SerializeField]
+    private InventoryObject HeldObject;
+
     public GameObject[] interactables;
 
     void Start()
@@ -111,6 +114,16 @@ public class GameManager : MonoBehaviour
     public GameObject GetDialogCanvas()
     {
         return DialogCanvas;
+    }
+
+    public void SetHeldObject(InventoryObject invObj)
+    {
+        this.HeldObject = invObj;
+    }
+
+    public InventoryObject GetHeldObject()
+    {
+        return HeldObject;
     }
 
 }
