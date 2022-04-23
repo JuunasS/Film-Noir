@@ -10,8 +10,11 @@ public class MenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        menu = GameObject.Find("MiniMenu");
-        menu.SetActive(false);
+        if(GameObject.Find("MiniMenu") != null)
+        {
+            menu = GameObject.Find("MiniMenu");
+            menu.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -24,7 +27,7 @@ public class MenuScript : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("Panttilainaamo");
+        SceneManager.LoadScene("Toimisto");
     }
 
     public void QuitGame()

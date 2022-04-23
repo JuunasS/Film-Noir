@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager manager;
 
-    private GameObject DialogCanvas;
-    private GameObject InventoryCanvas;
+    public GameState GameState;
+
+    public GameObject DialogCanvas;
+    public GameObject InventoryCanvas;
 
     [SerializeField]
     private InventoryObject HeldObject;
@@ -28,6 +30,22 @@ public class GameManager : MonoBehaviour
         {
             // If manager already exists in scene destroy this
             Destroy(gameObject);
+        }
+    }
+
+    void Start()
+    {
+        DialogCanvas = GameObject.Find("DialogueCanvas");
+        InventoryCanvas = GameObject.Find("InventoryCanvas");
+        CheckInteractables();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            InventoryCanvas.GetComponent<InventoryController>().ToggleInventory();
         }
     }
 
@@ -59,22 +77,6 @@ public class GameManager : MonoBehaviour
                     Destroy(obj);
                 }
             }
-        }
-    }
-
-    void Start()
-    {
-        DialogCanvas = GameObject.Find("DialogueCanvas");
-        InventoryCanvas = GameObject.Find("InventoryCanvas");
-        CheckInteractables();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            InventoryCanvas.GetComponent<InventoryController>().ToggleInventory();
         }
     }
 

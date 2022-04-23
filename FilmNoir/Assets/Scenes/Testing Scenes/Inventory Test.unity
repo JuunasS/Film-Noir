@@ -642,6 +642,7 @@ MonoBehaviour:
   radius: 2
   interactionTransform: {fileID: 1097620485}
   InventoryObject: {fileID: 11400000, guid: adbc6d8c5202180419b61976c8b2f232, type: 2}
+  start: {fileID: 11400000, guid: 0ffd89c9d89694f419665ee0e035ee7b, type: 2}
 --- !u!65 &1097620487
 BoxCollider:
   m_ObjectHideFlags: 0
