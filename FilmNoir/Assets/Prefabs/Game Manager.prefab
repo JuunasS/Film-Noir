@@ -43,8 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051b91b28d714c847a971a85f250ef7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameState: {fileID: 0}
-  DialogCanvas: {fileID: 0}
-  InventoryCanvas: {fileID: 0}
+  GameState: {fileID: 11400000, guid: da6a25fa3204965458b3bfd6fd15dd9e, type: 2}
   HeldObject: {fileID: 0}
   interactables: []

@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f294ec2bd3649834b8d0488a3d438233, type: 3}
   m_Name: Game State 0
   m_EditorClassIdentifier: 
-  UnlockedScenes:
-  - Toimisto
-  - Panttilainaamo
+  OfficeSceneName: Toimisto
+  ApartmentSceneName: 
+  PawnshopSceneName: 
+  HairsaloonSceneName: 
+  ClubSceneName: 
+  ParkSceneName: 
+  BarSceneName: 
   NextGameState: {fileID: 0}

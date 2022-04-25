@@ -7,23 +7,37 @@ public class LoadLevel : MonoBehaviour
 {
     public string levelToLoad;
     public static bool isActive = true;
+
     // Start is called before the first frame update
     void Start()
     {
-        if (!isActive)
-        {
-            gameObject.SetActive(false);
-        }
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    public void SetLevelToLoad(string level)
+    {
+        levelToLoad = level;
+        if(levelToLoad != "")
+        {
+            gameObject.SetActive(true);
+        }
     }
 
     public void LoadTheLevel()
     {
-        GameManager.manager.LoadScene(levelToLoad);
+        if (levelToLoad != "")
+        {
+            GameManager.manager.LoadScene(levelToLoad);
+        }
+        else
+        {
+            Debug.Log("Scene is not open in this GameState");
+        }
     }
 }

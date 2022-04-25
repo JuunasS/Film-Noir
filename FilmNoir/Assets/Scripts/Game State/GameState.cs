@@ -1,24 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName = "Game State", menuName = "Game State/New Game State")]
 public class GameState : ScriptableObject
 {
-    public string[] UnlockedScenes;
+    public string OfficeSceneName;
+    public string ApartmentSceneName;
+    public string PawnshopSceneName;
+    public string HairsaloonSceneName;
+    public string ClubSceneName;
+    public string ParkSceneName;
+    public string BarSceneName;
 
     public GameState NextGameState;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

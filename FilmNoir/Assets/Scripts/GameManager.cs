@@ -10,8 +10,10 @@ public class GameManager : MonoBehaviour
 
     public GameState GameState;
 
-    public GameObject DialogCanvas;
-    public GameObject InventoryCanvas;
+    public NPCInfo[] NPCList = new NPCInfo[20];
+
+    private GameObject DialogCanvas;
+    private GameObject InventoryCanvas;
 
     [SerializeField]
     private InventoryObject HeldObject;
@@ -38,6 +40,10 @@ public class GameManager : MonoBehaviour
         DialogCanvas = GameObject.Find("DialogueCanvas");
         InventoryCanvas = GameObject.Find("InventoryCanvas");
         CheckInteractables();
+
+        //lis‰t‰‰n NPC:it‰ listalle johon tallennetaan keskusteluiden kulku
+        NPCList[0] = new NPCInfo("PawnshopNPC", DialogueMode.FIRST_DIALOGUE);
+        NPCList[1] = new NPCInfo("testNPC", DialogueMode.FIRST_DIALOGUE);
     }
 
     // Update is called once per frame
