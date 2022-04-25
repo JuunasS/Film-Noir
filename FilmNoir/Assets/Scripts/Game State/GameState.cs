@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(fileName = "Game State", menuName = "Game State/New Game State")]
 public class GameState : ScriptableObject
 {
-    public Scene[] UnlockedScenes;
+    public string[] UnlockedScenes;
 
     public GameState NextGameState;
 
