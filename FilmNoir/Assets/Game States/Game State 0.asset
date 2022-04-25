@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Game State 0
   m_EditorClassIdentifier: 
   OfficeSceneName: Toimisto
-  ApartmentSceneName: 
+  ApartmentAisleSceneName: Kaytava
+  ApartmentSceneName: Asunto
   PawnshopSceneName: 
   HairsaloonSceneName: 
   ClubSceneName: 
   ParkSceneName: 
   BarSceneName: 
-  NextGameState: {fileID: 0}

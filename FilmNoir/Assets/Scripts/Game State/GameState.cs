@@ -6,12 +6,11 @@ using UnityEngine;
 public class GameState : ScriptableObject
 {
     public string OfficeSceneName;
+    public string ApartmentAisleSceneName;
     public string ApartmentSceneName;
     public string PawnshopSceneName;
     public string HairsaloonSceneName;
     public string ClubSceneName;
     public string ParkSceneName;
     public string BarSceneName;
-
-    public GameState NextGameState;
 }

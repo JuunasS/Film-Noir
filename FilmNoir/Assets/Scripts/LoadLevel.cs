@@ -11,7 +11,6 @@ public class LoadLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,6 +25,10 @@ public class LoadLevel : MonoBehaviour
         if(levelToLoad != "")
         {
             gameObject.SetActive(true);
+        }
+        else
+        {
+            gameObject.SetActive(false);
         }
     }
 

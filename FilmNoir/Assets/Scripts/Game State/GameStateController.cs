@@ -30,14 +30,9 @@ public class GameStateController : MonoBehaviour
         // Office Scene
         OfficeButton.GetComponent<LoadLevel>().SetLevelToLoad(CurrentGameState.OfficeSceneName);
 
-        // Apartment Scene goes to aisle
-        /*
-        if (CurrentGameState.ApartmentSceneName != null)
-        {
-            ApartmentButton.GetComponent<LoadLevel>().levelToLoad = CurrentGameState.ApartmentSceneName;
-        }
-        */
-
+        // Apartment Scene
+        ApartmentButton.GetComponent<LoadLevel>().SetLevelToLoad(CurrentGameState.ApartmentAisleSceneName);
+        
         // Pawnshop Scene
         PawnshopButton.GetComponent<LoadLevel>().SetLevelToLoad(CurrentGameState.PawnshopSceneName);
 
@@ -52,7 +47,5 @@ public class GameStateController : MonoBehaviour
 
         // Bar Scene
         BarButton.GetComponent<LoadLevel>().SetLevelToLoad(CurrentGameState.BarSceneName);
-
-
     }
 }

@@ -127,8 +127,8 @@ public class GameManager : MonoBehaviour
         return HeldObject;
     }
 
-    public void NextGameState()
+    public void SetGameState(GameState newGameState)
     {
-        this.GameState = GameState.NextGameState;
+        this.GameState = newGameState;
     }
 }
