@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Game State 0
   m_EditorClassIdentifier: 
   UnlockedScenes:
+  - Toimisto
   - Panttilainaamo
   NextGameState: {fileID: 0}
