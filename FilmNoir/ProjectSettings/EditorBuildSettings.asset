@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Baari.unity
     guid: 3c068fa8c5b01d64e90d2014d6677cc6
   - enabled: 1
-    path: Assets/Scenes/Panttilainaamo.unity
+    path: Assets/Scenes/Kaytava.unity
     guid: fa37caf308134cd438d513662f824d7e
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
