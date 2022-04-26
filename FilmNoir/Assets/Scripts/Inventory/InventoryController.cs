@@ -14,7 +14,8 @@ public class InventoryController : MonoBehaviour
     public GameObject ImagePanel;
     public GameObject DescriptionText;
 
-    private void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
         if (GameManager.manager.GetInventoryCanvas() != null)
         {
@@ -24,12 +25,6 @@ public class InventoryController : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
     }
 
     // Update is called once per frame

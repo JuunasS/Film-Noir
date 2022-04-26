@@ -10,22 +10,17 @@ public class DialogueController : MonoBehaviour
     public GameObject panel;
     public static bool isConversationActive = false;
 
-    private void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
-        if(GameManager.manager.GetDialogCanvas() != null)
+        if (GameManager.manager.GetDialogCanvas() != null)
         {
             Destroy(gameObject);
-        } 
+        }
         else
         {
             DontDestroyOnLoad(gameObject);
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
     }
 
     // Update is called once per frame

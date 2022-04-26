@@ -10,10 +10,10 @@ public class GameManager : MonoBehaviour
 
     public GameState GameState;
 
-    public NPCInfo[] NPCList = new NPCInfo[20];
+    private GameObject DialogCanvas = null;
+    private GameObject InventoryCanvas = null;
 
-    private GameObject DialogCanvas;
-    private GameObject InventoryCanvas;
+    public NPCInfo[] NPCList = new NPCInfo[20];
 
     [SerializeField]
     private InventoryObject HeldObject;
