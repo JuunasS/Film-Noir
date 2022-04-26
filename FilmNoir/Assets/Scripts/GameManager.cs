@@ -43,7 +43,12 @@ public class GameManager : MonoBehaviour
 
         //lis‰t‰‰n NPC:it‰ listalle johon tallennetaan keskusteluiden kulku
         NPCList[0] = new NPCInfo("PawnshopNPC", DialogueMode.FIRST_DIALOGUE);
-        NPCList[1] = new NPCInfo("testNPC", DialogueMode.FIRST_DIALOGUE);
+        NPCList[1] = new NPCInfo("Barbara", DialogueMode.FIRST_DIALOGUE);
+        NPCList[2] = new NPCInfo("Singer", DialogueMode.FIRST_DIALOGUE);
+        NPCList[3] = new NPCInfo("Gangster", DialogueMode.FIRST_DIALOGUE);
+        NPCList[4] = new NPCInfo("Hairdresser", DialogueMode.FIRST_DIALOGUE);
+        NPCList[5] = new NPCInfo("Antagonist", DialogueMode.FIRST_DIALOGUE);
+        NPCList[6] = new NPCInfo("Bartender", DialogueMode.FIRST_DIALOGUE);
     }
 
     // Update is called once per frame

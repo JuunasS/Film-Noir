@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class NPCcontroller : MonoBehaviour
 {
-    public Animator animator;
+    [HideInInspector] public Animator animator;
+    /*
     public DialogueNode startingDialogue;
     public DialogueNode secondDialogue;
     public DialogueNode inBetweenDialogue;
@@ -13,14 +14,19 @@ public class NPCcontroller : MonoBehaviour
     public InventoryObject wantedObject;
     InventoryController inventory;
 
+    */
+    [HideInInspector]public SimpleDialogue simpleDialogue;
+    [HideInInspector] public DialogueNeedsItem dialogWithItem;
+
     public NPCName nameOfNPC;
+    public DialogueStyle styleOfDialogue;
 
     public bool hasMoreToSay;
 
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
-        inventory = FindObjectOfType<InventoryController>();
+        //inventory = FindObjectOfType<InventoryController>();
     }
 
     private void Update()
@@ -30,8 +36,19 @@ public class NPCcontroller : MonoBehaviour
             animator.SetBool("isTalking", false);
         }
     }
-    public void DisplayDialogue()
+    public void ChooseDialogue()
     {
+        if(styleOfDialogue == DialogueStyle.SIMPLE_DIALOGUE)
+        {
+            simpleDialogue = gameObject.GetComponent<SimpleDialogue>();
+            simpleDialogue.DisplayDialogue();
+        }
+        else if (styleOfDialogue == DialogueStyle.NEEDS_ITEM)
+        {
+            dialogWithItem = gameObject.GetComponent<DialogueNeedsItem>();
+            dialogWithItem.DisplayDialogue();
+        }
+        /*
         int index = (int)nameOfNPC;
         animator.SetBool("isTalking", true);
         switch (GameManager.manager.NPCList[index].dialogueProgress)   //k‰yd‰‰n l‰pi game managerissa olevaa listaa NPC:iden dialogien kulusta
@@ -61,6 +78,7 @@ public class NPCcontroller : MonoBehaviour
             default:
                 break;
         }
+        */
     }
 
 }
@@ -73,12 +91,23 @@ public enum DialogueMode
     THIRD_DIALOGUE
 }
 
+public enum DialogueStyle
+{
+    SIMPLE_DIALOGUE,
+    NEEDS_ITEM
+}
+
 
 //Toimii indeksin‰ kun hyˆdynnet‰‰n game managerissa olevaa listaa t‰ynn‰ NPC:iden dialogin kulkua
 public enum NPCName // t‰nne merkitt‰v‰ eri NPC:iden nimet, ja sitten pidett‰v‰ ne gameManagerissa samassa j‰rjestyksess‰
 {
     PAWNSHOPNPC = 0,
-    TESTNPC
+    BARBARA,
+    SINGER,
+    GANGSTER,
+    HAIRDRESSER,
+    ANTAGONIST,
+    BARTENDER
 }
 
 // luokka josta tehd‰‰n olioita joita tallennetaan game managerissa olevaan listaan

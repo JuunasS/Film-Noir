@@ -14,6 +14,6 @@ public class NPCInteract : Interactable
     {
         base.Interact();
         Debug.Log("Juteltu NPC:lle!");
-        instance.DisplayDialogue();
+        instance.ChooseDialogue();
     }
 }
