@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
   m_Name: Dialog-1
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 0}
+  Speaker: {fileID: 11400000, guid: 69bdb4c971b65fd4f9bfc6dffa572208, type: 2}
   DialogueText: Hello
   ChoiceDialogs:
   - {fileID: 11400000, guid: e87c66b84af55a04da424ca690f76990, type: 2}

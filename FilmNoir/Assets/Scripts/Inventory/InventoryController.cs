@@ -17,12 +17,15 @@ public class InventoryController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("InventoryController Start");
         if (GameManager.manager.GetInventoryCanvas() != null)
         {
+            Debug.Log("Destroy InventoryCanvas");
             Destroy(gameObject);
         }
         else
         {
+            GameManager.manager.SetInventoryCanvas(gameObject);
             DontDestroyOnLoad(gameObject);
         }
     }

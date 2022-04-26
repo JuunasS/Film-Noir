@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class DialogueController : MonoBehaviour
 {
     public List<Button> DialogueOptions = new List<Button>();
+
+    public Text SpeakerNameText;
     public Text DialogueText;
     public GameObject panel;
     public static bool isConversationActive = false;
@@ -13,12 +15,15 @@ public class DialogueController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("DialogController Start");
         if (GameManager.manager.GetDialogCanvas() != null)
         {
+            Debug.Log("Destroy DialogController");
             Destroy(gameObject);
         }
         else
         {
+            GameManager.manager.SetDialogCanvas(gameObject);
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -39,6 +44,7 @@ public class DialogueController : MonoBehaviour
         
 
         Debug.Log(node.DialogueText);
+        this.SpeakerNameText.text = node.Speaker.Name;
         this.DialogueText.text = node.DialogueText;
 
         foreach (Button button in DialogueOptions)

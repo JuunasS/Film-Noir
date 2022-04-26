@@ -10,10 +10,10 @@ public class GameManager : MonoBehaviour
 
     public GameState GameState;
 
-    private GameObject DialogCanvas = null;
-    private GameObject InventoryCanvas = null;
-
     public NPCInfo[] NPCList = new NPCInfo[20];
+
+    private GameObject DialogCanvas;
+    private GameObject InventoryCanvas;
 
     [SerializeField]
     private InventoryObject HeldObject;
@@ -37,8 +37,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        DialogCanvas = GameObject.Find("DialogueCanvas");
-        InventoryCanvas = GameObject.Find("InventoryCanvas");
         CheckInteractables();
 
         //lis‰t‰‰n NPC:it‰ listalle johon tallennetaan keskusteluiden kulku
@@ -115,6 +113,16 @@ public class GameManager : MonoBehaviour
     public GameObject GetDialogCanvas()
     {
         return DialogCanvas;
+    }
+
+    public void SetInventoryCanvas(GameObject invCanvas)
+    {
+        this.InventoryCanvas = invCanvas;
+    }
+
+    public void SetDialogCanvas(GameObject dialogCanvas)
+    {
+        this.DialogCanvas = dialogCanvas;
     }
 
     public void SetHeldObject(InventoryObject invObj)
