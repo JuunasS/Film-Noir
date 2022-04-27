@@ -9,11 +9,11 @@ public class GameManager : MonoBehaviour
     public static GameManager manager;
 
     public GameState GameState;
-
-    public NPCInfo[] NPCList = new NPCInfo[20];
+    public AudioSource GameMusic;
 
     private GameObject DialogCanvas;
     private GameObject InventoryCanvas;
+    public NPCInfo[] NPCList = new NPCInfo[20];
 
     [SerializeField]
     private InventoryObject HeldObject;
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    // Used for adding checking items in scene
+    // Used for checking items in scene
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         CheckInteractables();
@@ -81,10 +81,13 @@ public class GameManager : MonoBehaviour
 
             if(obj.gameObject.GetComponent<PickableItem>() != null)
             {
-                if (InventoryCanvas.GetComponent<InventoryController>().InventoryContains(obj.gameObject.GetComponent<PickableItem>().InventoryObject))
+                if(InventoryCanvas != null)
                 {
-                    Debug.Log("Interactables foreach loop 3");
-                    Destroy(obj);
+                    if (InventoryCanvas.GetComponent<InventoryController>().InventoryContains(obj.gameObject.GetComponent<PickableItem>().InventoryObject))
+                    {
+                        Debug.Log("Interactables foreach loop 3");
+                        Destroy(obj);
+                    }
                 }
             }
         }
@@ -144,5 +147,11 @@ public class GameManager : MonoBehaviour
     public void SetGameState(GameState newGameState)
     {
         this.GameState = newGameState;
+    }
+
+    public void SetMusic(AudioClip newMusic)
+    {
+        GameMusic.clip = newMusic;
+        GameMusic.Play();
     }
 }

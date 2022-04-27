@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: AceDaniels
   m_EditorClassIdentifier: 
   Name: Ace Daniels
+  NameColor: {r: 1, g: 1, b: 1, a: 1}

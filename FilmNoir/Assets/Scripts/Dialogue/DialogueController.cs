@@ -42,16 +42,23 @@ public class DialogueController : MonoBehaviour
 
         PlayerController.canMove = false; //lopettaa pelaajan liikkumisen sen ajaksi kunnes dialogi-ikkuna suljetaan
         
-
+        // Show text
         Debug.Log(node.DialogueText);
-        this.SpeakerNameText.text = node.Speaker.Name;
         this.DialogueText.text = node.DialogueText;
 
+        // Show name of current speaker
+        this.SpeakerNameText.text = node.Speaker.Name;
+        node.Speaker.NameColor.a = 1;
+        this.SpeakerNameText.color = node.Speaker.NameColor;
+        
+
+        // Choice buttons set to false
         foreach (Button button in DialogueOptions)
         {
             button.gameObject.SetActive(false);
         }
 
+        // New buttons activated
         for (int i = 0; i < node.ChoiceDialogs.Count; i++)
         {
             DialogueOptions[i].gameObject.SetActive(true);
