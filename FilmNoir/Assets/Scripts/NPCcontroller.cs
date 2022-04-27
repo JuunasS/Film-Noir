@@ -77,7 +77,8 @@ public enum NPCName // t‰nne merkitt‰v‰ eri NPC:iden nimet, ja sitten pidett‰v‰ 
     GANGSTER,
     HAIRDRESSER,
     ANTAGONIST,
-    BARTENDER
+    BARTENDER,
+    MISTRESS
 }
 
 // luokka josta tehd‰‰n olioita joita tallennetaan game managerissa olevaan listaan

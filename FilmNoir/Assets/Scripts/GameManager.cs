@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
         NPCList[4] = new NPCInfo("Hairdresser", DialogueMode.FIRST_DIALOGUE);
         NPCList[5] = new NPCInfo("Antagonist", DialogueMode.FIRST_DIALOGUE);
         NPCList[6] = new NPCInfo("Bartender", DialogueMode.FIRST_DIALOGUE);
+        NPCList[7] = new NPCInfo("Mistress", DialogueMode.FIRST_DIALOGUE);
     }
 
     // Update is called once per frame
