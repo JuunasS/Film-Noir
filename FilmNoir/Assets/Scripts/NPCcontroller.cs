@@ -4,24 +4,14 @@ using UnityEngine;
 
 public class NPCcontroller : MonoBehaviour
 {
+
     [HideInInspector] public Animator animator;
-    /*
-    public DialogueNode startingDialogue;
-    public DialogueNode secondDialogue;
-    public DialogueNode inBetweenDialogue;
-    public DialogueNode thirdDialogue;
-
-    public InventoryObject wantedObject;
-    InventoryController inventory;
-
-    */
-    [HideInInspector]public SimpleDialogue simpleDialogue;
+    [HideInInspector] public SimpleDialogue simpleDialogue;
     [HideInInspector] public DialogueNeedsItem dialogWithItem;
+    [HideInInspector] public DialogueChangeGState dialogChangingGstate;
 
-    public NPCName nameOfNPC;
+
     public DialogueStyle styleOfDialogue;
-
-    public bool hasMoreToSay;
 
     private void Start()
     {
@@ -48,37 +38,15 @@ public class NPCcontroller : MonoBehaviour
             dialogWithItem = gameObject.GetComponent<DialogueNeedsItem>();
             dialogWithItem.DisplayDialogue();
         }
-        /*
-        int index = (int)nameOfNPC;
-        animator.SetBool("isTalking", true);
-        switch (GameManager.manager.NPCList[index].dialogueProgress)   //k‰yd‰‰n l‰pi game managerissa olevaa listaa NPC:iden dialogien kulusta
+        else if (styleOfDialogue == DialogueStyle.CHANGE_GAMESTATE)
         {
-            case DialogueMode.FIRST_DIALOGUE:
-                GameManager.manager.SetDialogue(startingDialogue);
-                GameManager.manager.NPCList[index].dialogueProgress = DialogueMode.SECOND_DIALOGUE;
-                break;
-
-            case DialogueMode.SECOND_DIALOGUE:
-                if(inventory.InventoryContains(wantedObject))
-                {
-                    GameManager.manager.SetDialogue(secondDialogue);
-                    if (hasMoreToSay)
-                    {
-                        GameManager.manager.NPCList[index].dialogueProgress = DialogueMode.THIRD_DIALOGUE;
-                    }
-                }
-                else
-                    GameManager.manager.SetDialogue(inBetweenDialogue);
-                break;
-
-            case DialogueMode.THIRD_DIALOGUE:
-                GameManager.manager.SetDialogue(thirdDialogue);
-                break;
-
-            default:
-                break;
+            dialogChangingGstate = gameObject.GetComponent<DialogueChangeGState>();
+            dialogChangingGstate.DisplayDialogue();
         }
-        */
+        else if (styleOfDialogue == DialogueStyle.DEFAULT)
+        {
+            Debug.Log("Et ole laittanut dialogityyppi‰ t‰lle NPC:lle");
+        }
     }
 
 }
@@ -93,8 +61,10 @@ public enum DialogueMode
 
 public enum DialogueStyle
 {
+    DEFAULT,
     SIMPLE_DIALOGUE,
-    NEEDS_ITEM
+    NEEDS_ITEM,
+    CHANGE_GAMESTATE
 }
 
 

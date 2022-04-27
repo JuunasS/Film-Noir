@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
   m_Name: ShowOffDialogue 1
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 0}
+  Speaker: {fileID: 11400000, guid: 69bdb4c971b65fd4f9bfc6dffa572208, type: 2}
   DialogueText: This is just a detective novel I read when it gets quiet in the office.
   ChoiceDialogs:
   - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}

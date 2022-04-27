@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(NPCcontroller))]
 public class NPCInteract : Interactable
 {
-    public NPCcontroller instance;
+    [HideInInspector] public NPCcontroller instance;
 
     private void Start()
     {

@@ -2746,8 +2746,8 @@ GameObject:
   - component: {fileID: 1670101467}
   - component: {fileID: 1670101469}
   - component: {fileID: 1670101470}
-  - component: {fileID: 1670101468}
   - component: {fileID: 1670101471}
+  - component: {fileID: 1670101468}
   m_Layer: 0
   m_Name: AntagonistNPC
   m_TagString: Interactable
@@ -2794,13 +2794,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1670101465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2e2241c39ccf8941b82c134d4781430, type: 3}
+  m_Script: {fileID: 11500000, guid: edf8d3b5ebaff3f47a19ad0c2828b304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  firstDialogue: {fileID: 11400000, guid: dc0d4bfcd98acf649bc0f7d482c5ee7b, type: 2}
-  idleDialogue: {fileID: 11400000, guid: f3a0b023ae9398541ac3272030ae7d40, type: 2}
+  firstDialogue: {fileID: 11400000, guid: 4379aa7c171d0ab4c940c1ba0f68e2dc, type: 2}
+  idleDialogue: {fileID: 11400000, guid: 3bbb30ede21164a498575391ddcf7145, type: 2}
   nameOfNPC: 5
+  newGameState: {fileID: 11400000, guid: 432910cdc0513b545896507ec8283449, type: 2}
 --- !u!65 &1670101469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2845,9 +2846,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  nameOfNPC: 0
-  styleOfDialogue: 1
-  hasMoreToSay: 0
+  dialogChangingGstate: {fileID: 0}
+  styleOfDialogue: 2
 --- !u!1 &1724135061
 GameObject:
   m_ObjectHideFlags: 0
