@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051b91b28d714c847a971a85f250ef7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameState: {fileID: 11400000, guid: da6a25fa3204965458b3bfd6fd15dd9e, type: 2}
+  GameState: {fileID: 11400000, guid: f8186f8d4c883214a9851d6e20be4bb3, type: 2}
   GameMusic: {fileID: 2145357778}
   HeldObject: {fileID: 0}
   interactables: []

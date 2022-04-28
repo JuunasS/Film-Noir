@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 3e9484f4f38a5f44ca5ac96f69f2cfd5, type: 3}
   ItemName: Whiskey glass
-  Description: An empty whiskey glass.
+  Description: "This glass is kinda filthy... But a nice design.. \r\nMaybe no one
+    will notice, if I take it."
   Connection: {fileID: 0}
