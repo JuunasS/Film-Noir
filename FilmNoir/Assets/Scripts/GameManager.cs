@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     private GameObject DialogCanvas;
     private GameObject InventoryCanvas;
+    public List<InventoryObject> PlayerInventory = new List<InventoryObject>();
+
     public NPCInfo[] NPCList = new NPCInfo[20];
 
     [SerializeField]
@@ -180,8 +182,22 @@ public class GameManager : MonoBehaviour
         GameSave LoadGameSave = JsonUtility.FromJson<GameSave>(GameSaveJson);
 
         this.GameState = LoadGameSave.GameState;
-        this.InventoryCanvas.GetComponent<InventoryController>().PlayerInventory = LoadGameSave.InventoryObjects;
+        this.PlayerInventory = LoadGameSave.InventoryObjects;
         this.currentSceneName = LoadGameSave.SceneName;
+    }
+
+    public bool CheckSave()
+    {
+        Debug.Log("Checking playerprefs...");
+        string GameSaveJson = PlayerPrefs.GetString(GAMESAVEKEY);
+
+        GameSave LoadGameSave = JsonUtility.FromJson<GameSave>(GameSaveJson);
+
+        if(LoadGameSave.CheckVariables())
+        {
+            return true;
+        }
+        return false;
     }
 }
 
@@ -196,6 +212,16 @@ public class GameSave
     {
         GameState = GameManager.manager.GameState;
         SceneName = GameManager.manager.currentSceneName;
-        InventoryObjects = GameManager.manager.GetInventoryCanvas().GetComponent<InventoryController>().PlayerInventory;
+        InventoryObjects = GameManager.manager.PlayerInventory;
+    }
+
+
+    public bool CheckVariables()
+    {
+        if(GameState == null || InventoryObjects == null || SceneName == "")
+        {
+            return false;
+        }
+        return true;
     }
 }

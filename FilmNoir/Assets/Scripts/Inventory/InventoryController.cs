@@ -7,7 +7,6 @@ public class InventoryController : MonoBehaviour
 {
     public GameObject InventoryPanel; // Contains all panels
     public List<GameObject> Panels = new List<GameObject>(); // 16 Panels
-    public List<InventoryObject> PlayerInventory = new List<InventoryObject>();
 
     public GameObject DescriptionPanel;
     public Text DescriptionItemName;
@@ -40,7 +39,7 @@ public class InventoryController : MonoBehaviour
 
     public bool InventoryContains(InventoryObject obj)
     {
-        foreach(InventoryObject invObj in PlayerInventory)
+        foreach(InventoryObject invObj in GameManager.manager.PlayerInventory)
         {
             if(obj == invObj)
             {
@@ -69,16 +68,16 @@ public class InventoryController : MonoBehaviour
 
     public void AddItem(InventoryObject invObject)
     {
-        PlayerInventory.Add(invObject);
+        GameManager.manager.PlayerInventory.Add(invObject);
         InvOpenAudio.Play();
         UpdateInventory();
     }
 
     private void UpdateInventory()
     {
-        for (int i = 0; i < PlayerInventory.Count; i++)
+        for (int i = 0; i < GameManager.manager.PlayerInventory.Count; i++)
         {
-            Panels[i].GetComponent<InventoryPanel>().SetInventoryObject(PlayerInventory[i]);
+            Panels[i].GetComponent<InventoryPanel>().SetInventoryObject(GameManager.manager.PlayerInventory[i]);
         }
     }
 

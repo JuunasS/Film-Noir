@@ -50,8 +50,16 @@ public class MenuScript : MonoBehaviour
 
     public void LoadGame()
     {
-        GameManager.manager.LoadPrefs();
-        GameManager.manager.LoadScene(GameManager.manager.currentSceneName);
+        if(GameManager.manager.CheckSave())
+        {
+            GameManager.manager.LoadPrefs();
+            GameManager.manager.LoadScene(GameManager.manager.currentSceneName);
+        }
+        else
+        {
+            Debug.Log("No GameSaves exist");
+        }
+
     }
 
     public void TitleReturn()
