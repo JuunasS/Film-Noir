@@ -11,6 +11,7 @@ public class NPCMotor : MonoBehaviour
     private NavMeshAgent agent;
     public Animator animator;
     public bool hasDialogue = false;
+    public bool reachedDestination = false;
 
     void Start()
     {
@@ -20,19 +21,25 @@ public class NPCMotor : MonoBehaviour
     }
     private void Update()
     {
-        if (!agent.pathPending)
+        if (!reachedDestination)
         {
-            if (agent.remainingDistance <= agent.stoppingDistance)
+            if (!agent.pathPending)
             {
-                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+                if (agent.remainingDistance <= agent.stoppingDistance)
                 {
-                    if(hasDialogue)
+                    if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                     {
-                        gameObject.GetComponent<NPCcontroller>().StartDialogue();
+                        if (hasDialogue)
+                        {
+                            gameObject.GetComponent<NPCcontroller>().StartDialogue();
+                        }
+                        reachedDestination = true;
                     }
                 }
             }
+
         }
+
 
         if (target != null)
         {
@@ -58,7 +65,7 @@ public class NPCMotor : MonoBehaviour
     public void MoveToPointDialogue(Vector3 point)
     {
         agent.SetDestination(point);
-        hasDialogue = true; 
+        hasDialogue = true;
     }
 
     public void FollowTarget(Interactable newTarget)        //kutsutaan kun napautetaan interactable objectia, ja k‰vell‰‰n sen luo
