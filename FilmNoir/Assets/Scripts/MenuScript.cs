@@ -34,7 +34,7 @@ public class MenuScript : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("Toimisto");
+        SceneManager.LoadScene("Intro");
     }
 
     public void QuitGame()
