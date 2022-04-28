@@ -1,21 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class NPCcontroller : MonoBehaviour
 {
-
     [HideInInspector] public Animator animator;
     [HideInInspector] public SimpleDialogue simpleDialogue;
     [HideInInspector] public DialogueNeedsItem dialogWithItem;
     [HideInInspector] public DialogueChangeGState dialogChangingGstate;
 
+    private NPCMotor motor;
+
+    public DialogueNode startDialogue;
+    public Transform waypoint;
+
 
     public DialogueStyle styleOfDialogue;
+
+
+    private void Awake()
+    {
+        if (waypoint != null)
+        {
+            Debug.Log("Started moving");
+            gameObject.GetComponent<NavMeshObstacle>().enabled = false;
+            motor = GetComponent<NPCMotor>();
+        }
+    }
 
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        if(waypoint != null && startDialogue != null)
+        {
+            motor.MoveToPointDialogue(waypoint.position);
+        }
+        else
+        {
+            motor.MoveToPoint(waypoint.position);
+        }
         //inventory = FindObjectOfType<InventoryController>();
     }
 
@@ -26,6 +50,12 @@ public class NPCcontroller : MonoBehaviour
             animator.SetBool("isTalking", false);
         }
     }
+
+    public void StartDialogue()
+    {
+        GameManager.manager.SetDialogue(startDialogue);
+    }
+
     public void ChooseDialogue()
     {
         if(styleOfDialogue == DialogueStyle.SIMPLE_DIALOGUE)
