@@ -6,5 +6,5 @@ using UnityEngine;
 public class DialogCharacter : ScriptableObject
 {
     public string Name;
-    
+    public Color NameColor;
 }

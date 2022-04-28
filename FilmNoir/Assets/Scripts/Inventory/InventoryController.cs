@@ -14,6 +14,8 @@ public class InventoryController : MonoBehaviour
     public GameObject ImagePanel;
     public GameObject DescriptionText;
 
+    public AudioSource InvOpenAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +52,7 @@ public class InventoryController : MonoBehaviour
 
     public void ToggleInventory()
     {
+        InvOpenAudio.Play();
         if (InventoryPanel.activeInHierarchy)
         {
             Debug.Log("Inventory hidden");
@@ -67,6 +70,7 @@ public class InventoryController : MonoBehaviour
     public void AddItem(InventoryObject invObject)
     {
         PlayerInventory.Add(invObject);
+        InvOpenAudio.Play();
         UpdateInventory();
     }
 
