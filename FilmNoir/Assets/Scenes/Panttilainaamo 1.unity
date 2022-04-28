@@ -220,6 +220,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1432728736996655804, guid: 3d1d4f4f14071bf46949f9c92db76a6f, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432728737898653060, guid: 3d1d4f4f14071bf46949f9c92db76a6f, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1902,13 +1906,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  startingDialogue: {fileID: 11400000, guid: b822934d31294694d9055a360f76c427, type: 2}
-  secondDialogue: {fileID: 11400000, guid: f3a0b023ae9398541ac3272030ae7d40, type: 2}
-  inBetweenDialogue: {fileID: 11400000, guid: 0ffd89c9d89694f419665ee0e035ee7b, type: 2}
-  thirdDialogue: {fileID: 11400000, guid: dc0d4bfcd98acf649bc0f7d482c5ee7b, type: 2}
-  wantedObject: {fileID: 11400000, guid: 17a9dd7e70ac41e46840facbbc527f98, type: 2}
-  nameOfNPC: 0
-  hasMoreToSay: 1
+  simpleDialogue: {fileID: 0}
+  dialogWithItem: {fileID: 0}
+  dialogChangingGstate: {fileID: 0}
+  styleOfDialogue: 0
 --- !u!65 &1802880459
 BoxCollider:
   m_ObjectHideFlags: 0
