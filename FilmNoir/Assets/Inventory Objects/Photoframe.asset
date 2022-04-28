@@ -15,4 +15,4 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: b0ce7d662f4152148b021ff7d9f027f5, type: 3}
   ItemName: Photo
   Description: Photo of a man
-  Connection: {fileID: 11400000, guid: 589e44881780fef4b87ea9b0f5836d27, type: 2}
+  Connection: {fileID: 0}

@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 5562978363848181161}
   - component: {fileID: 5562978363848181160}
   - component: {fileID: 5562978363848181167}
-  - component: {fileID: 7267871706429687714}
+  - component: {fileID: 2171459785804245645}
   m_Layer: 5
   m_Name: InventoryCanvas
   m_TagString: Untagged
@@ -731,8 +731,8 @@ MonoBehaviour:
   DescriptionItemName: {fileID: 5562978364786056640}
   ImagePanel: {fileID: 5562978365166155309}
   DescriptionText: {fileID: 5562978363627841818}
-  InvOpenAudio: {fileID: 7267871706429687714}
---- !u!82 &7267871706429687714
+  InvOpenAudio: {fileID: 2171459785804245645}
+--- !u!82 &2171459785804245645
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -741,7 +741,7 @@ AudioSource:
   m_GameObject: {fileID: 5562978363848181166}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 4e540c723553bb04fa9904b6854a9632, type: 2}
   m_audioClip: {fileID: 8300000, guid: 153c71af4a88fd241ae44258eaf1fbb2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
