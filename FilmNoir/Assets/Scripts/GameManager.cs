@@ -6,9 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private string GAMESAVEKEY = "GAMESAVEPREF";
+    GameSave GameSave = new GameSave();
+
     public static GameManager manager;
 
     public GameState GameState;
+    public string currentSceneName;
     public AudioSource GameMusic;
 
     private GameObject DialogCanvas;
@@ -37,6 +41,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        currentSceneName = SceneManager.GetActiveScene().name;
         CheckInteractables();
 
         //lis‰t‰‰n NPC:it‰ listalle johon tallennetaan keskusteluiden kulku
@@ -69,6 +74,7 @@ public class GameManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         CheckInteractables();
+        currentSceneName = SceneManager.GetActiveScene().name;
     }
 
     public void CheckInteractables()
@@ -153,5 +159,43 @@ public class GameManager : MonoBehaviour
     {
         GameMusic.clip = newMusic;
         GameMusic.Play();
+    }
+
+    // Saves gamestate and player inventory to playerprefs in JSON format
+    public void SavePrefs()
+    {
+        Debug.Log("Saving playerprefs...");
+        this.GameSave.NewData();
+        string GameSaveJson = JsonUtility.ToJson(this.GameSave);
+
+        PlayerPrefs.SetString(GAMESAVEKEY, GameSaveJson);
+    }
+
+    // Loads gamestate and player inventory from playerprefs and converts them beck from JSON format
+    public void LoadPrefs()
+    {
+        Debug.Log("Loading playerprefs...");
+        string GameSaveJson = PlayerPrefs.GetString(GAMESAVEKEY);
+
+        GameSave LoadGameSave = JsonUtility.FromJson<GameSave>(GameSaveJson);
+
+        this.GameState = LoadGameSave.GameState;
+        this.InventoryCanvas.GetComponent<InventoryController>().PlayerInventory = LoadGameSave.InventoryObjects;
+        this.currentSceneName = LoadGameSave.SceneName;
+    }
+}
+
+
+public class GameSave
+{
+    public GameState GameState;
+    public string SceneName;
+    public List<InventoryObject> InventoryObjects;
+
+    public void NewData()
+    {
+        GameState = GameManager.manager.GameState;
+        SceneName = GameManager.manager.currentSceneName;
+        InventoryObjects = GameManager.manager.GetInventoryCanvas().GetComponent<InventoryController>().PlayerInventory;
     }
 }

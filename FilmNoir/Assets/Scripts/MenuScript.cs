@@ -42,6 +42,18 @@ public class MenuScript : MonoBehaviour
         Application.Quit();
     }
 
+
+    public void SaveGame()
+    {
+        GameManager.manager.SavePrefs();
+    }
+
+    public void LoadGame()
+    {
+        GameManager.manager.LoadPrefs();
+        GameManager.manager.LoadScene(GameManager.manager.currentSceneName);
+    }
+
     public void TitleReturn()
     {
         SceneManager.LoadScene("MainMenu");
