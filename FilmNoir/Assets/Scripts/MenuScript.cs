@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
-    GameObject menu;
+    public GameObject menu;
+    public GameObject settingsMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,11 @@ public class MenuScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)){
             menu.SetActive(!menu.activeInHierarchy);
+            PlayerController.canMove = !PlayerController.canMove;
+            if (settingsMenu.activeInHierarchy)
+            {
+                ToggleSettingsMenu();
+            }
         }
     }
 
@@ -39,4 +46,10 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void ToggleSettingsMenu()
+    {
+        settingsMenu.SetActive(!settingsMenu.activeInHierarchy);
+    }
+
 }
