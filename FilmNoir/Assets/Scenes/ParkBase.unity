@@ -699,7 +699,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e8c1275faeada74449c84c43f3443e5d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5ec3933c4ca84cc4c93e08dfce41b1a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1345,6 +1345,8 @@ MonoBehaviour:
   radius: 2
   interactionTransform: {fileID: 1438234004}
   levelToLoad: MapScene
+  doesGameStateChange: 0
+  newGameState: {fileID: 0}
 --- !u!1 &1267817409
 GameObject:
   m_ObjectHideFlags: 0

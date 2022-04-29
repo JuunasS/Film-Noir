@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8387160341268961357}
   - component: {fileID: 8387160341268961358}
   - component: {fileID: 8387160341268961359}
-  - component: {fileID: 1298411562}
   - component: {fileID: 1298411560}
   - component: {fileID: 1298411561}
+  - component: {fileID: 903317715}
   m_Layer: 0
   m_Name: AntagonistNPC
   m_TagString: Interactable
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 8387160341268961353}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.33, y: 0.89, z: 2.72}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.40000015, y: 0.4, z: 0.40000015}
   m_Children:
   - {fileID: 8354059220943351682}
   m_Father: {fileID: 0}
@@ -64,8 +64,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.910979, y: 6.309784, z: 2.1416092}
-  m_Center: {x: 0.012512445, y: 2.654892, z: -0.21523139}
+  m_Size: {x: 2.486315, y: 10.92059, z: 3.4863608}
+  m_Center: {x: 0.30018046, y: 4.9602933, z: 0.45714796}
 --- !u!208 &8387160341268961358
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ NavMeshObstacle:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8387160341268961353}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Shape: 1
   m_Extents: {x: 0.5, y: 0.5, z: 0.5}
@@ -100,26 +100,7 @@ MonoBehaviour:
   dialogChangingGstate: {fileID: 0}
   startDialogue: {fileID: 11400000, guid: 78dfaef4e0111b74e81ee45ec81b117b, type: 2}
   waypoint: {fileID: 0}
-  styleOfDialogue: 0
---- !u!95 &1298411562
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8387160341268961353}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 05976204f10ba4e41944bd2971eb4f10, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  styleOfDialogue: 1
 --- !u!195 &1298411560
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -130,7 +111,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -154,9 +135,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b4623234ff2854d90880a958848502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1298411562}
+  animator: {fileID: 0}
   hasDialogue: 0
   reachedDestination: 0
+--- !u!114 &903317715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8387160341268961353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e2241c39ccf8941b82c134d4781430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  firstDialogue: {fileID: 11400000, guid: a7943cc56d383fe49a0a06821b1aa29a, type: 2}
+  idleDialogue: {fileID: 11400000, guid: 99dda1e7eb222ef42852faf35bf075dc, type: 2}
+  nameOfNPC: 5
 --- !u!1001 &8387160342456354921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -170,15 +167,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f134b9f4471461d4b88f36b81b9a5328, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.607719
+      value: 8.431134
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f134b9f4471461d4b88f36b81b9a5328, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.607719
+      value: 8.431134
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f134b9f4471461d4b88f36b81b9a5328, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.607719
+      value: 8.431134
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f134b9f4471461d4b88f36b81b9a5328, type: 3}
       propertyPath: m_LocalPosition.x

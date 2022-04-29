@@ -980,6 +980,8 @@ MonoBehaviour:
   radius: 2
   interactionTransform: {fileID: 186968190}
   levelToLoad: MapScene
+  doesGameStateChange: 0
+  newGameState: {fileID: 0}
 --- !u!1 &657130170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,6 +1911,7 @@ MonoBehaviour:
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
   dialogChangingGstate: {fileID: 0}
+  dialogGetItem: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
   styleOfDialogue: 0

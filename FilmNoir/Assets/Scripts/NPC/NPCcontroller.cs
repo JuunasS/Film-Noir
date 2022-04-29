@@ -8,16 +8,14 @@ public class NPCcontroller : MonoBehaviour
     [HideInInspector] public Animator animator;
     [HideInInspector] public SimpleDialogue simpleDialogue;
     [HideInInspector] public DialogueNeedsItem dialogWithItem;
-    [HideInInspector] public DialogueChangeGState dialogChangingGstate;
+    [HideInInspector] public DialogGetItem dialogGetItem;
 
     private NPCMotor motor;
 
     public DialogueNode startDialogue;
     public Transform waypoint;
 
-
     public DialogueStyle styleOfDialogue;
-
 
     private void Awake()
     {
@@ -70,10 +68,10 @@ public class NPCcontroller : MonoBehaviour
             dialogWithItem = gameObject.GetComponent<DialogueNeedsItem>();
             dialogWithItem.DisplayDialogue();
         }
-        else if (styleOfDialogue == DialogueStyle.CHANGE_GAMESTATE)
+        else if (styleOfDialogue == DialogueStyle.GET_ITEM)
         {
-            dialogChangingGstate = gameObject.GetComponent<DialogueChangeGState>();
-            dialogChangingGstate.DisplayDialogue();
+            dialogGetItem = gameObject.GetComponent<DialogGetItem>();
+            dialogGetItem.DisplayDialogue();
         }
         else if (styleOfDialogue == DialogueStyle.DEFAULT)
         {
@@ -96,7 +94,7 @@ public enum DialogueStyle
     DEFAULT,
     SIMPLE_DIALOGUE,
     NEEDS_ITEM,
-    CHANGE_GAMESTATE
+    GET_ITEM
 }
 
 
@@ -112,7 +110,8 @@ public enum NPCName // t‰nne merkitt‰v‰ eri NPC:iden nimet, ja sitten pidett‰v‰ 
     BARTENDER,
     MISTRESS,
     NINA,
-    CHEATER
+    CHEATER,
+    CLIENT_JUDY
 }
 
 // luokka josta tehd‰‰n olioita joita tallennetaan game managerissa olevaan listaan
