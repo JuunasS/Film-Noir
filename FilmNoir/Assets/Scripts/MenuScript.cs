@@ -34,12 +34,32 @@ public class MenuScript : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("Toimisto");
+        SceneManager.LoadScene("Intro");
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+
+    public void SaveGame()
+    {
+        GameManager.manager.SavePrefs();
+    }
+
+    public void LoadGame()
+    {
+        if(GameManager.manager.CheckSave())
+        {
+            GameManager.manager.LoadPrefs();
+            GameManager.manager.LoadScene(GameManager.manager.currentSceneName);
+        }
+        else
+        {
+            Debug.Log("No GameSaves exist");
+        }
+
     }
 
     public void TitleReturn()

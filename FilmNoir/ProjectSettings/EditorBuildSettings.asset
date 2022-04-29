@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0a881d102a722814fb510e4420248e14
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 2354cab138aa33345af291715f6227cd
+  - enabled: 1
     path: Assets/Scenes/Toimisto.unity
     guid: 104e25c5755c9484f81c9579895e091b
   - enabled: 1
@@ -20,9 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Kaytava.unity
     guid: fa37caf308134cd438d513662f824d7e
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 0a881d102a722814fb510e4420248e14
   - enabled: 1
     path: Assets/Scenes/MapScene.unity
     guid: 1e51922fc7aec254aa47b62454690e5c
