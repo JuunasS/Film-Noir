@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3941602905572461951}
   - component: {fileID: 4710237470397988708}
+  - component: {fileID: 333675144441149493}
   - component: {fileID: 2145357778}
   m_Layer: 0
   m_Name: Game Manager
@@ -45,9 +46,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameState: {fileID: 11400000, guid: da6a25fa3204965458b3bfd6fd15dd9e, type: 2}
+  currentSceneName: 
   GameMusic: {fileID: 2145357778}
+  PlayerInventory: []
   HeldObject: {fileID: 0}
   interactables: []
+--- !u!114 &333675144441149493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4368131356969597090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992d8ff576e53d64887fe2f7f61655a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 4e540c723553bb04fa9904b6854a9632, type: 2}
+  volumeSlider: {fileID: 0}
 --- !u!82 &2145357778
 AudioSource:
   m_ObjectHideFlags: 0
