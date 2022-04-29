@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 2fa44e87e9566d6458d87f85ddbfd43e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 300
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Film Noir
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f4f30f58f918a8842a8faaf9fe5465eb, type: 3}
+  - {fileID: 12800000, guid: 930496a6fb7ab6641a252da07b192ea5, type: 3}
+  - {fileID: 12800000, guid: d8ce6233e7ff7354987fde894eb952d9, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
