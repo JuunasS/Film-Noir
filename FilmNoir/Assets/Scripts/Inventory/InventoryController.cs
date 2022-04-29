@@ -18,6 +18,7 @@ public class InventoryController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        InvOpenAudio = GetComponent<AudioSource>();
         Debug.Log("InventoryController Start");
         if (GameManager.manager.GetInventoryCanvas() != null)
         {

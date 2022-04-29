@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 9c3f5fa630b66204888105e27ef17eca
+guid: b58f6206b1fd5d5489a1baec31cbae7c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: antag_talking
+    second: cheater_sitting
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: antag_talking
+      name: cheater_sitting
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 163
+      lastFrame: 210
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -17,6 +17,6 @@ MonoBehaviour:
   ApartmentSceneName: Asunto
   PawnshopSceneName: 
   HairsaloonSceneName: 
-  ClubSceneName: 
+  ClubSceneName: ClubBase
   ParkSceneName: 
   BarSceneName: 

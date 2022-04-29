@@ -8,7 +8,7 @@ public class IntroNextScene : MonoBehaviour
     //Triggers when becomes active
     void OnEnable()
     {
-        SceneManager.LoadScene("Toimisto");
+        SceneManager.LoadScene("01Office");
     }
 
 }

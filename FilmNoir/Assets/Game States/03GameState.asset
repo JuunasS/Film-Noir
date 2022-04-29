@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f294ec2bd3649834b8d0488a3d438233, type: 3}
-  m_Name: 01GameState
+  m_Name: 03GameState
   m_EditorClassIdentifier: 
   OfficeSceneName: OfficeBase
   ApartmentAisleSceneName: 
   ApartmentSceneName: 
   PawnshopSceneName: 
   HairsaloonSceneName: 
-  ClubSceneName: 
-  ParkSceneName: 01Park
+  ClubSceneName: ClubBase
+  ParkSceneName: ParkBase
   BarSceneName: 

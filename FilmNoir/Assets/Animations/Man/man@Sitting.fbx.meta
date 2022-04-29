@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 9c3f5fa630b66204888105e27ef17eca
+guid: 62767cd6f29db56429c1d74563b7aebf
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: antag_talking
+    second: man_sitting
   externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: antag_talking
+      name: man_sitting
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 163
+      lastFrame: 120
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

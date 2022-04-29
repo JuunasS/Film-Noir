@@ -17,7 +17,7 @@ public class NPCMotor : MonoBehaviour
     {
         gameObject.GetComponent<NavMeshObstacle>().enabled = false;
         agent = GetComponent<NavMeshAgent>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
     private void Update()
     {
@@ -47,14 +47,6 @@ public class NPCMotor : MonoBehaviour
             FaceTarget();                           //pit‰‰ huolen ett‰ agentti osoittaa esineen suuntaan
         }
 
-        if (agent.velocity.sqrMagnitude <= 1f)
-        {
-            animator.SetBool("isWalking", false);
-        }
-        if (agent.velocity.sqrMagnitude > 1f)
-        {
-            animator.SetBool("isWalking", true);
-        }
     }
 
     public void MoveToPoint(Vector3 point)

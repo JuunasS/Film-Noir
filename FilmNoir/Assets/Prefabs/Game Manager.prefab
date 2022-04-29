@@ -44,10 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051b91b28d714c847a971a85f250ef7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameState: {fileID: 11400000, guid: f8186f8d4c883214a9851d6e20be4bb3, type: 2}
+  GameState: {fileID: 11400000, guid: f5e075c79d0ea4c4ca94ddc9329c7d76, type: 2}
+  currentSceneName: 
   GameMusic: {fileID: 2145357778}
+  PlayerInventory: []
   HeldObject: {fileID: 0}
-  interactables: []
+  collectables: []
 --- !u!82 &2145357778
 AudioSource:
   m_ObjectHideFlags: 0

@@ -34,6 +34,7 @@ public class NPCcontroller : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         if(waypoint != null && startDialogue != null)
         {
+            animator.SetBool("isWalking", true);
             motor.MoveToPointDialogue(waypoint.position);
         }
         else
@@ -53,6 +54,7 @@ public class NPCcontroller : MonoBehaviour
 
     public void StartDialogue()
     {
+        animator.SetBool("isWalking", false);
         GameManager.manager.SetDialogue(startDialogue);
     }
 
@@ -109,7 +111,8 @@ public enum NPCName // t‰nne merkitt‰v‰ eri NPC:iden nimet, ja sitten pidett‰v‰ 
     ANTAGONIST,
     BARTENDER,
     MISTRESS,
-    NINA
+    NINA,
+    CHEATER
 }
 
 // luokka josta tehd‰‰n olioita joita tallennetaan game managerissa olevaan listaan
