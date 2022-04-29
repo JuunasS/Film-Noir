@@ -12,6 +12,18 @@ public class MenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("MenuScript Start");
+        if (GameManager.manager.GetMenuCanvas() != null)
+        {
+            Debug.Log("Destroy MenuScript");
+            Destroy(gameObject);
+        }
+        else
+        {
+            GameManager.manager.SetMenuCanvas(gameObject);
+            DontDestroyOnLoad(gameObject);
+        }
+
         if(GameObject.Find("MiniMenu") != null)
         {
             menu = GameObject.Find("MiniMenu");
@@ -22,7 +34,7 @@ public class MenuScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)){
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "MainMenu"){
             menu.SetActive(!menu.activeInHierarchy);
             PlayerController.canMove = !PlayerController.canMove;
             if (settingsMenu.activeInHierarchy)
@@ -64,6 +76,11 @@ public class MenuScript : MonoBehaviour
 
     public void TitleReturn()
     {
+        menu.SetActive(!menu.activeInHierarchy);
+        if (settingsMenu.activeInHierarchy)
+        {
+            ToggleSettingsMenu();
+        }
         SceneManager.LoadScene("MainMenu");
     }
 

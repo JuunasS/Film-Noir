@@ -17,8 +17,9 @@ public class GameManager : MonoBehaviour
 
     private GameObject DialogCanvas;
     private GameObject InventoryCanvas;
-    public List<InventoryObject> PlayerInventory = new List<InventoryObject>();
+    private GameObject MenuCanvas;
 
+    public List<InventoryObject> PlayerInventory = new List<InventoryObject>();
     public NPCInfo[] NPCList = new NPCInfo[20];
 
     [SerializeField]
@@ -134,6 +135,11 @@ public class GameManager : MonoBehaviour
         return DialogCanvas;
     }
 
+    public GameObject GetMenuCanvas()
+    {
+        return MenuCanvas;
+    }
+
     public void SetInventoryCanvas(GameObject invCanvas)
     {
         this.InventoryCanvas = invCanvas;
@@ -142,6 +148,11 @@ public class GameManager : MonoBehaviour
     public void SetDialogCanvas(GameObject dialogCanvas)
     {
         this.DialogCanvas = dialogCanvas;
+    }
+
+    public void SetMenuCanvas(GameObject menuCanvas)
+    {
+        this.MenuCanvas = menuCanvas;
     }
 
     public void SetHeldObject(InventoryObject invObj)

@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7397982938624466349, guid: 9989bdb59b7dd7a4f8595c7f818ba4ca, type: 3}
+      propertyPath: musicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a469d1bf771f7a54594eedb3c8164f93, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9989bdb59b7dd7a4f8595c7f818ba4ca, type: 3}
 --- !u!1 &356983401
@@ -263,8 +267,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 749971211}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+      - m_Target: {fileID: 1445320521}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: LoadGame
         m_Mode: 1
         m_Arguments:
@@ -396,8 +400,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 749971211}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+      - m_Target: {fileID: 1445320521}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
@@ -446,51 +450,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738427368}
   m_CullTransparentMesh: 1
---- !u!1 &749971210
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 749971212}
-  - component: {fileID: 749971211}
-  m_Layer: 0
-  m_Name: MenuControl
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &749971211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749971210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7c5b5888e31ee41a05b6ae87cbed8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menu: {fileID: 0}
-  settingsMenu: {fileID: 1832765987}
---- !u!4 &749971212
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749971210}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 321.7962, y: 167.2528, z: 399.58987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &808631733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -498,9 +457,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 333675144441149493, guid: 2a251a334108d2f4bb9ab94110a6bcce, type: 3}
+      propertyPath: volumeSlider
+      value: 
+      objectReference: {fileID: 2633095471911367106}
     - target: {fileID: 3941602905572461951, guid: 2a251a334108d2f4bb9ab94110a6bcce, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3941602905572461951, guid: 2a251a334108d2f4bb9ab94110a6bcce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -960,8 +923,9 @@ GameObject:
   - component: {fileID: 1445320520}
   - component: {fileID: 1445320519}
   - component: {fileID: 1445320518}
+  - component: {fileID: 1445320521}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -979,9 +943,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1846705871}
-  - {fileID: 1832765988}
+  - {fileID: 2633095473481305323}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1049,6 +1013,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1445320521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445320516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2471f67abda75478ca69efa1bb71e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 1846705870}
+  settingsMenu: {fileID: 2633095473481305320}
 --- !u!1 &1468268146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,8 +1110,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 749971211}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+      - m_Target: {fileID: 1445320521}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ToggleSettingsMenu
         m_Mode: 1
         m_Arguments:
@@ -1265,8 +1243,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 749971211}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+      - m_Target: {fileID: 1445320521}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -1323,12 +1301,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1445320517}
     m_Modifications:
     - target: {fileID: 2633095471916219973, guid: 362420c30c4ea85479397ab283da2824, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633095471916219973, guid: 362420c30c4ea85479397ab283da2824, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 749971211}
+      objectReference: {fileID: 1445320521}
     - target: {fileID: 2633095471916219973, guid: 362420c30c4ea85479397ab283da2824, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToggleSettingsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633095471916219973, guid: 362420c30c4ea85479397ab283da2824, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2633095472850642109, guid: 362420c30c4ea85479397ab283da2824, type: 3}
       propertyPath: m_Name
@@ -1418,7 +1404,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2633095473347303831, guid: 362420c30c4ea85479397ab283da2824, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2047060915}
+    - target: {fileID: 2633095473347303831, guid: 362420c30c4ea85479397ab283da2824, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetVolumeLevel
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2633095473756677423, guid: 362420c30c4ea85479397ab283da2824, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 362420c30c4ea85479397ab283da2824, type: 3}
 --- !u!1 &1672437204
 GameObject:
@@ -1499,16 +1494,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672437204}
   m_CullTransparentMesh: 1
---- !u!1 &1832765987 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2633095472850642109, guid: 362420c30c4ea85479397ab283da2824, type: 3}
-  m_PrefabInstance: {fileID: 1517906005}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1832765988 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2633095472850642110, guid: 362420c30c4ea85479397ab283da2824, type: 3}
-  m_PrefabInstance: {fileID: 1517906005}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1846705870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,7 +1506,7 @@ GameObject:
   - component: {fileID: 1846705873}
   - component: {fileID: 1846705872}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1667,3 +1652,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873273829}
   m_CullTransparentMesh: 1
+--- !u!114 &2047060915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 333675144441149493, guid: 2a251a334108d2f4bb9ab94110a6bcce, type: 3}
+  m_PrefabInstance: {fileID: 808631733}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992d8ff576e53d64887fe2f7f61655a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2633095471911367106 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2633095473347303831, guid: 362420c30c4ea85479397ab283da2824, type: 3}
+  m_PrefabInstance: {fileID: 1517906005}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2633095473481305320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2633095472850642109, guid: 362420c30c4ea85479397ab283da2824, type: 3}
+  m_PrefabInstance: {fileID: 1517906005}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2633095473481305323 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2633095472850642110, guid: 362420c30c4ea85479397ab283da2824, type: 3}
+  m_PrefabInstance: {fileID: 1517906005}
+  m_PrefabAsset: {fileID: 0}
