@@ -78,7 +78,8 @@ public enum NPCName // t‰nne merkitt‰v‰ eri NPC:iden nimet, ja sitten pidett‰v‰ 
     HAIRDRESSER,
     ANTAGONIST,
     BARTENDER,
-    MISTRESS
+    MISTRESS,
+    NINA
 }
 
 // luokka josta tehd‰‰n olioita joita tallennetaan game managerissa olevaan listaan

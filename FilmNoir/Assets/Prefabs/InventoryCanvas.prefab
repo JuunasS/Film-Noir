@@ -731,7 +731,7 @@ MonoBehaviour:
   DescriptionItemName: {fileID: 5562978364786056640}
   ImagePanel: {fileID: 5562978365166155309}
   DescriptionText: {fileID: 5562978363627841818}
-  InvOpenAudio: {fileID: 2171459785804245645}
+  InvOpenAudio: {fileID: 0}
 --- !u!82 &2171459785804245645
 AudioSource:
   m_ObjectHideFlags: 0

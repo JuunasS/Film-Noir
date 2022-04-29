@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private InventoryObject HeldObject;
 
-    public GameObject[] interactables;
+    public GameObject[] collectables;
 
     private void Awake()
     {
@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
         NPCList[5] = new NPCInfo("Antagonist", DialogueMode.FIRST_DIALOGUE);
         NPCList[6] = new NPCInfo("Bartender", DialogueMode.FIRST_DIALOGUE);
         NPCList[7] = new NPCInfo("Mistress", DialogueMode.FIRST_DIALOGUE);
+        NPCList[8] = new NPCInfo("Nina", DialogueMode.FIRST_DIALOGUE);
     }
 
     // Update is called once per frame
@@ -73,9 +74,9 @@ public class GameManager : MonoBehaviour
 
     public void CheckInteractables()
     {
-        interactables = GameObject.FindGameObjectsWithTag("Interactable");
+        collectables = GameObject.FindGameObjectsWithTag("Collectible");
 
-        foreach (GameObject obj in interactables)
+        foreach (GameObject obj in collectables)
         {
             Debug.Log("Interactables foreach loop 1");
 

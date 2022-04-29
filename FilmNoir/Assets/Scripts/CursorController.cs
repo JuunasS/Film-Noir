@@ -22,7 +22,7 @@ public class CursorController : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
-            if (hit.collider.tag == "Interactable")
+            if (hit.collider.tag == "Interactable" || hit.collider.tag == "Collectible")
             {
                 Clickable();
 
