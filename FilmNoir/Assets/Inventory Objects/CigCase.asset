@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: bf837a4967089eb46a71666df57ae6b1, type: 3}
   ItemName: Cigarette case
-  Description: "A silver cigarette case with an engraving... ''To my dear Hermie,
-    love, Judy''.\r\nBingo! It's Herman Campbell's.\r There's a few Luckies inside..
-    Mr Campbell's brand.\r And a couple of menthol ones. Mrs. Campbell doesn't smoke,
-    so these menthol cigs must belong to a friend of his..."
+  Description: A silver cigarette case with an engraving... ''To my dear Hermie,
+    love, Judy''. It seems to belong to Herman Campbell.
   Connection: {fileID: 0}

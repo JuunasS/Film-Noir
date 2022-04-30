@@ -14,9 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OfficeBase.unity
     guid: 104e25c5755c9484f81c9579895e091b
-  - enabled: 1
-    path: Assets/Scenes/kampaamo.unity
-    guid: 8060e955e7ce5414faf44eabf8107bb2
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Asunto.unity
     guid: 724ac4b716c1b4841a68d80b559b21ca
@@ -50,4 +50,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OfficeScenes/02Office.unity
     guid: f148577b33274974fab0d564e3221ce3
+  - enabled: 1
+    path: Assets/Scenes/HairdresserScenes/01Hairdresser.unity
+    guid: 16d3f0884cbe07949bd1164575625481
+  - enabled: 1
+    path: Assets/Scenes/PawnshopScenes/01Pawnshop.unity
+    guid: e945e0576f94f6047b8bcc4c36dfc2ef
+  - enabled: 1
+    path: Assets/Scenes/HairdresserBase.unity
+    guid: da71468347f9e9f4f8da9c9e9fd7ef8c
+  - enabled: 1
+    path: Assets/Scenes/HairdresserScenes/02Hairdresser.unity
+    guid: 527b37bdf371f7f4aa496200173b99b8
+  - enabled: 1
+    path: Assets/Scenes/OfficeScenes/03Office.unity
+    guid: 46655ce9b5ddfb54f8478265964d13c2
   m_configObjects: {}

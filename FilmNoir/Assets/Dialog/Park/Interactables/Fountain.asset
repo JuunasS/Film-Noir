@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fountain
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: 69bdb4c971b65fd4f9bfc6dffa572208, type: 2}
-  DialogueText: A dolphin shaped fountain. People sometimes throw coins in and wish
-    for something. I don't have any coins on me at the moment.
+  DialogueText: A dolphin-shaped fountain. People sometimes throw coins in and wish
+    for something. I don't have any coins on me at the moment. Nor wishes.
   ChoiceDialogs:
   - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}

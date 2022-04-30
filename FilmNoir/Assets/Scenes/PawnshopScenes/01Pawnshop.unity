@@ -228,6 +228,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d1d4f4f14071bf46949f9c92db76a6f, type: 3}
+--- !u!114 &15313308 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1960490582, guid: 3d1d4f4f14071bf46949f9c92db76a6f, type: 3}
+  m_PrefabInstance: {fileID: 15313307}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &34946120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,6 +1731,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 333675144441149493, guid: 2a251a334108d2f4bb9ab94110a6bcce, type: 3}
+      propertyPath: volumeSlider
+      value: 
+      objectReference: {fileID: 15313308}
     - target: {fileID: 3941602905572461951, guid: 2a251a334108d2f4bb9ab94110a6bcce, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1911,11 +1926,10 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  dialogChangingGstate: {fileID: 0}
   dialogGetItem: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
-  styleOfDialogue: 4
+  styleOfDialogue: 3
 --- !u!65 &1802880459
 BoxCollider:
   m_ObjectHideFlags: 0
