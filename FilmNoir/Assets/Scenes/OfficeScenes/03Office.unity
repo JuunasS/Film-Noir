@@ -1117,6 +1117,222 @@ Transform:
   m_Father: {fileID: 1421174652}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &572919228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 572919235}
+  - component: {fileID: 572919234}
+  - component: {fileID: 572919233}
+  - component: {fileID: 572919232}
+  - component: {fileID: 572919231}
+  - component: {fileID: 572919230}
+  - component: {fileID: 572919229}
+  - component: {fileID: 572919236}
+  m_Layer: 0
+  m_Name: GangsterNPC
+  m_TagString: Interactable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &572919229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572919228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e2241c39ccf8941b82c134d4781430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  firstDialogue: {fileID: 11400000, guid: 6f8465e2f1c54f64cb1e64a22b3eed9c, type: 2}
+  idleDialogue: {fileID: 11400000, guid: c3fad03ba3cad454c9c1f86074a7efa9, type: 2}
+  nameOfNPC: 3
+  newGameState: {fileID: 0}
+  changesGameState: 0
+--- !u!114 &572919230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572919228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e31a6487296a22458fa1a15c4f7eb2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 2
+  interactionTransform: {fileID: 572919235}
+  instance: {fileID: 0}
+--- !u!114 &572919231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572919228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c147fe78fe95d8641a3ea65b1b67099d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  simpleDialogue: {fileID: 0}
+  dialogWithItem: {fileID: 0}
+  dialogGetItem: {fileID: 0}
+  startDialogue: {fileID: 11400000, guid: 78dfaef4e0111b74e81ee45ec81b117b, type: 2}
+  waypoint: {fileID: 1199667444}
+  styleOfDialogue: 1
+--- !u!208 &572919232
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572919228}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!195 &572919233
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572919228}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.84
+  m_Speed: 2
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 4.27
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!65 &572919234
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572919228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7285738, y: 4.9570866, z: 1.178162}
+  m_Center: {x: 0.052868247, y: 1.9785433, z: 0.025968254}
+--- !u!4 &572919235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572919228}
+  m_LocalRotation: {x: -0, y: -0.9710461, z: -0, w: 0.23889215}
+  m_LocalPosition: {x: 0.76, y: 1.8, z: 2.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: -152.358, z: 0}
+--- !u!114 &572919236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572919228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b4623234ff2854d90880a958848502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  hasDialogue: 0
+  reachedDestination: 0
+--- !u!1001 &588625097
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8387160341268961353, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_Name
+      value: Gangster
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.081069425
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9967085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -170.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961354, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387160341268961359, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: waypoint
+      value: 
+      objectReference: {fileID: 1199667444}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
 --- !u!1 &641558814
 GameObject:
   m_ObjectHideFlags: 0

@@ -72,7 +72,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 3f14ee3a8a3fae84e82076170aed4cf5, type: 3}
+  m_Motion: {fileID: -203655887218126122, guid: 380e6f66833201e4b86f974e5d701d07, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -137,7 +137,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NinaAnimator
+  m_Name: GangsterAnimator
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isTalking
@@ -211,7 +211,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 679ef0bc5f36a4143901ba3330f38a66, type: 3}
+  m_Motion: {fileID: -203655887218126122, guid: 41f847b2a7b1af94195def091b1af196, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -238,7 +238,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 3f14ee3a8a3fae84e82076170aed4cf5, type: 3}
+  m_Motion: {fileID: -203655887218126122, guid: 3f5998d2cc40e4f4688e038e8ab20d37, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
