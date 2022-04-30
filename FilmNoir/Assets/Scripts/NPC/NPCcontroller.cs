@@ -35,7 +35,7 @@ public class NPCcontroller : MonoBehaviour
             animator.SetBool("isWalking", true);
             motor.MoveToPointDialogue(waypoint.position);
         }
-        else
+        else if(waypoint != null)
         {
             motor.MoveToPoint(waypoint.position);
         }

@@ -9,6 +9,7 @@ public class DialogueController : MonoBehaviour
 
     public Text SpeakerNameText;
     public Text DialogueText;
+    public Font dialogueFont;
     public GameObject panel;
     public static bool isConversationActive = false;
 
