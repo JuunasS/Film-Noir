@@ -1716,6 +1716,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: a7943cc56d383fe49a0a06821b1aa29a, type: 2}
   idleDialogue: {fileID: 11400000, guid: 6a4b83c595dcd7f4e9df2dd498f2a596, type: 2}
   nameOfNPC: 7
+  newGameState: {fileID: 0}
+  changesGameState: 0
 --- !u!1 &779207799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,7 +1890,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  dialogChangingGstate: {fileID: 0}
+  dialogGetItem: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
   styleOfDialogue: 1
@@ -1953,6 +1955,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: 6f8465e2f1c54f64cb1e64a22b3eed9c, type: 2}
   idleDialogue: {fileID: 11400000, guid: 2da58ab7cd3c69444b5a832e4363ef3f, type: 2}
   nameOfNPC: 9
+  newGameState: {fileID: 0}
+  changesGameState: 0
 --- !u!1 &1065917680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3765,6 +3769,8 @@ MonoBehaviour:
   radius: 2
   interactionTransform: {fileID: 464739941}
   levelToLoad: MapScene
+  doesGameStateChange: 0
+  newGameState: {fileID: 0}
 --- !u!1 &1900159003
 GameObject:
   m_ObjectHideFlags: 0
@@ -4067,7 +4073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1432728736996655804, guid: 3d1d4f4f14071bf46949f9c92db76a6f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d1d4f4f14071bf46949f9c92db76a6f, type: 3}
@@ -4187,7 +4193,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  dialogChangingGstate: {fileID: 0}
+  dialogGetItem: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
   styleOfDialogue: 0
