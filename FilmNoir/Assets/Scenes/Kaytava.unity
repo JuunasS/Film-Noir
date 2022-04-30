@@ -188,6 +188,8 @@ MonoBehaviour:
   radius: 2
   interactionTransform: {fileID: 1820531168}
   levelToLoad: Asunto
+  doesGameStateChange: 0
+  newGameState: {fileID: 0}
 --- !u!65 &65244306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -616,7 +618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1432728736996655804, guid: 3d1d4f4f14071bf46949f9c92db76a6f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d1d4f4f14071bf46949f9c92db76a6f, type: 3}
@@ -901,6 +903,8 @@ MonoBehaviour:
   radius: 2
   interactionTransform: {fileID: 55578450}
   levelToLoad: MapScene
+  doesGameStateChange: 0
+  newGameState: {fileID: 0}
 --- !u!65 &669655005
 BoxCollider:
   m_ObjectHideFlags: 0
