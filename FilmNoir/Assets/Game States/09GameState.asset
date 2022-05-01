@@ -15,7 +15,7 @@ MonoBehaviour:
   OfficeSceneName: OfficeBase
   ApartmentAisleSceneName: Kaytava
   ApartmentSceneName: Asunto
-  PawnshopSceneName: PawnshopBase
+  PawnshopSceneName: 02PawnShop
   HairsaloonSceneName: HairdresserBase
   ClubSceneName: ClubBase
   ParkSceneName: ParkBase

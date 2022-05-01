@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 2354cab138aa33345af291715f6227cd
   - enabled: 1
-    path: Assets/Scenes/OfficeBase.unity
+    path: Assets/Scenes/OfficeScenes/OfficeBase.unity
     guid: 104e25c5755c9484f81c9579895e091b
   - enabled: 0
     path: 
@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Asunto.unity
     guid: 724ac4b716c1b4841a68d80b559b21ca
   - enabled: 1
-    path: Assets/Scenes/Baari.unity
+    path: Assets/Scenes/BarScenes/BarBase.unity
     guid: 3c068fa8c5b01d64e90d2014d6677cc6
   - enabled: 1
     path: Assets/Scenes/Kaytava.unity
@@ -36,13 +36,13 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/ClubBase.unity
+    path: Assets/Scenes/ClubScenes/ClubBase.unity
     guid: bf8e2aec88b481c48a2c2d623ba67fdc
   - enabled: 1
     path: Assets/Scenes/ClubScenes/01Club.unity
     guid: 41fc193c2f9db624588f7f684226563c
   - enabled: 1
-    path: Assets/Scenes/PawnshopBase.unity
+    path: Assets/Scenes/PawnshopScenes/PawnshopBase.unity
     guid: 65940318106783a459d1e048921e29c2
   - enabled: 1
     path: Assets/Scenes/ParkScenes/01Park.unity
@@ -57,7 +57,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PawnshopScenes/01Pawnshop.unity
     guid: e945e0576f94f6047b8bcc4c36dfc2ef
   - enabled: 1
-    path: Assets/Scenes/HairdresserBase.unity
+    path: Assets/Scenes/HairdresserScenes/HairdresserBase.unity
     guid: da71468347f9e9f4f8da9c9e9fd7ef8c
   - enabled: 1
     path: Assets/Scenes/HairdresserScenes/02Hairdresser.unity
@@ -65,4 +65,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OfficeScenes/03Office.unity
     guid: 46655ce9b5ddfb54f8478265964d13c2
+  - enabled: 1
+    path: Assets/Scenes/PawnshopScenes/02PawnShop.unity
+    guid: 0326e9a4da5f02248b53a5ca37c250ae
+  - enabled: 1
+    path: Assets/Scenes/ClubScenes/02Club.unity
+    guid: f55725b87bf1ba946a88525d3eccb6e3
+  - enabled: 1
+    path: Assets/Scenes/OfficeScenes/04Office.unity
+    guid: c1d81581be2047c47bf26592a3389784
+  - enabled: 1
+    path: Assets/Scenes/OfficeScenes/05Office.unity
+    guid: aeac95b2b87c4cc46aa088eb09999ede
   m_configObjects: {}
