@@ -15,7 +15,7 @@ MonoBehaviour:
   OfficeSceneName: OfficeBase
   ApartmentAisleSceneName: HallwayBase
   ApartmentSceneName: ApartmentBase
-  PawnshopSceneName: 02PawnShop
+  PawnshopSceneName: 02Pawnshop
   HairsaloonSceneName: HairdresserBase
   ClubSceneName: ClubBase
   ParkSceneName: ParkBase

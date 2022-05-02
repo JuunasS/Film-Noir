@@ -1191,6 +1191,7 @@ MonoBehaviour:
   dialogGetItem: {fileID: 0}
   startDialogue: {fileID: 11400000, guid: 78dfaef4e0111b74e81ee45ec81b117b, type: 2}
   waypoint: {fileID: 1199667444}
+  joinsLater: 0
   styleOfDialogue: 1
 --- !u!208 &572919232
 NavMeshObstacle:
@@ -1279,6 +1280,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 903317715, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: newGameState
+      value: 
+      objectReference: {fileID: 11400000, guid: e6f0e6d6f5726654bbe9d088eb741235, type: 2}
+    - target: {fileID: 903317715, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: changesGameState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160341268961353, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
       propertyPath: m_Name
       value: Gangster
@@ -1331,6 +1340,10 @@ PrefabInstance:
       propertyPath: waypoint
       value: 
       objectReference: {fileID: 1199667444}
+    - target: {fileID: 8387160341268961359, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
+      propertyPath: startDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: c3fad03ba3cad454c9c1f86074a7efa9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a566c185cd80dc49a3a1fe4e2861ebd, type: 3}
 --- !u!1 &641558814

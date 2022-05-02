@@ -264,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 1820531168}
-  levelToLoad: 
+  levelToLoad: 01Apartment
   doesGameStateChange: 0
   newGameState: {fileID: 0}
   landLadyDialogue: {fileID: 11400000, guid: 6f8465e2f1c54f64cb1e64a22b3eed9c, type: 2}
@@ -2007,5 +2007,9 @@ PrefabInstance:
       propertyPath: AisleDoor
       value: 
       objectReference: {fileID: 65244304}
+    - target: {fileID: 7556054434649148695, guid: 52efe3fb0469de74d8052180bbd50a5f, type: 3}
+      propertyPath: isItTheClosedDoor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52efe3fb0469de74d8052180bbd50a5f, type: 3}

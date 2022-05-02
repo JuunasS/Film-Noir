@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 1820531168}
-  levelToLoad: Asunto
+  levelToLoad: 
   doesGameStateChange: 0
   newGameState: {fileID: 0}
 --- !u!65 &65244306
