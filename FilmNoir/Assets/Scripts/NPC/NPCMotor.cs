@@ -11,7 +11,7 @@ public class NPCMotor : MonoBehaviour
     private NavMeshAgent agent;
     public Animator animator;
     public bool hasDialogue = false;
-    public bool hasSpoken = false;
+    private bool hasSpoken = false;
     public bool reachedDestination = false;
 
     void Start()
