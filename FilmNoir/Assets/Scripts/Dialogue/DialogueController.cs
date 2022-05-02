@@ -15,10 +15,10 @@ public class DialogueController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("DialogController Start");
+        //Debug.Log("DialogController Start");
         if (GameManager.manager.GetDialogCanvas() != null)
         {
-            Debug.Log("Destroy DialogController");
+            //Debug.Log("Destroy DialogController");
             Destroy(gameObject);
         }
         else
@@ -28,12 +28,6 @@ public class DialogueController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void SetDialogue(DialogueNode node)
     {
         Debug.Log("Start setting dialogue");
@@ -41,7 +35,7 @@ public class DialogueController : MonoBehaviour
         panel.SetActive(true);
 
         PlayerController.canMove = false; //lopettaa pelaajan liikkumisen sen ajaksi kunnes dialogi-ikkuna suljetaan
-        
+
         // Show text
         Debug.Log(node.DialogueText);
         this.DialogueText.text = node.DialogueText;
@@ -50,7 +44,7 @@ public class DialogueController : MonoBehaviour
         this.SpeakerNameText.text = node.Speaker.Name;
         node.Speaker.NameColor.a = 1;
         this.SpeakerNameText.color = node.Speaker.NameColor;
-        
+
 
         // Choice buttons set to false
         foreach (Button button in DialogueOptions)
@@ -63,16 +57,16 @@ public class DialogueController : MonoBehaviour
         {
             DialogueOptions[i].gameObject.SetActive(true);
             DialogueOptions[i].GetComponentInChildren<Text>().text = node.ChoiceDialogs[i].Text;
-            if(node.ChoiceDialogs[i].IsExit)
+            if (node.ChoiceDialogs[i].IsExit)
             {
                 DialogueOptions[i].onClick.AddListener(ExitDialogue);
-            } 
+            }
             else
             {
                 DialogueOptions[i].onClick.AddListener(node.ChoiceDialogs[i].SetNextNode);
             }
-            
         }
+
     }
 
     public void ExitDialogue()
