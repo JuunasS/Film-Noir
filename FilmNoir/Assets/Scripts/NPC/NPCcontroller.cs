@@ -16,7 +16,6 @@ public class NPCcontroller : MonoBehaviour
     public Transform waypoint;
 
     public DialogueStyle styleOfDialogue;
-    public bool isItTheEndScene = false;
 
     private void Awake()
     {
@@ -55,15 +54,7 @@ public class NPCcontroller : MonoBehaviour
     {
         animator.SetBool("isWalking", false);
         animator.SetBool("isTalking", true);
-        if (isItTheEndScene)
-        {
-            dialogWithItem = gameObject.GetComponent<DialogueNeedsItem>();
-            dialogWithItem.DisplayDialogue();
-        }
-        else
-        {
-            GameManager.manager.SetDialogue(startDialogue);
-        }
+        GameManager.manager.SetDialogue(startDialogue);
     }
 
     public void ChooseDialogue()
