@@ -1821,7 +1821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  firstDialogue: {fileID: 11400000, guid: a7943cc56d383fe49a0a06821b1aa29a, type: 2}
+  firstDialogue: {fileID: 11400000, guid: 5a4d956ce7461834a82ef2aa22f4ede5, type: 2}
   idleDialogue: {fileID: 11400000, guid: 6a4b83c595dcd7f4e9df2dd498f2a596, type: 2}
   nameOfNPC: 7
   newGameState: {fileID: 0}
@@ -2001,6 +2001,7 @@ MonoBehaviour:
   dialogGetItem: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
+  joinsLater: 0
   styleOfDialogue: 1
 --- !u!208 &879101490
 NavMeshObstacle:
@@ -4404,6 +4405,7 @@ MonoBehaviour:
   dialogGetItem: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
+  joinsLater: 0
   styleOfDialogue: 0
 --- !u!1 &1978948074
 GameObject:

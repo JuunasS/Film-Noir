@@ -43,12 +43,11 @@ public class NPCcontroller : MonoBehaviour
                 motor.MoveToPoint(waypoint.position);
             }
         }
-
-        //inventory = FindObjectOfType<InventoryController>();
     }
 
     public void JoinConversation(DialogueNode nextNode)
     {
+        animator.SetBool("isWalking", true);
         startDialogue = nextNode;
         motor.reachedDestination = false;
         motor.MoveToPointDialogue(waypoint.position);
