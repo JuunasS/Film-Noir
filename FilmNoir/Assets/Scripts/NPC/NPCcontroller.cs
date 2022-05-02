@@ -14,6 +14,7 @@ public class NPCcontroller : MonoBehaviour
 
     public DialogueNode startDialogue;
     public Transform waypoint;
+    public bool joinsLater;
 
     public DialogueStyle styleOfDialogue;
 
@@ -30,17 +31,29 @@ public class NPCcontroller : MonoBehaviour
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
-        if(waypoint != null && startDialogue != null)
+        if (joinsLater != true)
         {
-            animator.SetBool("isWalking", true);
-            motor.MoveToPointDialogue(waypoint.position);
+            if (waypoint != null && startDialogue != null)
+            {
+                animator.SetBool("isWalking", true);
+                motor.MoveToPointDialogue(waypoint.position);
+            }
+            else if (waypoint != null)
+            {
+                motor.MoveToPoint(waypoint.position);
+            }
         }
-        else if(waypoint != null)
-        {
-            motor.MoveToPoint(waypoint.position);
-        }
+
         //inventory = FindObjectOfType<InventoryController>();
     }
+
+    public void JoinConversation(DialogueNode nextNode)
+    {
+        startDialogue = nextNode;
+        motor.reachedDestination = false;
+        motor.MoveToPointDialogue(waypoint.position);
+    }
+
 
     private void Update()
     {
@@ -59,7 +72,7 @@ public class NPCcontroller : MonoBehaviour
 
     public void ChooseDialogue()
     {
-        if(styleOfDialogue == DialogueStyle.SIMPLE_DIALOGUE)
+        if (styleOfDialogue == DialogueStyle.SIMPLE_DIALOGUE)
         {
             simpleDialogue = gameObject.GetComponent<SimpleDialogue>();
             simpleDialogue.DisplayDialogue();

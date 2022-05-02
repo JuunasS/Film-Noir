@@ -9,9 +9,18 @@ public class ChoiceDialogueNode : ScriptableObject
     public string Text;
     public DialogueNode NextNode;
     public bool IsExit;
+    public string JoiningNPC;
 
     public void SetNextNode()
     {
-        GameManager.manager.SetDialogue(NextNode);
+        if(JoiningNPC != "")
+        {
+            GameManager.manager.NpcJoinConversation(JoiningNPC, NextNode);
+        }
+        else
+        {
+            GameManager.manager.SetDialogue(NextNode);
+        }
+
     }
 }

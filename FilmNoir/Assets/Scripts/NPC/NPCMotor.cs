@@ -11,6 +11,7 @@ public class NPCMotor : MonoBehaviour
     private NavMeshAgent agent;
     public Animator animator;
     public bool hasDialogue = false;
+    private bool hasSpoken = false;
     public bool reachedDestination = false;
 
     void Start()
@@ -29,19 +30,21 @@ public class NPCMotor : MonoBehaviour
                 {
                     if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                     {
-                        if (hasDialogue)
+                        if (hasDialogue && !hasSpoken)
                         {
+                            hasSpoken = true;       
+                            Debug.Log("NPC dialogue set");
                             gameObject.GetComponent<NPCcontroller>().StartDialogue();
                         }
                         reachedDestination = true;
-                    }
+                    } 
                 }
             }
 
         }
 
 
-        if (target != null)
+        if (target != null && !reachedDestination)
         {
             agent.SetDestination(target.position);
             FaceTarget();                           //pit‰‰ huolen ett‰ agentti osoittaa esineen suuntaan

@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: TEST
+  m_Name: Dialog 3
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: 9cdbe5c385904d14aaa5d37d13456872, type: 2}
-  DialogueText: Third dialogue
+  DialogueText: I join the conversation
+  JoiningNPC: AntagonistNPC 2
   ChoiceDialogs:
   - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}
-  - {fileID: 11400000, guid: 52cb2e5d112059f4da05a687a9e699e5, type: 2}
+  - {fileID: 11400000, guid: 9763345290848da42a2ca21e7b9b089a, type: 2}
