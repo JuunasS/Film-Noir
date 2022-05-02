@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 13GameState
   m_EditorClassIdentifier: 
   OfficeSceneName: 04Office
-  ApartmentAisleSceneName: Kaytava
-  ApartmentSceneName: Asunto
+  ApartmentAisleSceneName: HallwayBase
+  ApartmentSceneName: ApartmentBase
   PawnshopSceneName: PawnShopBase
   HairsaloonSceneName: HairdresserBase
   ClubSceneName: ClubBase
