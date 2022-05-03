@@ -25,11 +25,12 @@ public class DialogGetItem : MonoBehaviour
 
     private void OnDestroy()
     {
-        if(changesGameState && hasBeenTalkedTo)
+        GameManager.manager.NPCList[index].dialogueProgress = DialogueMode.FIRST_DIALOGUE;
+        if (changesGameState && hasBeenTalkedTo)
         {
-            GameManager.manager.NPCList[index].dialogueProgress = DialogueMode.FIRST_DIALOGUE;
             GameManager.manager.SetGameState(newGameState);
         }
+        
     }
 
     public void DisplayDialogue()

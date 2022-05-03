@@ -15,7 +15,7 @@ public class MenuScript : MonoBehaviour
         Debug.Log("MenuScript Start");
         if (GameManager.manager.GetMenuCanvas() != null)
         {
-            Debug.Log("Destroy MenuScript");
+            //Debug.Log("Destroy MenuScript");
             Destroy(gameObject);
         }
         else

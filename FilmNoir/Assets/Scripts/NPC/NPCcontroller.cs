@@ -9,13 +9,19 @@ public class NPCcontroller : MonoBehaviour
     [HideInInspector] public SimpleDialogue simpleDialogue;
     [HideInInspector] public DialogueNeedsItem dialogWithItem;
     [HideInInspector] public DialogGetItem dialogGetItem;
+    [HideInInspector] public EndSceneDialogue endScene;
 
     private NPCMotor motor;
 
     public DialogueNode startDialogue;
     public Transform waypoint;
+    public bool joinsLater;
+
+    public GameObject NPCBody; // when NPC join conversation late
+    //and arrives at the scene, this is turned on so they show up in scene
 
     public DialogueStyle styleOfDialogue;
+
     public bool isItTheEndScene = false;
 
     private void Awake()
@@ -31,17 +37,34 @@ public class NPCcontroller : MonoBehaviour
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
-        if(waypoint != null && startDialogue != null)
+        if (joinsLater != true)
         {
-            animator.SetBool("isWalking", true);
-            motor.MoveToPointDialogue(waypoint.position);
+            if (waypoint != null && startDialogue != null)
+            {
+                animator.SetBool("isWalking", true);
+                motor.MoveToPointDialogue(waypoint.position);
+            }
+            else if (waypoint != null)
+            {
+                motor.MoveToPoint(waypoint.position);
+            }
         }
-        else if(waypoint != null)
+
+        if (joinsLater)
         {
-            motor.MoveToPoint(waypoint.position);
+            NPCBody.SetActive(false);
         }
-        //inventory = FindObjectOfType<InventoryController>();
     }
+
+    public void JoinConversation(DialogueNode nextNode)
+    {
+        NPCBody.SetActive(true);
+        animator.SetBool("isWalking", true);
+        startDialogue = nextNode;
+        motor.reachedDestination = false;
+        motor.MoveToPointDialogue(waypoint.position);
+    }
+
 
     private void Update()
     {
@@ -55,10 +78,11 @@ public class NPCcontroller : MonoBehaviour
     {
         animator.SetBool("isWalking", false);
         animator.SetBool("isTalking", true);
+
         if (isItTheEndScene)
         {
-            dialogWithItem = gameObject.GetComponent<DialogueNeedsItem>();
-            dialogWithItem.DisplayDialogue();
+            endScene = gameObject.GetComponent<EndSceneDialogue>();
+            endScene.DisplayDialogue();
         }
         else
         {
@@ -68,7 +92,7 @@ public class NPCcontroller : MonoBehaviour
 
     public void ChooseDialogue()
     {
-        if(styleOfDialogue == DialogueStyle.SIMPLE_DIALOGUE)
+        if (styleOfDialogue == DialogueStyle.SIMPLE_DIALOGUE)
         {
             simpleDialogue = gameObject.GetComponent<SimpleDialogue>();
             simpleDialogue.DisplayDialogue();

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
   m_Name: TEST
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 0}
+  Speaker: {fileID: 11400000, guid: 6807bcfc4a39ec34e8cb8ae04f43374f, type: 2}
   DialogueText: Third dialogue
   ChoiceDialogs:
   - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}
-  - {fileID: 11400000, guid: 52cb2e5d112059f4da05a687a9e699e5, type: 2}
+  - {fileID: 11400000, guid: 29afc99a3df38da448a4206ba4862810, type: 2}
