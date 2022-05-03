@@ -2027,6 +2027,7 @@ MonoBehaviour:
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
   styleOfDialogue: 3
+  isItTheEndScene: 0
 --- !u!65 &1802880459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2072,8 +2073,8 @@ MonoBehaviour:
   inBetweenDialogue: {fileID: 11400000, guid: 9929787df8aac5e49b050ecb27bd729a, type: 2}
   givenItem: {fileID: 11400000, guid: 1ea1e4f41cc4293468328003e3ee94bc, type: 2}
   nameOfNPC: 0
-  newGameState: {fileID: 0}
-  changesGameState: 0
+  newGameState: {fileID: 11400000, guid: f3fca9a05eb5b544ea1c499d6c4f9a51, type: 2}
+  changesGameState: 1
 --- !u!1001 &1873171038
 PrefabInstance:
   m_ObjectHideFlags: 0

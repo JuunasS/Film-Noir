@@ -35,11 +35,11 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/ClubScenes/01Club.unity
-    guid: bf8e2aec88b481c48a2c2d623ba67fdc
   - enabled: 0
-    path: Assets/Scenes/ClubBase.unity
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/ClubScenes/01Club.unity
     guid: 41fc193c2f9db624588f7f684226563c
   - enabled: 1
     path: Assets/Scenes/PawnshopScenes/PawnshopBase.unity
