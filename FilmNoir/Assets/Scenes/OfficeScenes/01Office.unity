@@ -2515,21 +2515,9 @@ PrefabInstance:
       propertyPath: waypoint
       value: 
       objectReference: {fileID: 1650230813}
-    - target: {fileID: 3474762379724210212, guid: 1d728a0d810548d429d5c09dcddf0145, type: 3}
-      propertyPath: joinsLater
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3474762379724210212, guid: 1d728a0d810548d429d5c09dcddf0145, type: 3}
-      propertyPath: startDialogue
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3474762379724210232, guid: 1d728a0d810548d429d5c09dcddf0145, type: 3}
       propertyPath: m_Name
       value: ClientJudyNPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 3474762379724210232, guid: 1d728a0d810548d429d5c09dcddf0145, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d728a0d810548d429d5c09dcddf0145, type: 3}
