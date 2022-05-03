@@ -9,6 +9,7 @@ public class NPCcontroller : MonoBehaviour
     [HideInInspector] public SimpleDialogue simpleDialogue;
     [HideInInspector] public DialogueNeedsItem dialogWithItem;
     [HideInInspector] public DialogGetItem dialogGetItem;
+    [HideInInspector] public EndSceneDialogue endScene;
 
     private NPCMotor motor;
 
@@ -20,6 +21,8 @@ public class NPCcontroller : MonoBehaviour
     //and arrives at the scene, this is turned on so they show up in scene
 
     public DialogueStyle styleOfDialogue;
+
+    public bool isItTheEndScene = false;
 
     private void Awake()
     {
@@ -75,7 +78,16 @@ public class NPCcontroller : MonoBehaviour
     {
         animator.SetBool("isWalking", false);
         animator.SetBool("isTalking", true);
-        GameManager.manager.SetDialogue(startDialogue);
+
+        if (isItTheEndScene)
+        {
+            endScene = gameObject.GetComponent<EndSceneDialogue>();
+            endScene.DisplayDialogue();
+        }
+        else
+        {
+            GameManager.manager.SetDialogue(startDialogue);
+        }
     }
 
     public void ChooseDialogue()

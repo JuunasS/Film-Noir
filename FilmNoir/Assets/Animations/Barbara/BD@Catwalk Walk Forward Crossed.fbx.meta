@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 201337e6c3370d44ca69dceb78631039
+guid: a5cf5736bb39cab4ba4f686573ce1d48
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Barbara_walking
+    second: Barbara_walking_forward
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Barbara_walking
+      name: Barbara_walking_forward
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
