@@ -5,9 +5,9 @@ using UnityEngine;
 public class DialogueNeedsItem : MonoBehaviour
 {
     [HideInInspector] public Animator animator;
-    public DialogueNode startingDialogue;
-    public DialogueNode secondDialogue;
-    public DialogueNode inBetweenDialogue;
+    public DialogueNode haveItemDialogue;
+    public DialogueNode dontHaveItemDialogue;
+    public DialogueNode idleDialogue;
 
     public InventoryObject wantedObject;
     InventoryController inventory;
@@ -43,17 +43,17 @@ public class DialogueNeedsItem : MonoBehaviour
         switch (GameManager.manager.NPCList[index].dialogueProgress)   //k‰yd‰‰n l‰pi game managerissa olevaa listaa NPC:iden dialogien kulusta
         {
             case DialogueMode.FIRST_DIALOGUE:
-                GameManager.manager.SetDialogue(startingDialogue);
+                if (inventory.InventoryContains(wantedObject))
+                {
+                    GameManager.manager.SetDialogue(haveItemDialogue);
+                }
+                else
+                    GameManager.manager.SetDialogue(dontHaveItemDialogue);
                 GameManager.manager.NPCList[index].dialogueProgress = DialogueMode.SECOND_DIALOGUE;
                 break;
 
             case DialogueMode.SECOND_DIALOGUE:
-                if (inventory.InventoryContains(wantedObject))
-                {
-                    GameManager.manager.SetDialogue(secondDialogue);
-                }
-                else
-                    GameManager.manager.SetDialogue(inBetweenDialogue);
+                GameManager.manager.SetDialogue(idleDialogue);
                 break;
 
             default:

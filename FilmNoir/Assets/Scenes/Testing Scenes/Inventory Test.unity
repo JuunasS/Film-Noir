@@ -846,11 +846,13 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  dialogGetItem: {fileID: 0}
+  endScene: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 1294028028}
   joinsLater: 1
+  NPCBody: {fileID: 860432027}
   styleOfDialogue: 1
+  isItTheEndScene: 0
 --- !u!208 &654243308
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2144,7 +2146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1097620484
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3125,7 +3127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1968968053
 Transform:
   m_ObjectHideFlags: 0
@@ -4366,6 +4368,10 @@ PrefabInstance:
       value: Poster
       objectReference: {fileID: 0}
     - target: {fileID: 4307925354956688323, guid: 4e33c7cb72ac99642b74a11f7e53090d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307925354956688323, guid: 4e33c7cb72ac99642b74a11f7e53090d, type: 3}
       propertyPath: m_TagString
       value: Interactable
       objectReference: {fileID: 0}
@@ -5570,11 +5576,13 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  dialogGetItem: {fileID: 0}
-  startDialogue: {fileID: 11400000, guid: 78dfaef4e0111b74e81ee45ec81b117b, type: 2}
+  endScene: {fileID: 0}
+  startDialogue: {fileID: 11400000, guid: 6eb8fa431f872c447ae15b03e1c67085, type: 2}
   waypoint: {fileID: 874241365}
   joinsLater: 0
+  NPCBody: {fileID: 8387160342077994453}
   styleOfDialogue: 1
+  isItTheEndScene: 0
 --- !u!1 &8387160342077994453
 GameObject:
   m_ObjectHideFlags: 0

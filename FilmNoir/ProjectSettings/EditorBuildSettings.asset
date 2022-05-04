@@ -92,4 +92,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OfficeScenes/05Office.unity
     guid: aeac95b2b87c4cc46aa088eb09999ede
+  - enabled: 1
+    path: Assets/Scenes/Endings/BadEND.unity
+    guid: 89a6c1bcab823c9458bea92b07a4e874
+  - enabled: 1
+    path: Assets/Scenes/Endings/GoodEND.unity
+    guid: e855eadef11b3574aa66dfcf09f4bc3b
   m_configObjects: {}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
+  m_Name: SalonDialog 2-1
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: e5a0757c40ddff345ada3f883df8ced1, type: 2}
+  DialogueText: Well, I've had clients who... well weren't exactly happy with the
+    haircut.
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: 6a74423bd2ab3b540bd3340439a62561, type: 2}

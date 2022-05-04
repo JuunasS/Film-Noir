@@ -8,7 +8,6 @@ public class NPCcontroller : MonoBehaviour
     [HideInInspector] public Animator animator;
     [HideInInspector] public SimpleDialogue simpleDialogue;
     [HideInInspector] public DialogueNeedsItem dialogWithItem;
-    [HideInInspector] public DialogGetItem dialogGetItem;
     [HideInInspector] public EndSceneDialogue endScene;
 
     private NPCMotor motor;
@@ -102,11 +101,6 @@ public class NPCcontroller : MonoBehaviour
             dialogWithItem = gameObject.GetComponent<DialogueNeedsItem>();
             dialogWithItem.DisplayDialogue();
         }
-        else if (styleOfDialogue == DialogueStyle.GET_ITEM)
-        {
-            dialogGetItem = gameObject.GetComponent<DialogGetItem>();
-            dialogGetItem.DisplayDialogue();
-        }
         else if (styleOfDialogue == DialogueStyle.DEFAULT)
         {
             Debug.Log("Et ole laittanut dialogityyppiä tälle NPC:lle");
@@ -127,8 +121,7 @@ public enum DialogueStyle
 {
     DEFAULT,
     SIMPLE_DIALOGUE,
-    NEEDS_ITEM,
-    GET_ITEM
+    NEEDS_ITEM
 }
 
 

@@ -4022,7 +4022,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 6f8465e2f1c54f64cb1e64a22b3eed9c, type: 2}
     - target: {fileID: 120976466074590052, guid: ecd76fd7b0eeabf46aea5eec5e2f7da0, type: 3}
       propertyPath: isThereMonologue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 120976466074590053, guid: ecd76fd7b0eeabf46aea5eec5e2f7da0, type: 3}
       propertyPath: cursor
@@ -4079,6 +4079,14 @@ PrefabInstance:
     - target: {fileID: 443448472029075918, guid: ecd76fd7b0eeabf46aea5eec5e2f7da0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 628091297519903159, guid: ecd76fd7b0eeabf46aea5eec5e2f7da0, type: 3}
+      propertyPath: monologueNode
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f8465e2f1c54f64cb1e64a22b3eed9c, type: 2}
+    - target: {fileID: 628091297519903159, guid: ecd76fd7b0eeabf46aea5eec5e2f7da0, type: 3}
+      propertyPath: isThereMonologue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 967326852514038644, guid: ecd76fd7b0eeabf46aea5eec5e2f7da0, type: 3}
       propertyPath: m_Name

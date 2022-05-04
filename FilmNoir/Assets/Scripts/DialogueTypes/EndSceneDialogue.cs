@@ -23,10 +23,12 @@ public class EndSceneDialogue : MonoBehaviour
         if(!DialogueController.isConversationActive && doesBarbaraDie)
         {
             Debug.Log("Barbara kuolee"); //tähän voidaan laittaa lopputeksti ja whatever
+            GameManager.manager.LoadScene("BadEND");
         }
         if(!DialogueController.isConversationActive && !doesBarbaraDie)
         {
             Debug.Log("Barbara ei kuole");
+            GameManager.manager.LoadScene("GoodEND");
         }
     }
 

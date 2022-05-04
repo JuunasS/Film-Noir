@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
-  m_Name: Choice 1-1
+  m_Script: {fileID: 11500000, guid: 898548fc27e5bef4c8a0aab3415b4345, type: 3}
+  m_Name: Salon Owner
   m_EditorClassIdentifier: 
-  Text: Long choice dialogue text
-  NextNode: {fileID: 11400000, guid: 0ffd89c9d89694f419665ee0e035ee7b, type: 2}
-  IsExit: 0
-  JoiningNPC: 
-  GivesItem: 0
-  InventoryItem: {fileID: 0}
+  Name: Salon Owner
+  NameColor: {r: 0, g: 1, b: 0.77115273, a: 0}
