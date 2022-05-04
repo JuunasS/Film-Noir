@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
-  m_Name: 1-2 Back Salon
+  m_Name: SalonAnswerNext
   m_EditorClassIdentifier: 
-  Text: Back
-  NextNode: {fileID: 11400000, guid: 4284e03ce0d173d4ea0b7068e0800abd, type: 2}
+  Text: Next
+  NextNode: {fileID: 11400000, guid: aad8772b1073d064cb1c8ac28bad3ef3, type: 2}
   IsExit: 0
   JoiningNPC: 
   GivesItem: 0

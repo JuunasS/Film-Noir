@@ -22,6 +22,8 @@ public class ChoiceDialogueNode : ScriptableObject
         }
         else
         {
+
+            Debug.Log("Choice node setting dialogue: " + NextNode);
             GameManager.manager.SetDialogue(NextNode);
         }
         if (GivesItem)
