@@ -2141,12 +2141,12 @@ GameObject:
   - component: {fileID: 1097620487}
   - component: {fileID: 1097620486}
   m_Layer: 0
-  m_Name: office_Photoframe
-  m_TagString: Interactable
+  m_Name: Receipt
+  m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1097620484
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2187,7 +2187,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b0ce7d662f4152148b021ff7d9f027f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9acc1325a83b4c54ebccb4cbfd94c0cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2226,8 +2226,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 1097620485}
-  InventoryObject: {fileID: 11400000, guid: adbc6d8c5202180419b61976c8b2f232, type: 2}
-  start: {fileID: 11400000, guid: 0ffd89c9d89694f419665ee0e035ee7b, type: 2}
+  InventoryObject: {fileID: 11400000, guid: bc35e89f914f27d40ad0b37780ca86b5, type: 2}
+  start: {fileID: 11400000, guid: dab70df4640c52b42afa2d94c03d7fa5, type: 2}
   changesGameState: 0
   newGameState: {fileID: 0}
 --- !u!65 &1097620487
@@ -2243,24 +2243,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.38, y: 1.38, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1166959951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8387160342077994453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2e2241c39ccf8941b82c134d4781430, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  firstDialogue: {fileID: 11400000, guid: a7943cc56d383fe49a0a06821b1aa29a, type: 2}
-  idleDialogue: {fileID: 11400000, guid: 99dda1e7eb222ef42852faf35bf075dc, type: 2}
-  nameOfNPC: 5
-  newGameState: {fileID: 0}
-  changesGameState: 0
 --- !u!1 &1216455627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,18 +3715,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2086391932281936498, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086391932281936498, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086391932281936498, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2086391933614329141, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3832,30 +3802,6 @@ PrefabInstance:
     - target: {fileID: 2086391933614329145, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086391934254702686, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086391934254702686, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086391934254702686, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086391934294229044, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086391934294229044, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086391934294229044, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ce05eac90e480a44af4b330821e6af8, type: 3}
@@ -5598,7 +5544,6 @@ GameObject:
   - component: {fileID: 8387160342077994451}
   - component: {fileID: 1027464628}
   - component: {fileID: 1027464629}
-  - component: {fileID: 1166959951}
   - component: {fileID: 8387160342077994456}
   m_Layer: 0
   m_Name: AntagonistNPC
@@ -5651,10 +5596,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   haveItemDialogue: {fileID: 11400000, guid: 7c063401c1dcfcb4e91d2339bf4cc81b, type: 2}
-  dontHaveItemDialogue: {fileID: 11400000, guid: 842a359b5ed745c41adc5c534c7080e5, type: 2}
+  dontHaveItemDialogue: {fileID: 11400000, guid: 6eb8fa431f872c447ae15b03e1c67085, type: 2}
   idleDialogue: {fileID: 11400000, guid: 842a359b5ed745c41adc5c534c7080e5, type: 2}
   wantedObject: {fileID: 11400000, guid: bc35e89f914f27d40ad0b37780ca86b5, type: 2}
-  nameOfNPC: 4
+  nameOfNPC: 5
   newGameState: {fileID: 0}
   changesGameState: 0
 --- !u!95 &8387160342125775080
