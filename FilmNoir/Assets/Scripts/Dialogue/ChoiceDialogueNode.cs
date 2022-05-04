@@ -19,6 +19,10 @@ public class ChoiceDialogueNode : ScriptableObject
     {
         try
         {
+            if (GivesItem)
+            {
+                GameManager.manager.AddItemToInventory(InventoryItem);
+            }
             if (JoiningNPC == "")
             {
                 Debug.Log("Choice node setting dialogue: " + NextNode);
