@@ -12,6 +12,8 @@ public class DialogueController : MonoBehaviour
     public GameObject panel;
     public static bool isConversationActive = false;
 
+    public DialogueNode currentDialogue;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,8 @@ public class DialogueController : MonoBehaviour
 
     public void SetDialogue(DialogueNode node)
     {
+        currentDialogue = node;
+
         Debug.Log("Start setting dialogue");
         isConversationActive = true;    //laitetaan bool joka vahtii onko jokin keskustelu käynnissä trueksi
         panel.SetActive(true);

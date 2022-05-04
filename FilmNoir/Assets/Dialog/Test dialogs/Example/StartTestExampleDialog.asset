@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: StartTestExampleDialog
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: 9cdbe5c385904d14aaa5d37d13456872, type: 2}
-  DialogueText: Hello it's me
+  DialogueText: Hello it's me, here have some cigs.
   ChoiceDialogs:
   - {fileID: 11400000, guid: 702b00167cfd3f448b641c0e94846db8, type: 2}

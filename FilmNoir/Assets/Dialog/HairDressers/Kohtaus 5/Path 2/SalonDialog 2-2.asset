@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: Dialog Object
+  m_Name: SalonDialog 2-2
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: 69bdb4c971b65fd4f9bfc6dffa572208, type: 2}
-  DialogueText: 'Hello '
+  Speaker: {fileID: 11400000, guid: e5a0757c40ddff345ada3f883df8ced1, type: 2}
+  DialogueText: But I don't know if any of them would have done this.
   ChoiceDialogs:
-  - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}
+  - {fileID: 11400000, guid: f7e82d5d30153da4b91d58a1cd626a8e, type: 2}

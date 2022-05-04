@@ -846,11 +846,13 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  dialogGetItem: {fileID: 0}
+  endScene: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 1294028028}
   joinsLater: 1
+  NPCBody: {fileID: 860432027}
   styleOfDialogue: 1
+  isItTheEndScene: 0
 --- !u!208 &654243308
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5574,11 +5576,13 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  dialogGetItem: {fileID: 0}
-  startDialogue: {fileID: 11400000, guid: 8740b8af09afda94ba1488080d13fe64, type: 2}
+  endScene: {fileID: 0}
+  startDialogue: {fileID: 11400000, guid: 6eb8fa431f872c447ae15b03e1c67085, type: 2}
   waypoint: {fileID: 874241365}
   joinsLater: 0
+  NPCBody: {fileID: 8387160342077994453}
   styleOfDialogue: 1
+  isItTheEndScene: 0
 --- !u!1 &8387160342077994453
 GameObject:
   m_ObjectHideFlags: 0
