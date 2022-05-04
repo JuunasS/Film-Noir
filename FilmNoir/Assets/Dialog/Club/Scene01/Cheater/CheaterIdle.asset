@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: TEST
+  m_Name: CheaterIdle
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: 69bdb4c971b65fd4f9bfc6dffa572208, type: 2}
-  DialogueText: Test
+  DialogueText: I've already found out what I need to.
   ChoiceDialogs:
-  - {fileID: 11400000, guid: 29155561774c40b46a1264d3d287f657, type: 2}
+  - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}

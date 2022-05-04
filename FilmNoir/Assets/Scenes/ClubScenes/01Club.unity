@@ -852,7 +852,7 @@ PrefabInstance:
     - target: {fileID: 1896945691949996505, guid: 538c1a237068d294c87a9245649e0ece, type: 3}
       propertyPath: startDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: a8c501314f9265b45a7bb1fc43b406f8, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1896945691949996505, guid: 538c1a237068d294c87a9245649e0ece, type: 3}
       propertyPath: styleOfDialogue
       value: 1
@@ -1882,8 +1882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  firstDialogue: {fileID: 11400000, guid: 5a4d956ce7461834a82ef2aa22f4ede5, type: 2}
-  idleDialogue: {fileID: 11400000, guid: 6a4b83c595dcd7f4e9df2dd498f2a596, type: 2}
+  firstDialogue: {fileID: 11400000, guid: 08e5dd1256a17374c861d925be766857, type: 2}
+  idleDialogue: {fileID: 11400000, guid: 08e5dd1256a17374c861d925be766857, type: 2}
   nameOfNPC: 7
   newGameState: {fileID: 0}
   changesGameState: 0
@@ -2064,7 +2064,7 @@ MonoBehaviour:
   waypoint: {fileID: 0}
   joinsLater: 0
   NPCBody: {fileID: 0}
-  styleOfDialogue: 1
+  styleOfDialogue: 2
   isItTheEndScene: 0
 --- !u!208 &879101490
 NavMeshObstacle:
@@ -2120,15 +2120,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 879101487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2e2241c39ccf8941b82c134d4781430, type: 3}
+  m_Script: {fileID: 11500000, guid: 63fe38660459df14a8c5a0d3431966ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  firstDialogue: {fileID: 11400000, guid: 6f8465e2f1c54f64cb1e64a22b3eed9c, type: 2}
-  idleDialogue: {fileID: 11400000, guid: 2da58ab7cd3c69444b5a832e4363ef3f, type: 2}
+  haveItemDialogue: {fileID: 11400000, guid: e5f76d6de73c864458a6c4378949bf2e, type: 2}
+  dontHaveItemDialogue: {fileID: 11400000, guid: 367cc38a1638bea4e81534fe8d3c2254, type: 2}
+  idleDialogue: {fileID: 11400000, guid: 348a10b0c3442a24dabed3829fbf001a, type: 2}
+  wantedObject: {fileID: 11400000, guid: 9a356c5ec5f76904e9f7306ade5ce9ef, type: 2}
   nameOfNPC: 9
-  newGameState: {fileID: 11400000, guid: 1cc4db809d98ad24a95651290cd3193b, type: 2}
-  changesGameState: 1
+  newGameState: {fileID: 0}
+  changesGameState: 0
 --- !u!1 &885374360 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1896945691949996510, guid: 538c1a237068d294c87a9245649e0ece, type: 3}
@@ -2153,7 +2155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   firstDialogue: {fileID: 11400000, guid: a8c501314f9265b45a7bb1fc43b406f8, type: 2}
-  idleDialogue: {fileID: 11400000, guid: 2b3f78a70bc5c064098f885b18d51c42, type: 2}
+  idleDialogue: {fileID: 11400000, guid: 7cc81913d79fd9f428275d8165defef2, type: 2}
   nameOfNPC: 8
   newGameState: {fileID: 0}
   changesGameState: 0
@@ -3733,6 +3735,14 @@ PrefabInstance:
       value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 2245420085025257767, guid: f4f21a23a61217e49b196a7055dc33d3, type: 3}
+      propertyPath: NPCBody
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245420085025257767, guid: f4f21a23a61217e49b196a7055dc33d3, type: 3}
+      propertyPath: joinsLater
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245420085025257767, guid: f4f21a23a61217e49b196a7055dc33d3, type: 3}
       propertyPath: styleOfDialogue
       value: 1
       objectReference: {fileID: 0}
@@ -4893,6 +4903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BartenderNPC
       objectReference: {fileID: 0}
+    - target: {fileID: 2670083830592015273, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}
+      propertyPath: startDialogue
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2670083830592015274, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4940,10 +4954,10 @@ PrefabInstance:
     - target: {fileID: 2670083830592015277, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}
       propertyPath: idleDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 6a4b83c595dcd7f4e9df2dd498f2a596, type: 2}
+      objectReference: {fileID: 11400000, guid: 2bc455df33b4f4049ba3099a0c112d4f, type: 2}
     - target: {fileID: 2670083830592015277, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}
       propertyPath: firstDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 6f8465e2f1c54f64cb1e64a22b3eed9c, type: 2}
+      objectReference: {fileID: 11400000, guid: 11e131dadb22e634fbfa690c9489ad84, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}

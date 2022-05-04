@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: TEST
+  m_Name: Cheater Dialog 6
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: 69bdb4c971b65fd4f9bfc6dffa572208, type: 2}
-  DialogueText: Test
+  Speaker: {fileID: 11400000, guid: 6807bcfc4a39ec34e8cb8ae04f43374f, type: 2}
+  DialogueText: What can I get you?
   ChoiceDialogs:
-  - {fileID: 11400000, guid: 29155561774c40b46a1264d3d287f657, type: 2}
+  - {fileID: 11400000, guid: 3faac21d96827204a9aef9bf28fd2fe7, type: 2}

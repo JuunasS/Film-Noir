@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
-  m_Name: Nina 2-2
+  m_Name: Cheater 2
   m_EditorClassIdentifier: 
-  Text: Fine.
-  NextNode: {fileID: 11400000, guid: 4d143184c1694824ab84ef13be431c35, type: 2}
-  IsExit: 1
+  Text: No, certainly not. I found this cigarette case in front of the coat check,
+    and since you're the only male customer, I thought it might be yours.
+  NextNode: {fileID: 11400000, guid: 38847ac7939ad0041915fc0e6e3a87cc, type: 2}
+  IsExit: 0
   JoiningNPC: 
-  GivesItem: 1
-  InventoryItem: {fileID: 11400000, guid: 9a356c5ec5f76904e9f7306ade5ce9ef, type: 2}
+  GivesItem: 0
+  InventoryItem: {fileID: 0}
