@@ -46,10 +46,10 @@ public class DialogueNeedsItem : MonoBehaviour
                 if (inventory.InventoryContains(wantedObject))
                 {
                     GameManager.manager.SetDialogue(haveItemDialogue);
+                    GameManager.manager.NPCList[index].dialogueProgress = DialogueMode.SECOND_DIALOGUE;
                 }
                 else
                     GameManager.manager.SetDialogue(dontHaveItemDialogue);
-                GameManager.manager.NPCList[index].dialogueProgress = DialogueMode.SECOND_DIALOGUE;
                 break;
 
             case DialogueMode.SECOND_DIALOGUE:
