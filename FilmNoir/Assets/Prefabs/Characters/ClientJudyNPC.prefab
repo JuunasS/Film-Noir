@@ -30,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3474762379724210232}
-  m_LocalRotation: {x: -0, y: -0.98809606, z: -0, w: 0.15383844}
+  m_LocalRotation: {x: 0, y: -0.9880958, z: 0, w: 0.1538397}
   m_LocalPosition: {x: 1.73, y: 0.72, z: 4.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -88,9 +88,11 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  dialogChangingGstate: {fileID: 0}
-  startDialogue: {fileID: 11400000, guid: 78dfaef4e0111b74e81ee45ec81b117b, type: 2}
+  dialogGetItem: {fileID: 0}
+  startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
+  joinsLater: 1
+  NPCBody: {fileID: 4393749794504562243}
   styleOfDialogue: 1
 --- !u!114 &3474762379724210213
 MonoBehaviour:
@@ -138,6 +140,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: a7943cc56d383fe49a0a06821b1aa29a, type: 2}
   idleDialogue: {fileID: 11400000, guid: 99dda1e7eb222ef42852faf35bf075dc, type: 2}
   nameOfNPC: 10
+  newGameState: {fileID: 0}
+  changesGameState: 0
 --- !u!208 &3474762379724210208
 NavMeshObstacle:
   m_ObjectHideFlags: 0

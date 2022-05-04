@@ -1301,8 +1301,8 @@ MonoBehaviour:
   radius: 2
   interactionTransform: {fileID: 1790778657}
   levelToLoad: MapScene
-  doesGameStateChange: 0
-  newGameState: {fileID: 0}
+  doesGameStateChange: 1
+  newGameState: {fileID: 11400000, guid: d3c53dc8fc233894a87aebafdb931f5b, type: 2}
 --- !u!65 &1224846037
 BoxCollider:
   m_ObjectHideFlags: 0

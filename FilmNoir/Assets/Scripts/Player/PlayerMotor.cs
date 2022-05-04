@@ -13,6 +13,9 @@ public class PlayerMotor : MonoBehaviour
 
     public Animator animator;
 
+    public bool isThereMonologue;
+    public DialogueNode monologueNode;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -33,6 +36,12 @@ public class PlayerMotor : MonoBehaviour
         if (agent.velocity.sqrMagnitude > 1f)
         {
             animator.SetBool("isWalking", true);
+        }
+
+        if (isThereMonologue)
+        {
+            GameManager.manager.SetDialogue(monologueNode);
+            isThereMonologue = false;
         }
     }
 

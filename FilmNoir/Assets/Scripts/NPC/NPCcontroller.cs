@@ -8,7 +8,7 @@ public class NPCcontroller : MonoBehaviour
     [HideInInspector] public Animator animator;
     [HideInInspector] public SimpleDialogue simpleDialogue;
     [HideInInspector] public DialogueNeedsItem dialogWithItem;
-    [HideInInspector] public DialogGetItem dialogGetItem;
+    [HideInInspector] public EndSceneDialogue endScene;
 
     private NPCMotor motor;
 
@@ -16,7 +16,12 @@ public class NPCcontroller : MonoBehaviour
     public Transform waypoint;
     public bool joinsLater;
 
+    public GameObject NPCBody; // when NPC join conversation late
+    //and arrives at the scene, this is turned on so they show up in scene
+
     public DialogueStyle styleOfDialogue;
+
+    public bool isItTheEndScene = false;
 
     private void Awake()
     {
@@ -44,11 +49,16 @@ public class NPCcontroller : MonoBehaviour
             }
         }
 
-        //inventory = FindObjectOfType<InventoryController>();
+        if (joinsLater)
+        {
+            NPCBody.SetActive(false);
+        }
     }
 
     public void JoinConversation(DialogueNode nextNode)
     {
+        NPCBody.SetActive(true);
+        animator.SetBool("isWalking", true);
         startDialogue = nextNode;
         motor.reachedDestination = false;
         motor.MoveToPointDialogue(waypoint.position);
@@ -67,7 +77,16 @@ public class NPCcontroller : MonoBehaviour
     {
         animator.SetBool("isWalking", false);
         animator.SetBool("isTalking", true);
-        GameManager.manager.SetDialogue(startDialogue);
+
+        if (isItTheEndScene)
+        {
+            endScene = gameObject.GetComponent<EndSceneDialogue>();
+            endScene.DisplayDialogue();
+        }
+        else
+        {
+            GameManager.manager.SetDialogue(startDialogue);
+        }
     }
 
     public void ChooseDialogue()
@@ -81,11 +100,6 @@ public class NPCcontroller : MonoBehaviour
         {
             dialogWithItem = gameObject.GetComponent<DialogueNeedsItem>();
             dialogWithItem.DisplayDialogue();
-        }
-        else if (styleOfDialogue == DialogueStyle.GET_ITEM)
-        {
-            dialogGetItem = gameObject.GetComponent<DialogGetItem>();
-            dialogGetItem.DisplayDialogue();
         }
         else if (styleOfDialogue == DialogueStyle.DEFAULT)
         {
@@ -107,8 +121,7 @@ public enum DialogueStyle
 {
     DEFAULT,
     SIMPLE_DIALOGUE,
-    NEEDS_ITEM,
-    GET_ITEM
+    NEEDS_ITEM
 }
 
 
