@@ -124,7 +124,10 @@ public class GameManager : MonoBehaviour
 
     public void AddItemToInventory(InventoryObject obj)
     {
-        InventoryCanvas.GetComponent<InventoryController>().AddItem(obj);
+        if (!InventoryCanvas.GetComponent<InventoryController>().InventoryContains(obj))
+        {
+            InventoryCanvas.GetComponent<InventoryController>().AddItem(obj);
+        }
     }
 
     public void SetDescription(string name, string description, Sprite image)
