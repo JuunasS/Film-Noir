@@ -112,6 +112,7 @@ public class GameManager : MonoBehaviour
     }
     public void SetDialogue(DialogueNode node)
     {
+        Debug.Log("Gamemanager setting dialogue");
         DialogCanvas.GetComponent<DialogueController>().SetDialogue(node);
     }
 
