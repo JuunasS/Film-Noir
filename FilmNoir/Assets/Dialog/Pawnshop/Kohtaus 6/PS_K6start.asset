@@ -16,4 +16,3 @@ MonoBehaviour:
   DialogueText: Can I help you?
   ChoiceDialogs:
   - {fileID: 11400000, guid: 11c9e15d8cd26d44e9408c3edd53c5a0, type: 2}
-  - {fileID: 0}

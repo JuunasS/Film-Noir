@@ -2004,7 +2004,7 @@ MonoBehaviour:
   haveItemDialogue: {fileID: 0}
   dontHaveItemDialogue: {fileID: 0}
   idleDialogue: {fileID: 0}
-  wantedObject: {fileID: 0}
+  wantedObject: {fileID: 11400000, guid: bc35e89f914f27d40ad0b37780ca86b5, type: 2}
   nameOfNPC: 0
   newGameState: {fileID: 11400000, guid: 704aec49dcf2dd5428305dc9f3381b29, type: 2}
   changesGameState: 1
