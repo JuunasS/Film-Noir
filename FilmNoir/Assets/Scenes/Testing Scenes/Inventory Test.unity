@@ -2144,7 +2144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1097620484
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3125,7 +3125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1968968053
 Transform:
   m_ObjectHideFlags: 0
@@ -4366,6 +4366,10 @@ PrefabInstance:
       value: Poster
       objectReference: {fileID: 0}
     - target: {fileID: 4307925354956688323, guid: 4e33c7cb72ac99642b74a11f7e53090d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307925354956688323, guid: 4e33c7cb72ac99642b74a11f7e53090d, type: 3}
       propertyPath: m_TagString
       value: Interactable
       objectReference: {fileID: 0}
@@ -5571,7 +5575,7 @@ MonoBehaviour:
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
   dialogGetItem: {fileID: 0}
-  startDialogue: {fileID: 11400000, guid: 78dfaef4e0111b74e81ee45ec81b117b, type: 2}
+  startDialogue: {fileID: 11400000, guid: 8740b8af09afda94ba1488080d13fe64, type: 2}
   waypoint: {fileID: 874241365}
   joinsLater: 0
   styleOfDialogue: 1
