@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Dialog Object", menuName = "Dialog/Dialog Choice")]
 public class ChoiceDialogueNode : ScriptableObject
 {
+    [TextArea(5, 10)]
     public string Text;
     public DialogueNode NextNode;
     public bool IsExit;
@@ -16,17 +17,37 @@ public class ChoiceDialogueNode : ScriptableObject
 
     public void SetNextNode()
     {
-        if(JoiningNPC != "")
+        try
         {
-            GameManager.manager.NpcJoinConversation(JoiningNPC, NextNode);
+            if (GivesItem)
+            {
+                GameManager.manager.AddItemToInventory(InventoryItem);
+            }
+            if (JoiningNPC == "")
+            {
+                Debug.Log("Choice node setting dialogue: " + NextNode);
+                GameManager.manager.SetDialogue(NextNode);
+            }
+            else
+            {
+                GameManager.manager.NpcJoinConversation(JoiningNPC, NextNode);
+            }
+           
         }
-        else
+        catch (System.Exception e)
         {
-            GameManager.manager.SetDialogue(NextNode);
+            Debug.LogException(e);
+            Debug.LogError("Something is missing in dialogue. Please check that all dialogueChoices and dialogueNodes are all filled as needed.");
         }
+    }
+
+    public void ExitDialogue()
+    {
         if (GivesItem)
         {
             GameManager.manager.AddItemToInventory(InventoryItem);
         }
+        GameManager.manager.ExitDialogue(); 
     }
+
 }

@@ -7,6 +7,8 @@ public class DialogueController : MonoBehaviour
 {
     public List<Button> DialogueOptions = new List<Button>();
 
+    public Button largeDialogButton;
+
     public Text SpeakerNameText;
     public Text DialogueText;
     public GameObject panel;
@@ -53,29 +55,49 @@ public class DialogueController : MonoBehaviour
         // Choice buttons set to false
         foreach (Button button in DialogueOptions)
         {
+            largeDialogButton.gameObject.SetActive(false);
             button.gameObject.SetActive(false);
         }
 
-        // New buttons activated
-        for (int i = 0; i < node.ChoiceDialogs.Count; i++)
+
+        if(node.ChoiceDialogs.Count == 1)
         {
-            DialogueOptions[i].gameObject.SetActive(true);
-            DialogueOptions[i].GetComponentInChildren<Text>().text = node.ChoiceDialogs[i].Text;
-            if (node.ChoiceDialogs[i].IsExit)
+            largeDialogButton.gameObject.SetActive(true);
+            largeDialogButton.GetComponentInChildren<Text>().text = node.ChoiceDialogs[0].Text;
+            if (node.ChoiceDialogs[0].IsExit)
             {
-                DialogueOptions[i].onClick.AddListener(ExitDialogue);
+                largeDialogButton.onClick.AddListener(node.ChoiceDialogs[0].ExitDialogue);
             }
             else
             {
-                DialogueOptions[i].onClick.AddListener(node.ChoiceDialogs[i].SetNextNode);
+                largeDialogButton.onClick.AddListener(node.ChoiceDialogs[0].SetNextNode);
             }
         }
+        else
+        {
+            // New buttons activated
+            for (int i = 0; i < node.ChoiceDialogs.Count; i++)
+            {
+                DialogueOptions[i].gameObject.SetActive(true);
+                DialogueOptions[i].GetComponentInChildren<Text>().text = node.ChoiceDialogs[i].Text;
+                if (node.ChoiceDialogs[i].IsExit)
+                {
+                    DialogueOptions[i].onClick.AddListener(node.ChoiceDialogs[i].ExitDialogue);
+                }
+                else
+                {
+                    DialogueOptions[i].onClick.AddListener(node.ChoiceDialogs[i].SetNextNode);
+                }
+            }
+        }
+
+
+        
 
     }
 
     public void ExitDialogue()
     {
-
         foreach (Button button in DialogueOptions)
         {
             button.gameObject.SetActive(false);

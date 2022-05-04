@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: e5a0757c40ddff345ada3f883df8ced1, type: 2}
   DialogueText: I don't know! It's your job to find out!
-  ChoiceDialogs: []
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: 2af8b13ffe016904bb66f1db9d658412, type: 2}

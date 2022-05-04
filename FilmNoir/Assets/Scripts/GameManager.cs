@@ -112,13 +112,22 @@ public class GameManager : MonoBehaviour
     }
     public void SetDialogue(DialogueNode node)
     {
+        Debug.Log("Gamemanager setting dialogue");
         DialogCanvas.GetComponent<DialogueController>().SetDialogue(node);
+    }
+
+    public void ExitDialogue()
+    {
+        DialogCanvas.GetComponent<DialogueController>().ExitDialogue();
     }
 
 
     public void AddItemToInventory(InventoryObject obj)
     {
-        InventoryCanvas.GetComponent<InventoryController>().AddItem(obj);
+        if (!InventoryCanvas.GetComponent<InventoryController>().InventoryContains(obj))
+        {
+            InventoryCanvas.GetComponent<InventoryController>().AddItem(obj);
+        }
     }
 
     public void SetDescription(string name, string description, Sprite image)
