@@ -16,19 +16,28 @@ public class ChoiceDialogueNode : ScriptableObject
 
     public void SetNextNode()
     {
-        if(JoiningNPC != "")
+        try
         {
-            GameManager.manager.NpcJoinConversation(JoiningNPC, NextNode);
-        }
-        else
-        {
+            if (JoiningNPC != "")
+            {
+                GameManager.manager.NpcJoinConversation(JoiningNPC, NextNode);
+            }
+            else
+            {
 
-            Debug.Log("Choice node setting dialogue: " + NextNode);
-            GameManager.manager.SetDialogue(NextNode);
+                Debug.Log("Choice node setting dialogue: " + NextNode);
+                GameManager.manager.SetDialogue(NextNode);
+            }
+            if (GivesItem)
+            {
+                GameManager.manager.AddItemToInventory(InventoryItem);
+            }
         }
-        if (GivesItem)
+        catch (System.Exception e)
         {
-            GameManager.manager.AddItemToInventory(InventoryItem);
+            Debug.LogException(e);
+            Debug.LogError("Something is missing in dialogue. Please check that all dialogueChoices and dialogueNodes are all filled as needed.");
         }
+
     }
 }
