@@ -19,10 +19,6 @@ public class ChoiceDialogueNode : ScriptableObject
     {
         try
         {
-            if (GivesItem)
-            {
-                GameManager.manager.AddItemToInventory(InventoryItem);
-            }
             if (JoiningNPC == "")
             {
                 Debug.Log("Choice node setting dialogue: " + NextNode);
@@ -39,6 +35,15 @@ public class ChoiceDialogueNode : ScriptableObject
             Debug.LogException(e);
             Debug.LogError("Something is missing in dialogue. Please check that all dialogueChoices and dialogueNodes are all filled as needed.");
         }
-
     }
+
+    public void ExitDialogue()
+    {
+        if (GivesItem)
+        {
+            GameManager.manager.AddItemToInventory(InventoryItem);
+        }
+        GameManager.manager.ExitDialogue(); 
+    }
+
 }
