@@ -63,7 +63,7 @@ public class DialogueController : MonoBehaviour
             DialogueOptions[i].GetComponentInChildren<Text>().text = node.ChoiceDialogs[i].Text;
             if (node.ChoiceDialogs[i].IsExit)
             {
-                DialogueOptions[i].onClick.AddListener(ExitDialogue);
+                DialogueOptions[i].onClick.AddListener(node.ChoiceDialogs[i].ExitDialogue);
             }
             else
             {
@@ -75,7 +75,6 @@ public class DialogueController : MonoBehaviour
 
     public void ExitDialogue()
     {
-
         foreach (Button button in DialogueOptions)
         {
             button.gameObject.SetActive(false);
