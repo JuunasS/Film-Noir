@@ -116,6 +116,11 @@ public class GameManager : MonoBehaviour
         DialogCanvas.GetComponent<DialogueController>().SetDialogue(node);
     }
 
+    public void ExitDialogue()
+    {
+        DialogCanvas.GetComponent<DialogueController>().ExitDialogue();
+    }
+
 
     public void AddItemToInventory(InventoryObject obj)
     {
