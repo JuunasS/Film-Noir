@@ -11,6 +11,9 @@ public class ChoiceDialogueNode : ScriptableObject
     public bool IsExit;
     public string JoiningNPC;
 
+    public bool GivesItem;
+    public InventoryObject InventoryItem;
+
     public void SetNextNode()
     {
         if(JoiningNPC != "")
@@ -21,6 +24,9 @@ public class ChoiceDialogueNode : ScriptableObject
         {
             GameManager.manager.SetDialogue(NextNode);
         }
-
+        if (GivesItem)
+        {
+            GameManager.manager.AddItemToInventory(InventoryItem);
+        }
     }
 }

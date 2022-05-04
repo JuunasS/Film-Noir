@@ -434,6 +434,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  isThereMonologue: 0
+  monologueNode: {fileID: 0}
 --- !u!195 &120976466074590055
 NavMeshAgent:
   m_ObjectHideFlags: 0

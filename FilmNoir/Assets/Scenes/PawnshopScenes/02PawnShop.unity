@@ -2024,9 +2024,12 @@ MonoBehaviour:
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
   dialogGetItem: {fileID: 0}
+  endScene: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
-  styleOfDialogue: 3
+  joinsLater: 0
+  NPCBody: {fileID: 0}
+  styleOfDialogue: 1
   isItTheEndScene: 0
 --- !u!65 &1802880459
 BoxCollider:
@@ -2065,16 +2068,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1802880456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 160e513b5b91ab74eb19fc3a9757e76e, type: 3}
+  m_Script: {fileID: 11500000, guid: b2e2241c39ccf8941b82c134d4781430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  startingDialogue: {fileID: 11400000, guid: a7943cc56d383fe49a0a06821b1aa29a, type: 2}
-  inBetweenDialogue: {fileID: 11400000, guid: 9929787df8aac5e49b050ecb27bd729a, type: 2}
-  givenItem: {fileID: 11400000, guid: 1ea1e4f41cc4293468328003e3ee94bc, type: 2}
+  firstDialogue: {fileID: 0}
+  idleDialogue: {fileID: 0}
   nameOfNPC: 0
-  newGameState: {fileID: 11400000, guid: f3fca9a05eb5b544ea1c499d6c4f9a51, type: 2}
-  changesGameState: 1
+  newGameState: {fileID: 0}
+  changesGameState: 0
 --- !u!1001 &1873171038
 PrefabInstance:
   m_ObjectHideFlags: 0
