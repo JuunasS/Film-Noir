@@ -850,6 +850,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 159618168}
     - target: {fileID: 1896945691949996505, guid: 538c1a237068d294c87a9245649e0ece, type: 3}
+      propertyPath: startDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: a8c501314f9265b45a7bb1fc43b406f8, type: 2}
+    - target: {fileID: 1896945691949996505, guid: 538c1a237068d294c87a9245649e0ece, type: 3}
       propertyPath: styleOfDialogue
       value: 1
       objectReference: {fileID: 0}
@@ -2148,8 +2152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  firstDialogue: {fileID: 11400000, guid: 4c2466b32b338ba4d95f89082aa8021c, type: 2}
-  idleDialogue: {fileID: 11400000, guid: c3fad03ba3cad454c9c1f86074a7efa9, type: 2}
+  firstDialogue: {fileID: 11400000, guid: a8c501314f9265b45a7bb1fc43b406f8, type: 2}
+  idleDialogue: {fileID: 11400000, guid: 2b3f78a70bc5c064098f885b18d51c42, type: 2}
   nameOfNPC: 8
   newGameState: {fileID: 0}
   changesGameState: 0
