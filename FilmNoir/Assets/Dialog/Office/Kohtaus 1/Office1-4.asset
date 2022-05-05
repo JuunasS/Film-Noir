@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
+  m_Name: Office1-4
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 929bf02bfe308cd43a02834848fea49d, type: 2}
+  DialogueText: 'He was guilty. I told you, you have to get over it. I caught him.
+
+'
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: 34a487b3fd2158143802df5a7b5e121d, type: 2}
+  - {fileID: 11400000, guid: cfe5425586bf5a742bbd994bf6ca4280, type: 2}
+  - {fileID: 11400000, guid: 8e883712b335c9246b3f01d480a878b2, type: 2}

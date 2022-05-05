@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
   m_Name: PS_K10start
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 0}
-  DialogueText: 
-  ChoiceDialogs: []
+  Speaker: {fileID: 11400000, guid: f40a5893335c9464cb5568a15cad4798, type: 2}
+  DialogueText: You again. How I can help you this time?
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: ed5df5e3044ba5e4e9141b0fbadf38b3, type: 2}

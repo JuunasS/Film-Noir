@@ -2001,8 +2001,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  haveItemDialogue: {fileID: 0}
-  dontHaveItemDialogue: {fileID: 0}
+  haveItemDialogue: {fileID: 11400000, guid: d98af67888b2ba545899076e6c9db01a, type: 2}
+  dontHaveItemDialogue: {fileID: 11400000, guid: d98af67888b2ba545899076e6c9db01a, type: 2}
   idleDialogue: {fileID: 0}
   wantedObject: {fileID: 11400000, guid: bc35e89f914f27d40ad0b37780ca86b5, type: 2}
   nameOfNPC: 0

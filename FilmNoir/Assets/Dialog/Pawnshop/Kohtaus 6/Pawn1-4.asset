@@ -16,4 +16,4 @@ MonoBehaviour:
   DialogueText: ' ...Alright then, here''s the object they brought in. It''s not
     worth that much.'
   ChoiceDialogs:
-  - {fileID: 11400000, guid: 861ddd2a68676e843885ee2157ec28ba, type: 2}
+  - {fileID: 11400000, guid: 772de090e7d389144ab84c8daa5e37c7, type: 2}

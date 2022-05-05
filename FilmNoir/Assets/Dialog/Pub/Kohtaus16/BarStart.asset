@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
+  m_Name: BarStart
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 411020eb5c5daa14eaeec7bb700d4201, type: 2}
+  DialogueText: 'Do you have find anything for me, Mr. Daniels? '
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: 014a14b1cf8c4ea459e52b89b151a7b0, type: 2}
+  - {fileID: 11400000, guid: 4ea25f7fa57f26446b52967120ecc9ee, type: 2}
+  - {fileID: 11400000, guid: 0a7598effe185f64785eca88b6fb379d, type: 2}

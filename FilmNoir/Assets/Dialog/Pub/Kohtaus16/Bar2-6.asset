@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
+  m_Name: Bar2-6
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 411020eb5c5daa14eaeec7bb700d4201, type: 2}
+  DialogueText: Bullshit. I have... I had every reason to keep her alive. She was
+    exactly what I needed.
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: 015f6ec072c404041a575b4d88dba7d7, type: 2}
