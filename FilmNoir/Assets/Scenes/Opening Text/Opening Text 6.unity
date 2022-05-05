@@ -580,9 +580,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1714344543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd08ccb9159df5042af1153f5ec68aa4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d7a638954b4a0b4685b3a9f53111361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: 01Pawnshop
 --- !u!1001 &1755556204
 PrefabInstance:
   m_ObjectHideFlags: 0

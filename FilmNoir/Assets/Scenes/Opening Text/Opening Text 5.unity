@@ -550,6 +550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714344544}
   - component: {fileID: 1714344545}
+  - component: {fileID: 1714344546}
   m_Layer: 0
   m_Name: NextScene
   m_TagString: Untagged
@@ -583,6 +584,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f29ee6aa678bb6408244121c69c4e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1714344546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714344543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7a638954b4a0b4685b3a9f53111361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: 01Hairdresser
 --- !u!1 &1763856607
 GameObject:
   m_ObjectHideFlags: 0
