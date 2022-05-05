@@ -2091,7 +2091,7 @@ MonoBehaviour:
   radius: 2
   interactionTransform: {fileID: 1167173889}
   InventoryObject: {fileID: 11400000, guid: bc35e89f914f27d40ad0b37780ca86b5, type: 2}
-  start: {fileID: 11400000, guid: d13305d49650e084dac16d6a552a0d49, type: 2}
+  start: {fileID: 11400000, guid: 4867cd8a5b6064d40b62d649f719137a, type: 2}
   changesGameState: 1
   newGameState: {fileID: 11400000, guid: ec60100f0188a9840afa1861e78de4df, type: 2}
 --- !u!65 &1651004094

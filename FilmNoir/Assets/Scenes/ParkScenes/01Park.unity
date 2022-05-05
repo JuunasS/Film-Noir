@@ -940,8 +940,8 @@ MonoBehaviour:
   interactionTransform: {fileID: 1437751577}
   InventoryObject: {fileID: 11400000, guid: 77f5b2792a7b7f543ace47b2602689a0, type: 2}
   start: {fileID: 11400000, guid: 652a4edd650a1db42a28528ce815fdd4, type: 2}
-  changesGameState: 1
-  newGameState: {fileID: 11400000, guid: cc45d33b03d330043b7fd47471efc223, type: 2}
+  changesGameState: 0
+  newGameState: {fileID: 0}
 --- !u!65 &766485320
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1594,8 +1594,8 @@ MonoBehaviour:
   interactionTransform: {fileID: 954286602}
   InventoryObject: {fileID: 11400000, guid: 740acd51ea67ba0499736de274bfcb45, type: 2}
   start: {fileID: 11400000, guid: 8aec5580fe0198341b3c8867ee42f962, type: 2}
-  changesGameState: 0
-  newGameState: {fileID: 0}
+  changesGameState: 1
+  newGameState: {fileID: 11400000, guid: cc45d33b03d330043b7fd47471efc223, type: 2}
 --- !u!1 &1133899078
 GameObject:
   m_ObjectHideFlags: 0
