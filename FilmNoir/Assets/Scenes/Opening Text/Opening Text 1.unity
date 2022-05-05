@@ -501,13 +501,15 @@ PlayableDirector:
   m_GameObject: {fileID: 1444868350}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 36ac4b7109e0a4043870bc74b6254166, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 5e977ebc6aa2be7468e3d33191a77238, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 6144154780153780549, guid: 36ac4b7109e0a4043870bc74b6254166, type: 2}
+    value: {fileID: 1714344543}
+  - key: {fileID: 6144154780153780549, guid: 5e977ebc6aa2be7468e3d33191a77238, type: 2}
     value: {fileID: 1714344543}
   m_ExposedReferences:
     m_References: []
@@ -561,7 +563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.8679245, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
