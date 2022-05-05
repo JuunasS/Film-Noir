@@ -23,9 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ParkScenes/01Park.unity
     guid: 4b5f0bef034e93e44901b7e244332109
-  - enabled: 1
-    path: Assets/Scenes/ClubScenes/01Club.unity
-    guid: 41fc193c2f9db624588f7f684226563c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/ParkScenes/ParkBase.unity
     guid: 68ea05a247527e449b1b01cf97cf93b2
@@ -60,7 +60,7 @@ EditorBuildSettings:
     path: Assets/Scenes/OfficeScenes/03Office.unity
     guid: 46655ce9b5ddfb54f8478265964d13c2
   - enabled: 1
-    path: Assets/Scenes/PawnshopScenes/02Pawnshop.unity
+    path: Assets/Scenes/PawnshopScenes/02PawnShop.unity
     guid: 0326e9a4da5f02248b53a5ca37c250ae
   - enabled: 1
     path: Assets/Scenes/HallwayScenes/HallwayBase.unity
@@ -98,4 +98,55 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Endings/GoodEND.unity
     guid: e855eadef11b3574aa66dfcf09f4bc3b
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 1.unity
+    guid: 614e947fbca80a646b0598bd6cf883c8
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 2.unity
+    guid: 27db9ea65acc42a4fb90e8d9a61636e1
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 3.unity
+    guid: 8db79c1c89478e94ea70e508032f35e4
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 4.unity
+    guid: 23f42047eb4d73345bd5f4ca2b5f0874
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 5.unity
+    guid: 2928fd6ea951bfd46940b088e5df84f3
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 6.unity
+    guid: 5f5da6c9141e8434ba72f96ca7f30eff
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 7.unity
+    guid: 024a3ce2ec59f1a40b311834acd14c20
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 8.unity
+    guid: ce259e0b63ed7bf42a9ea92fa32548af
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 9.unity
+    guid: ae6b7417ddaf12c419ca477de4f9eeb8
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 10.unity
+    guid: 54802603077918f499ab7142726c5a8d
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 11.unity
+    guid: a575c914c1eced54d8c66c65236696fe
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 12.unity
+    guid: 28b6e5fdb5cbb8241b9193755ce5a4f0
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 13.unity
+    guid: 66649e169c92a7047b4b83a750f735fe
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 14.unity
+    guid: 66d71818f625520499ab368208a7108d
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 15.unity
+    guid: d7a8538245020d941afd4b11cec220eb
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 16.unity
+    guid: c9d141fc2bb20b44d9117b032a9d14eb
+  - enabled: 1
+    path: Assets/Scenes/Opening Text/Opening Text 17.unity
+    guid: ebac251cdf6fd6b49865bdc958a3c8e0
   m_configObjects: {}

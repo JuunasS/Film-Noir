@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f294ec2bd3649834b8d0488a3d438233, type: 3}
   m_Name: 03GameState
   m_EditorClassIdentifier: 
-  OfficeSceneName: 02Office
+  OfficeSceneName: Opening Scene 4
   ApartmentAisleSceneName: 
   ApartmentSceneName: 
   PawnshopSceneName: 
