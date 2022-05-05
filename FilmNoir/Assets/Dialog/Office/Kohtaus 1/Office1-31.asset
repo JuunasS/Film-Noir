@@ -17,4 +17,4 @@ MonoBehaviour:
   IsExit: 1
   JoiningNPC: 
   GivesItem: 1
-  InventoryItem: {fileID: 11400000, guid: adbc6d8c5202180419b61976c8b2f232, type: 2}
+  InventoryItem: {fileID: 11400000, guid: 3cf730639db03334cbd177f3e55a25aa, type: 2}
