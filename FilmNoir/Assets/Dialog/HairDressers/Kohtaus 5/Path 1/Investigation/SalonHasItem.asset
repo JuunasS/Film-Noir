@@ -15,4 +15,4 @@ MonoBehaviour:
   Speaker: {fileID: 11400000, guid: 69bdb4c971b65fd4f9bfc6dffa572208, type: 2}
   DialogueText: Do you know anything about this?
   ChoiceDialogs:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 21e0382cb3b4e4c4cb11b62925882f01, type: 2}

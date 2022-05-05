@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Nina
   m_EditorClassIdentifier: 
   Name: Nina
-  NameColor: {r: 0.4245283, g: 0.010012458, b: 0.35391906, a: 0}
+  NameColor: {r: 1, g: 0.9684868, b: 0, a: 0}
