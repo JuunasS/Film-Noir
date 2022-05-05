@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
-  m_Name: Office2-5-3
+  m_Name: Office3-1-7
   m_EditorClassIdentifier: 
-  Text: ...
-  NextNode: {fileID: 11400000, guid: 1455669ba8f80c14cb42eda80d2963fa, type: 2}
+  Text: I'm on that case, I don't think that Mott suspects you any more.
+  NextNode: {fileID: 11400000, guid: f1ca8556bd4bcf045aaf3d46f84ab33a, type: 2}
   IsExit: 0
   JoiningNPC: 
   GivesItem: 0

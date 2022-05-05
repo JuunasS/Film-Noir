@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
+  m_Name: Hall1-4
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: dbcef8a58d3c9fe4798e7fd864c7f3f7, type: 2}
+  DialogueText: I can't climb the stairs. I'm an old woman with a bad hip.
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: 6b7bb35ef1b298141a00dae5e5dcc4e7, type: 2}
+  - {fileID: 11400000, guid: 6eef45e9e1d2e3d419bfd0994088bd8e, type: 2}
+  - {fileID: 11400000, guid: b095d30e8168b9044b8e0ac803a2745a, type: 2}
+  - {fileID: 11400000, guid: 1172440aeea5a874fa00c940643f8de7, type: 2}

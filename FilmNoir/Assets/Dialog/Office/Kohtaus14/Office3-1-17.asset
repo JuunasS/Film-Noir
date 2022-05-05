@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
-  m_Name: Office2-5-3
+  m_Name: Office3-1-17
   m_EditorClassIdentifier: 
-  Text: ...
-  NextNode: {fileID: 11400000, guid: 1455669ba8f80c14cb42eda80d2963fa, type: 2}
+  Text: There are no evidence to arrest Mott. No we must give the photo to him or
+    the mayor. That is the only way to keep you safe.
+  NextNode: {fileID: 11400000, guid: ce7a105114af4bc469e3cf724ef4b34a, type: 2}
   IsExit: 0
   JoiningNPC: 
   GivesItem: 0

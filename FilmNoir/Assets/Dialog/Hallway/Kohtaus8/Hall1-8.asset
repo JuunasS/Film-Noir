@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
+  m_Name: Hall1-8
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: dbcef8a58d3c9fe4798e7fd864c7f3f7, type: 2}
+  DialogueText: ' At that fishy joint downtown as a coat check girl. It''s a suspicious
+    place full of dangerous people. '
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: b8140eec1d9d4ea4986372731e4eedcc, type: 2}
