@@ -2691,8 +2691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  firstDialogue: {fileID: 11400000, guid: 3bbb30ede21164a498575391ddcf7145, type: 2}
-  idleDialogue: {fileID: 11400000, guid: 9929787df8aac5e49b050ecb27bd729a, type: 2}
+  firstDialogue: {fileID: 11400000, guid: ac979b2263ff064458c4e9dfae1c4986, type: 2}
+  idleDialogue: {fileID: 11400000, guid: 10debae2828e15a4ab6d83168c87a586, type: 2}
   nameOfNPC: 2
   newGameState: {fileID: 11400000, guid: 3a48064856555354882e9df34799eb18, type: 2}
   changesGameState: 1
@@ -4333,11 +4333,11 @@ PrefabInstance:
     - target: {fileID: 2670083830592015277, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}
       propertyPath: idleDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 6a4b83c595dcd7f4e9df2dd498f2a596, type: 2}
+      objectReference: {fileID: 11400000, guid: 2bc455df33b4f4049ba3099a0c112d4f, type: 2}
     - target: {fileID: 2670083830592015277, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}
       propertyPath: firstDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 6f8465e2f1c54f64cb1e64a22b3eed9c, type: 2}
+      objectReference: {fileID: 11400000, guid: 2bc455df33b4f4049ba3099a0c112d4f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}
 --- !u!4 &2670083830853844242 stripped
