@@ -17,5 +17,5 @@ MonoBehaviour:
   NextNode: {fileID: 0}
   IsExit: 1
   JoiningNPC: 
-  GivesItem: 0
-  InventoryItem: {fileID: 0}
+  GivesItem: 1
+  InventoryItem: {fileID: 11400000, guid: 203cdcb4216b28f4db5d0901659d9c70, type: 2}

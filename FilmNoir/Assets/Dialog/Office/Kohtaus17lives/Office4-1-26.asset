@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: Office4-1-38
+  m_Name: Office4-1-26
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: 929bf02bfe308cd43a02834848fea49d, type: 2}
-  DialogueText: Enough nonsense. Do you have any last words?
+  Speaker: {fileID: 11400000, guid: 88c61b956d771404594eff7bdd35aee8, type: 2}
+  DialogueText: Not even during. Casey harassed me all the time. I didn't tell you,
+    because I wanted to spare your feelings.
   ChoiceDialogs:
-  - {fileID: 11400000, guid: 88f7bc96757bd0d4badf2a8ba96b1dea, type: 2}
+  - {fileID: 11400000, guid: d19ab521237035649a470eabd91cb2cf, type: 2}

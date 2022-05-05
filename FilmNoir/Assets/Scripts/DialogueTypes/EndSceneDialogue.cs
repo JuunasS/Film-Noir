@@ -41,12 +41,12 @@ public class EndSceneDialogue : MonoBehaviour
         animator.SetBool("isTalking", true);
         if (inventory.InventoryContains(wantedObject))
         {
-            GameManager.manager.SetDialogue(barbaraSurvivesDialogue);
+            GameManager.manager.SetDialogue(barbaraDiesDialogue);
         }
         else
         {
-            GameManager.manager.SetDialogue(barbaraDiesDialogue);
-            doesBarbaraDie = true;
+            GameManager.manager.SetDialogue(barbaraSurvivesDialogue);
+            doesBarbaraDie = false;
         } 
     }
 

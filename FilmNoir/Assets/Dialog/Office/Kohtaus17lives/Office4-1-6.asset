@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: Office4-1-38
+  m_Name: Office4-1-6
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: 929bf02bfe308cd43a02834848fea49d, type: 2}
-  DialogueText: Enough nonsense. Do you have any last words?
+  DialogueText: Very good, golden boy. Too bad I thought you'd be out of the way,
+    if I got you out of the police.
   ChoiceDialogs:
-  - {fileID: 11400000, guid: 88f7bc96757bd0d4badf2a8ba96b1dea, type: 2}
+  - {fileID: 11400000, guid: 0e0b5ec550f0cfd4a96794110d3ed847, type: 2}

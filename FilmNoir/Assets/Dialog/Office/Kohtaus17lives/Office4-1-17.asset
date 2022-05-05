@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
-  m_Name: Office4-1-25
+  m_Name: Office4-1-17
   m_EditorClassIdentifier: 
   Text: ...
-  NextNode: {fileID: 11400000, guid: 0f362f0d5a045f646831218319825981, type: 2}
+  NextNode: {fileID: 11400000, guid: 706a7041d264b1247b617511da05d417, type: 2}
   IsExit: 0
-  JoiningNPC: Barbara
+  JoiningNPC: 
   GivesItem: 0
   InventoryItem: {fileID: 0}
