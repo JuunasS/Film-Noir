@@ -64,10 +64,12 @@ public class DialogueController : MonoBehaviour
 
 
         // Choice buttons set to false
+        largeDialogButton.onClick.RemoveAllListeners();
         largeDialogButton.gameObject.SetActive(false);
         foreach (Button button in DialogueOptions)
         {
-            Debug.Log(button.ToString() + " Loaded.");
+            Debug.Log(button.ToString() + " Disabled.");
+            button.onClick.RemoveAllListeners();
             button.gameObject.SetActive(false);
         }
 
