@@ -4245,11 +4245,11 @@ PrefabInstance:
     - target: {fileID: 2670083830592015277, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}
       propertyPath: idleDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 6a4b83c595dcd7f4e9df2dd498f2a596, type: 2}
+      objectReference: {fileID: 11400000, guid: 2bc455df33b4f4049ba3099a0c112d4f, type: 2}
     - target: {fileID: 2670083830592015277, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}
       propertyPath: firstDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 6f8465e2f1c54f64cb1e64a22b3eed9c, type: 2}
+      objectReference: {fileID: 11400000, guid: 2bc455df33b4f4049ba3099a0c112d4f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4411265bdc1754981b27e7f0b52537, type: 3}
 --- !u!1001 &4965294268200218984

@@ -177,8 +177,12 @@ PrefabInstance:
       value: HairDresserNPC
       objectReference: {fileID: 0}
     - target: {fileID: 5710478977450203916, guid: 3863779419acdad44bf4da03d7dff97b, type: 3}
+      propertyPath: startDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 6eb8fa431f872c447ae15b03e1c67085, type: 2}
+    - target: {fileID: 5710478977450203916, guid: 3863779419acdad44bf4da03d7dff97b, type: 3}
       propertyPath: styleOfDialogue
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5710478977450203918, guid: 3863779419acdad44bf4da03d7dff97b, type: 3}
       propertyPath: m_RootOrder
@@ -235,7 +239,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5710478977450203912, guid: 3863779419acdad44bf4da03d7dff97b, type: 3}
   m_PrefabInstance: {fileID: 74774736}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &74774738
+--- !u!114 &74774739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,12 +248,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 74774737}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2e2241c39ccf8941b82c134d4781430, type: 3}
+  m_Script: {fileID: 11500000, guid: 63fe38660459df14a8c5a0d3431966ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  firstDialogue: {fileID: 11400000, guid: a7943cc56d383fe49a0a06821b1aa29a, type: 2}
-  idleDialogue: {fileID: 11400000, guid: 9929787df8aac5e49b050ecb27bd729a, type: 2}
+  haveItemDialogue: {fileID: 11400000, guid: 7c063401c1dcfcb4e91d2339bf4cc81b, type: 2}
+  dontHaveItemDialogue: {fileID: 11400000, guid: 6eb8fa431f872c447ae15b03e1c67085, type: 2}
+  idleDialogue: {fileID: 11400000, guid: 842a359b5ed745c41adc5c534c7080e5, type: 2}
+  wantedObject: {fileID: 11400000, guid: bc35e89f914f27d40ad0b37780ca86b5, type: 2}
   nameOfNPC: 4
   newGameState: {fileID: 0}
   changesGameState: 0
