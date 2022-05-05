@@ -4019,10 +4019,10 @@ PrefabInstance:
     - target: {fileID: 120976466074590052, guid: ecd76fd7b0eeabf46aea5eec5e2f7da0, type: 3}
       propertyPath: monologueNode
       value: 
-      objectReference: {fileID: 11400000, guid: 6f8465e2f1c54f64cb1e64a22b3eed9c, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 120976466074590052, guid: ecd76fd7b0eeabf46aea5eec5e2f7da0, type: 3}
       propertyPath: isThereMonologue
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 120976466074590053, guid: ecd76fd7b0eeabf46aea5eec5e2f7da0, type: 3}
       propertyPath: cursor

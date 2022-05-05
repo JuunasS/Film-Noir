@@ -248,8 +248,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  firstDialogue: {fileID: 11400000, guid: a7943cc56d383fe49a0a06821b1aa29a, type: 2}
-  idleDialogue: {fileID: 11400000, guid: 9929787df8aac5e49b050ecb27bd729a, type: 2}
+  firstDialogue: {fileID: 11400000, guid: f517408a08326f44c84236efe4a6e4b4, type: 2}
+  idleDialogue: {fileID: 11400000, guid: fbc4f112e1685eb4ba593791d8684ccc, type: 2}
   nameOfNPC: 4
   newGameState: {fileID: 11400000, guid: 5b39ebc221c599a4384e06ef0ea06750, type: 2}
   changesGameState: 1

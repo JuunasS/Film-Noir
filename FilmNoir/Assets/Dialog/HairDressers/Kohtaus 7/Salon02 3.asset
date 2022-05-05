@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
+  m_Name: Salon02 3
+  m_EditorClassIdentifier: 
+  Text: This particular lady wears a blue dress and seems quite jumpy. Ring a bell?
+  NextNode: {fileID: 11400000, guid: 6b4619c087bf4924586e1d093a55e6e9, type: 2}
+  IsExit: 0
+  JoiningNPC: 
+  GivesItem: 0
+  InventoryItem: {fileID: 0}
