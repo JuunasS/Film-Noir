@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour
 {
-    public List<Button> DialogueOptions = new List<Button>();
+    public List<Button> DialogueOptions;
 
     public Button largeDialogButton;
 
@@ -34,28 +34,42 @@ public class DialogueController : MonoBehaviour
 
     public void SetDialogue(DialogueNode node)
     {
-        currentDialogue = node;
+        if(node == currentDialogue)
+        {
+            Debug.Log("DialogueNode already active.");
+            return;
+        }
+        Debug.Log("Start setting dialogue in DialogueController.");
 
-        Debug.Log("Start setting dialogue");
+        currentDialogue = node;
         isConversationActive = true;    //laitetaan bool joka vahtii onko jokin keskustelu käynnissä trueksi
         panel.SetActive(true);
 
         PlayerController.canMove = false; //lopettaa pelaajan liikkumisen sen ajaksi kunnes dialogi-ikkuna suljetaan
 
-        // Show text
-        Debug.Log(node.DialogueText);
-        this.DialogueText.text = node.DialogueText;
+        if(node.DialogueText != null)
+        {
+            // Show text
+            Debug.Log("Setting text to: " + node.DialogueText);
+            this.DialogueText.text = node.DialogueText;
+        }
 
-        // Show name of current speaker
-        this.SpeakerNameText.text = node.Speaker.Name;
-        node.Speaker.NameColor.a = 1;
-        this.SpeakerNameText.color = node.Speaker.NameColor;
+        if(node.Speaker.Name != null)
+        {
+            // Show name of current speaker
+            this.SpeakerNameText.text = node.Speaker.Name;
+            node.Speaker.NameColor.a = 1;
+            this.SpeakerNameText.color = node.Speaker.NameColor;
+        }
 
 
         // Choice buttons set to false
+        largeDialogButton.onClick.RemoveAllListeners();
+        largeDialogButton.gameObject.SetActive(false);
         foreach (Button button in DialogueOptions)
         {
-            largeDialogButton.gameObject.SetActive(false);
+            Debug.Log(button.ToString() + " Disabled.");
+            button.onClick.RemoveAllListeners();
             button.gameObject.SetActive(false);
         }
 
@@ -89,11 +103,7 @@ public class DialogueController : MonoBehaviour
                     DialogueOptions[i].onClick.AddListener(node.ChoiceDialogs[i].SetNextNode);
                 }
             }
-        }
-
-
-        
-
+        } 
     }
 
     public void ExitDialogue()

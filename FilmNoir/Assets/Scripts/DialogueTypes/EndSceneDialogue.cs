@@ -20,16 +20,20 @@ public class EndSceneDialogue : MonoBehaviour
     }
     private void Update()
     {
-        if(!DialogueController.isConversationActive && doesBarbaraDie)
+        if(!DialogueController.isConversationActive && animator.GetBool("isTalking") == true)
         {
-            Debug.Log("Barbara kuolee"); //tähän voidaan laittaa lopputeksti ja whatever
-            GameManager.manager.LoadScene("BadEND");
+            if (doesBarbaraDie)
+            {
+                Debug.Log("Barbara kuolee"); //tähän voidaan laittaa lopputeksti ja whatever
+                GameManager.manager.LoadScene("BadEND");
+            }
+            if (!doesBarbaraDie)
+            {
+                Debug.Log("Barbara ei kuole");
+                GameManager.manager.LoadScene("GoodEND");
+            }
         }
-        if(!DialogueController.isConversationActive && !doesBarbaraDie)
-        {
-            Debug.Log("Barbara ei kuole");
-            GameManager.manager.LoadScene("GoodEND");
-        }
+
     }
 
     public void DisplayDialogue()

@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
-  m_Name: Choice 2-2
+  m_Script: {fileID: 11500000, guid: 627b39a7f8a90174eb4120b781f7d225, type: 3}
+  m_Name: Gun
   m_EditorClassIdentifier: 
-  Text: New npc joins
-  NextNode: {fileID: 11400000, guid: 7b2b5ab87a766f648926f78dd20a9f0f, type: 2}
-  IsExit: 0
-  JoiningNPC: ClientJudyNPC
-  GivesItem: 0
-  InventoryItem: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 85766d42b659d7547bee79a437d5f6f2, type: 3}
+  ItemName: Gun
+  Description: Gun I got from Barbara... Hopefully I won't have to use it.
+  Connection: {fileID: 0}

@@ -67,7 +67,7 @@ public class NPCcontroller : MonoBehaviour
 
     private void Update()
     {
-        if (!DialogueController.isConversationActive && animator.GetBool("isTalking") == true)
+        if (!DialogueController.isConversationActive && animator.GetBool("isTalking") == true && !isItTheEndScene)
         {
             animator.SetBool("isTalking", false);
         }
