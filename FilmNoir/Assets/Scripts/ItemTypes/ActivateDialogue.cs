@@ -11,6 +11,4 @@ public class ActivateDialogue : Interactable
         base.Interact();
         GameManager.manager.SetDialogue(start);
     }
-
-
 }
