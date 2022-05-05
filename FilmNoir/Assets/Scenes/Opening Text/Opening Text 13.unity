@@ -638,9 +638,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1714344543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8219a6b7174a3c9419865ec5dbd3dca6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d7a638954b4a0b4685b3a9f53111361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: 02Club
 --- !u!1 &1763856607
 GameObject:
   m_ObjectHideFlags: 0
