@@ -39,12 +39,12 @@ public class DialogueNeedsItem : MonoBehaviour
     {
         index = (int)nameOfNPC;
         animator.SetBool("isTalking", true);
-        hasBeenTalkedTo = true;
         switch (GameManager.manager.NPCList[index].dialogueProgress)   //k‰yd‰‰n l‰pi game managerissa olevaa listaa NPC:iden dialogien kulusta
         {
             case DialogueMode.FIRST_DIALOGUE:
                 if (inventory.InventoryContains(wantedObject))
                 {
+                    hasBeenTalkedTo = true;
                     GameManager.manager.SetDialogue(haveItemDialogue);
                     GameManager.manager.NPCList[index].dialogueProgress = DialogueMode.SECOND_DIALOGUE;
                 }
