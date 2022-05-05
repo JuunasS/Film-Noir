@@ -2129,8 +2129,8 @@ MonoBehaviour:
   idleDialogue: {fileID: 11400000, guid: 348a10b0c3442a24dabed3829fbf001a, type: 2}
   wantedObject: {fileID: 11400000, guid: 9a356c5ec5f76904e9f7306ade5ce9ef, type: 2}
   nameOfNPC: 9
-  newGameState: {fileID: 0}
-  changesGameState: 0
+  newGameState: {fileID: 11400000, guid: 1cc4db809d98ad24a95651290cd3193b, type: 2}
+  changesGameState: 1
 --- !u!1 &885374360 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1896945691949996510, guid: 538c1a237068d294c87a9245649e0ece, type: 3}
