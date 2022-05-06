@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private string GAMESAVEKEY = "GAMESAVEPREF";
-    GameSave GameSave;
+    //private string GAMESAVEKEY = "GAMESAVEPREF";
+    private string path = "";
+    private string persistentPath = "";
+    GameSave GameSave = new GameSave();
 
     public static GameManager manager;
 
@@ -44,6 +47,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        SetPaths();
         currentSceneName = SceneManager.GetActiveScene().name;
         CheckInteractables();
 
@@ -210,17 +214,63 @@ public class GameManager : MonoBehaviour
     // Saves gamestate and player inventory to playerprefs in JSON format
     public void SavePrefs()
     {
+        Debug.Log("Saving GameSave...");
+        string savePath = persistentPath;
+
+        this.GameSave.NewData();
+
+        string json = JsonUtility.ToJson(GameSave);
+
+        using StreamWriter writer = new StreamWriter(savePath);
+        writer.Write(json);
+
+        /*
         this.GameSave = new GameSave();
         Debug.Log("Saving playerprefs...");
         this.GameSave.NewData();
         string GameSaveJson = JsonUtility.ToJson(this.GameSave);
         PlayerPrefs.SetString(GAMESAVEKEY, GameSaveJson);
         PlayerPrefs.Save();
+        */
     }
 
     // Loads gamestate and player inventory from playerprefs and converts them beck from JSON format
     public void LoadPrefs()
     {
+        Debug.Log("Loading GameSave...");
+        PlayerInventory.Clear();
+
+        using StreamReader reader = new StreamReader(persistentPath);
+        string json = reader.ReadToEnd();
+
+        GameSave LoadGameSave = JsonUtility.FromJson<GameSave>(json);
+
+        if (LoadGameSave != null)
+        {
+            if (LoadGameSave.GameState != null)
+            {
+                this.GameState = LoadGameSave.GameState;
+                Debug.Log("Found gamestate");
+            }
+            if (LoadGameSave.InventoryObjects.Count != 0)
+            {
+                foreach (InventoryObject inventoryObject in LoadGameSave.InventoryObjects)
+                {
+                    this.PlayerInventory.Add(inventoryObject);
+                }
+                Debug.Log("Found inventory objects");
+            }
+            if (LoadGameSave.SceneName != "")
+            {
+                this.currentSceneName = LoadGameSave.SceneName;
+                Debug.Log("Found current scene");
+            }
+        }
+        else
+        {
+            Debug.Log("No save found");
+        }
+        /*
         PlayerInventory.Clear();
         Debug.Log("Loading playerprefs...");
         string GameSaveJson = PlayerPrefs.GetString(GAMESAVEKEY);
@@ -252,6 +302,13 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("No save found");
         }
+        */
+    }
+
+    private void SetPaths()
+    {
+        path = Application.dataPath + Path.AltDirectorySeparatorChar + "SaveData.json";
+        persistentPath = Application.persistentDataPath + Path.AltDirectorySeparatorChar + "SaveData.json";
     }
 }
 
