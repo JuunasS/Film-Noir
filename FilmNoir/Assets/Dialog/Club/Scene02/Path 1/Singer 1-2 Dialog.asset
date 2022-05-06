@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
   m_Name: Singer 1-2 Dialog
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 0}
+  Speaker: {fileID: 11400000, guid: 3771aeaa17a95f44e8ccfacbe8385540, type: 2}
   DialogueText: She had the habit of getting into trouble with the law, her employers,
     customers... Any one of those I guess.
   ChoiceDialogs:
