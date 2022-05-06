@@ -229,14 +229,17 @@ public class GameManager : MonoBehaviour
             if(LoadGameSave.GameState != null)
             {
                 this.GameState = LoadGameSave.GameState;
+                Debug.Log("Found gamestate");
             }
-            if(LoadGameSave.InventoryObjects != null)
+            if(LoadGameSave.InventoryObjects.Count != 0)
             {
                 this.PlayerInventory = LoadGameSave.InventoryObjects;
+                Debug.Log("Found inventory objects");
             }
-            if(LoadGameSave.SceneName != "" && LoadGameSave.SceneName != null)
+            if(LoadGameSave.SceneName != "")
             {
                 this.currentSceneName = LoadGameSave.SceneName;
+                Debug.Log("Found current scene");
             }
         }
         else
@@ -251,7 +254,7 @@ public class GameSave
 {
     public GameState GameState;
     public string SceneName;
-    public List<InventoryObject> InventoryObjects;
+    public List<InventoryObject> InventoryObjects = new List<InventoryObject>();
 
     public void NewData()
     {
