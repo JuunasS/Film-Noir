@@ -80,7 +80,6 @@ public class MenuScript : MonoBehaviour
         {
             Debug.Log("No GameSaves exist");
         }
-
     }
 
     public void TitleReturn()

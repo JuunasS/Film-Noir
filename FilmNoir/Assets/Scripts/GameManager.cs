@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
     {
         CheckInteractables();
         currentSceneName = SceneManager.GetActiveScene().name;
+        PlayerController.canMove = true;
     }
 
     public void CheckInteractables()
