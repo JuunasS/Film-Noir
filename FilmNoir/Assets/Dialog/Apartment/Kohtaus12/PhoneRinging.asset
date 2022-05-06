@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: BlackmailPhoto
+  m_Name: PhoneRinging
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: 69bdb4c971b65fd4f9bfc6dffa572208, type: 2}
-  DialogueText: Something is under the mattress... Wait this is a photo of the mayor...
+  Speaker: {fileID: 11400000, guid: afa462aa236588b439a74b01540ed33c, type: 2}
+  DialogueText: .........
   ChoiceDialogs:
-  - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}
+  - {fileID: 11400000, guid: f5dff222f83785d408b35a5f70fff243, type: 2}
