@@ -2599,11 +2599,11 @@ PrefabInstance:
     - target: {fileID: 3474762379724210215, guid: 1d728a0d810548d429d5c09dcddf0145, type: 3}
       propertyPath: idleDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 9846ae563e34d5c4894b03a240e7ebf2, type: 2}
+      objectReference: {fileID: 11400000, guid: a0080b9f854ca96429481a5ebb60b02d, type: 2}
     - target: {fileID: 3474762379724210215, guid: 1d728a0d810548d429d5c09dcddf0145, type: 3}
       propertyPath: firstDialogue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: a0080b9f854ca96429481a5ebb60b02d, type: 2}
     - target: {fileID: 3474762379724210232, guid: 1d728a0d810548d429d5c09dcddf0145, type: 3}
       propertyPath: m_Name
       value: ClientJudyNPC
@@ -4048,9 +4048,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 1247679177}
     m_Modifications:
     - target: {fileID: 903317715, guid: 9f76bbb79c57e864ab890dd59aebea1a, type: 3}
+      propertyPath: idleDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: c7d4f5908853af8498031b545e902282, type: 2}
+    - target: {fileID: 903317715, guid: 9f76bbb79c57e864ab890dd59aebea1a, type: 3}
       propertyPath: firstDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 16d79d76befaaf542ac74ef99cde0b99, type: 2}
+      objectReference: {fileID: 11400000, guid: c7d4f5908853af8498031b545e902282, type: 2}
     - target: {fileID: 1298411560, guid: 9f76bbb79c57e864ab890dd59aebea1a, type: 3}
       propertyPath: m_Radius
       value: 0.4
