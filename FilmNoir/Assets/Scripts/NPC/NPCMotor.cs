@@ -48,6 +48,7 @@ public class NPCMotor : MonoBehaviour
                             gameObject.GetComponent<NPCcontroller>().StartDialogue();
                         }
                         reachedDestination = true;
+                        PlayerController.canMove = true;
                     } 
                 }
             }

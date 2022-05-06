@@ -215,6 +215,7 @@ public class GameManager : MonoBehaviour
         this.GameSave.NewData();
         string GameSaveJson = JsonUtility.ToJson(this.GameSave);
         PlayerPrefs.SetString(GAMESAVEKEY, GameSaveJson);
+        PlayerPrefs.Save();
     }
 
     // Loads gamestate and player inventory from playerprefs and converts them beck from JSON format
