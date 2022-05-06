@@ -11,7 +11,7 @@ public class NPCMotor : MonoBehaviour
     private NavMeshAgent agent;
     public Animator animator;
     public bool hasDialogue = false;
-    private bool hasSpoken = false;
+    public bool hasSpoken = false;
     public bool reachedDestination = false;
 
     void Start()
@@ -30,6 +30,16 @@ public class NPCMotor : MonoBehaviour
                 {
                     if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                     {
+                        if(gameObject.GetComponent<NPCcontroller>().isExiting && hasDialogue && !hasSpoken)
+                        {
+                            hasSpoken = true;
+                            gameObject.GetComponent<NPCcontroller>().StartDialogue();
+                            gameObject.GetComponent<NPCcontroller>().DisableNPC();
+                        } 
+                        else if(gameObject.GetComponent<NPCcontroller>().isExiting)
+                        {
+                            gameObject.GetComponent<NPCcontroller>().DisableNPC();
+                        }
                         if (hasDialogue && !hasSpoken)
                         {
                             hasSpoken = true;       

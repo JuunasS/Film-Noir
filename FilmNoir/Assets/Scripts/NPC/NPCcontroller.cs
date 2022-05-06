@@ -16,6 +16,9 @@ public class NPCcontroller : MonoBehaviour
     public Transform waypoint;
     public bool joinsLater;
 
+    public Transform exitWaypoint;
+    public bool isExiting;
+
     public GameObject NPCBody; // when NPC join conversation late
     //and arrives at the scene, this is turned on so they show up in scene
 
@@ -63,7 +66,28 @@ public class NPCcontroller : MonoBehaviour
         motor.reachedDestination = false;
         motor.MoveToPointDialogue(waypoint.position);
     }
+    public void ExitConversation(DialogueNode nextNode)
+    {
+        animator.SetBool("isWalking", true);
+        isExiting = true;
+        startDialogue = nextNode;
 
+        motor.hasDialogue = false;
+
+        if (startDialogue != null)
+        {
+            motor.hasDialogue = true;
+            motor.hasSpoken = false;
+        }
+
+        motor.reachedDestination = false;
+        motor.MoveToPointDialogue(exitWaypoint.position);
+    }
+
+    public void DisableNPC()
+    {
+        NPCBody.SetActive(false);
+    }
 
     private void Update()
     {

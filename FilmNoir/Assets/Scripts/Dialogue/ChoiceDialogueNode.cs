@@ -11,6 +11,8 @@ public class ChoiceDialogueNode : ScriptableObject
     public DialogueNode NextNode;
     public bool IsExit;
     public string JoiningNPC;
+    public string ExitingNPC;
+
 
     public bool GivesItem;
     public InventoryObject InventoryItem;
@@ -23,16 +25,21 @@ public class ChoiceDialogueNode : ScriptableObject
             {
                 GameManager.manager.AddItemToInventory(InventoryItem);
             }
-            if (JoiningNPC == "")
+            if (ExitingNPC != "")
             {
-                Debug.Log("Choice node setting dialogue: " + NextNode);
-                GameManager.manager.SetDialogue(NextNode);
+                GameManager.manager.NpcExitConversation(ExitingNPC, NextNode);
             }
-            else
+            else if (JoiningNPC != "")
             {
                 GameManager.manager.NpcJoinConversation(JoiningNPC, NextNode);
             }
-           
+            else
+            {
+                Debug.Log("Choice node setting dialogue: " + NextNode);
+                GameManager.manager.SetDialogue(NextNode);
+
+            }
+
         }
         catch (System.Exception e)
         {
@@ -43,11 +50,15 @@ public class ChoiceDialogueNode : ScriptableObject
 
     public void ExitDialogue()
     {
+        if (ExitingNPC != "")
+        {
+            GameManager.manager.NpcExitConversation(ExitingNPC, NextNode);
+        }
         if (GivesItem)
         {
             GameManager.manager.AddItemToInventory(InventoryItem);
         }
-        GameManager.manager.ExitDialogue(); 
+        GameManager.manager.ExitDialogue();
     }
 
 }
