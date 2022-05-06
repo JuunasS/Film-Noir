@@ -86,7 +86,7 @@ public class NPCcontroller : MonoBehaviour
 
     public void DisableNPC()
     {
-        NPCBody.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 
     private void Update()
