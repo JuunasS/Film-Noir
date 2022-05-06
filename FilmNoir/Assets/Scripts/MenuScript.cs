@@ -36,6 +36,14 @@ public class MenuScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "MainMenu"){
             menu.SetActive(!menu.activeInHierarchy);
+            if (!menu.activeInHierarchy)
+            {
+                Time.timeScale = 1;
+            }
+            else
+            {
+                Time.timeScale = 0;
+            }
             PlayerController.canMove = !PlayerController.canMove;
             if (settingsMenu.activeInHierarchy)
             {
@@ -53,7 +61,6 @@ public class MenuScript : MonoBehaviour
     {
         Application.Quit();
     }
-
 
     public void SaveGame()
     {
