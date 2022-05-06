@@ -545,7 +545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -47}
   m_SizeDelta: {x: 650, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1711551781
@@ -581,18 +581,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I poured myself a drink waiting for my client. I wondered, would she be
-    furiously content with the evidence, or would there be tears. I don\u2019t know
-    which is worse, getting one\u2019s strength from anger, or her crushing from
-    disappointment. Either way leads to a miserable life.\r\nMrs. Campbell was late,
-    perhaps she\u2019s just that way, or maybe she just didn\u2019t want to hear
-    the truth. Surprisingly a lot of clients don\u2019t actually want to hear they\u2019ve
-    been betrayed, altough they hire someone like me\u2026 Still. Well, people are
-    what they are, and maybe hope is what keeps us going.\r\nFor me this was just
-    a case out of many. A husband caught cheating. The couple\u2019s troubles did
-    not bring me joy, but it brought bread and whiskey to my table. The case was
-    easy, though, easier than most. I emptied my glass, twirled it in my hands a
-    while, then filled it again\u2026 \r\n"
+  m_Text: " After telling mrs. Campbell the unfortunate news about her husband she
+    stormed off. Well, it went as well as it could I guess.\r\nThe downside of these
+    types of cases is that even though the client pays for information, they might
+    still not be ready for the truth.\r\n\n For me this is just another case of many.
+    A husband caught cheating, a tale as ordinary as they come. Discovering the truth
+    didn't make me any happier,\r but it pays the bills.\r\n \r\n I got a call from
+    Casey, telling me about a new case. Someone has broken into a hair saloon downtown.
+    I better start heading that way."
 --- !u!222 &1711551782
 CanvasRenderer:
   m_ObjectHideFlags: 0
