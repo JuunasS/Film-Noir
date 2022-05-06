@@ -59,6 +59,7 @@ public class MenuScript : MonoBehaviour
 
     public void QuitGame()
     {
+        PlayerController.canMove = !PlayerController.canMove;
         Application.Quit();
     }
 
@@ -71,6 +72,7 @@ public class MenuScript : MonoBehaviour
     {
         if(GameManager.manager.CheckSave())
         {
+            PlayerController.canMove = !PlayerController.canMove;
             GameManager.manager.LoadPrefs();
             GameManager.manager.LoadScene(GameManager.manager.currentSceneName);
         }
