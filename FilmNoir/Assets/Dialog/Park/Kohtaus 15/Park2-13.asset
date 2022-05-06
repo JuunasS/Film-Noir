@@ -15,4 +15,4 @@ MonoBehaviour:
   Speaker: {fileID: 11400000, guid: 929bf02bfe308cd43a02834848fea49d, type: 2}
   DialogueText: 'Ok. Go now. '
   ChoiceDialogs:
-  - {fileID: 11400000, guid: 8d8f6bfb1180b3e439be09773aaf5356, type: 2}
+  - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}

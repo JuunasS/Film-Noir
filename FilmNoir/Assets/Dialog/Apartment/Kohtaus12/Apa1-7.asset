@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
   m_Name: Apa1-7
   m_EditorClassIdentifier: 
-  Text: have you seen her lately?
+  Text: Have you seen her lately?
   NextNode: {fileID: 11400000, guid: 76bb38e09e4b54d4798bbf7db9cb2a96, type: 2}
   IsExit: 0
   JoiningNPC: 
+  ExitingNPC: 
   GivesItem: 0
   InventoryItem: {fileID: 0}

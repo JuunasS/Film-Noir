@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Park2-1
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: 929bf02bfe308cd43a02834848fea49d, type: 2}
-  DialogueText: What happened?! I heard a shot.
+  DialogueText: What happened?!
   ChoiceDialogs:
   - {fileID: 11400000, guid: f3a734f0453dcad43941112e72012d9f, type: 2}
