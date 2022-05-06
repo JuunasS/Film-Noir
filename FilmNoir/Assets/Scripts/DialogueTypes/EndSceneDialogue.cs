@@ -42,11 +42,11 @@ public class EndSceneDialogue : MonoBehaviour
         if (inventory.InventoryContains(wantedObject))
         {
             GameManager.manager.SetDialogue(barbaraDiesDialogue);
+            doesBarbaraDie = true;
         }
         else
         {
             GameManager.manager.SetDialogue(barbaraSurvivesDialogue);
-            doesBarbaraDie = false;
         } 
     }
 
