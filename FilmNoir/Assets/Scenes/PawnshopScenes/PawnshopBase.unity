@@ -1959,8 +1959,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  firstDialogue: {fileID: 0}
-  idleDialogue: {fileID: 0}
+  firstDialogue: {fileID: 11400000, guid: 2738e4c678b55ad4a83f92b9d3392e18, type: 2}
+  idleDialogue: {fileID: 11400000, guid: effb28b4f149ca74793220433f24abb1, type: 2}
   nameOfNPC: 0
   newGameState: {fileID: 0}
   changesGameState: 0

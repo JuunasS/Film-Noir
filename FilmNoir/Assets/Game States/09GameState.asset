@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OfficeSceneName: OfficeBase
   ApartmentAisleSceneName: HallwayBase
-  ApartmentSceneName: ApartmentBase
+  ApartmentSceneName: 01Apartment
   PawnshopSceneName: Opening Text 10
   HairsaloonSceneName: HairdresserBase
   ClubSceneName: ClubBase
