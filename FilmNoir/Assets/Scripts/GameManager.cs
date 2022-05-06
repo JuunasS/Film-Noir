@@ -224,23 +224,25 @@ public class GameManager : MonoBehaviour
 
         GameSave LoadGameSave = JsonUtility.FromJson<GameSave>(GameSaveJson);
 
-        this.GameState = LoadGameSave.GameState;
-        this.PlayerInventory = LoadGameSave.InventoryObjects;
-        this.currentSceneName = LoadGameSave.SceneName;
-    }
-
-    public bool CheckSave()
-    {
-        Debug.Log("Checking playerprefs...");
-        string GameSaveJson = PlayerPrefs.GetString(GAMESAVEKEY);
-
-        GameSave LoadGameSave = JsonUtility.FromJson<GameSave>(GameSaveJson);
-
-        if(LoadGameSave.CheckVariables())
+        if(LoadGameSave != null)
         {
-            return true;
+            if(LoadGameSave.GameState != null)
+            {
+                this.GameState = LoadGameSave.GameState;
+            }
+            if(LoadGameSave.InventoryObjects != null)
+            {
+                this.PlayerInventory = LoadGameSave.InventoryObjects;
+            }
+            if(LoadGameSave.SceneName != "" && LoadGameSave.SceneName != null)
+            {
+                this.currentSceneName = LoadGameSave.SceneName;
+            }
         }
-        return false;
+        else
+        {
+            Debug.Log("No save found");
+        }
     }
 }
 
@@ -259,12 +261,4 @@ public class GameSave
         InventoryObjects = GameManager.manager.PlayerInventory;
     }
 
-    public bool CheckVariables()
-    {
-        if(GameState != null || InventoryObjects != null || SceneName != "")
-        {
-            return true;
-        }
-        return false;
-    }
 }

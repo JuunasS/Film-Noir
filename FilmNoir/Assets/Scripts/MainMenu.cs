@@ -21,15 +21,9 @@ public class MainMenu : MonoBehaviour
 
     public void LoadGame()
     {
-        if (GameManager.manager.CheckSave())
-        {
-            GameManager.manager.LoadPrefs();
-            GameManager.manager.LoadScene(GameManager.manager.currentSceneName);
-        }
-        else
-        {
-            Debug.Log("No GameSaves exist");
-        }
+        GameManager.manager.LoadPrefs();
+        GameManager.manager.LoadScene(GameManager.manager.currentSceneName);
+
     }
 
     public void ToggleSettingsMenu()

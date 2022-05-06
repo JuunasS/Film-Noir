@@ -24,7 +24,7 @@ public class MenuScript : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
 
-        if(GameObject.Find("MiniMenu") != null)
+        if (GameObject.Find("MiniMenu") != null)
         {
             menu = GameObject.Find("MiniMenu");
             menu.SetActive(false);
@@ -34,7 +34,8 @@ public class MenuScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "MainMenu"){
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "MainMenu")
+        {
             menu.SetActive(!menu.activeInHierarchy);
             if (!menu.activeInHierarchy)
             {
@@ -73,16 +74,9 @@ public class MenuScript : MonoBehaviour
     public void LoadGame()
     {
         Time.timeScale = 1;
-        if (GameManager.manager.CheckSave())
-        {
-            PlayerController.canMove = true;
-            GameManager.manager.LoadPrefs();
-            GameManager.manager.LoadScene(GameManager.manager.currentSceneName);
-        }
-        else
-        {
-            Debug.Log("No GameSaves exist");
-        }
+        PlayerController.canMove = true;
+        GameManager.manager.LoadPrefs();
+        GameManager.manager.LoadScene(GameManager.manager.currentSceneName);
     }
 
     public void TitleReturn()
