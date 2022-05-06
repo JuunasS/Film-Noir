@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BarStart
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: 411020eb5c5daa14eaeec7bb700d4201, type: 2}
-  DialogueText: 'Do you have find anything for me, Mr. Daniels? '
+  DialogueText: 'Do you have found anything for me, Mr. Daniels? '
   ChoiceDialogs:
   - {fileID: 11400000, guid: 014a14b1cf8c4ea459e52b89b151a7b0, type: 2}
   - {fileID: 11400000, guid: 4ea25f7fa57f26446b52967120ecc9ee, type: 2}

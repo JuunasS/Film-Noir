@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
   m_Name: Apa1-10
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: fc4f7b6bad29cf543a08ca51cfd4c3be, type: 2}
+  Speaker: {fileID: 11400000, guid: 3771aeaa17a95f44e8ccfacbe8385540, type: 2}
   DialogueText: ' Yes I am, but what is going on? Is Nina alright?'
   ChoiceDialogs:
   - {fileID: 11400000, guid: b063af84b5e0fa54a9e197ba665cd7f3, type: 2}

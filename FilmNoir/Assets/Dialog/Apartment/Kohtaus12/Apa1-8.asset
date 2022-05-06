@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
   m_Name: Apa1-8
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: fc4f7b6bad29cf543a08ca51cfd4c3be, type: 2}
-  DialogueText: Yes She came to see me just the other day.
+  Speaker: {fileID: 11400000, guid: 3771aeaa17a95f44e8ccfacbe8385540, type: 2}
+  DialogueText: Yes, she came to see me just the other day.
   ChoiceDialogs:
   - {fileID: 11400000, guid: b1575c6bb2701f24bb764cc78c32ba9e, type: 2}

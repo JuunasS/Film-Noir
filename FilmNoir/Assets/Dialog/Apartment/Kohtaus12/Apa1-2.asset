@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
   m_Name: Apa1-2
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: fc4f7b6bad29cf543a08ca51cfd4c3be, type: 2}
-  DialogueText: 'S: I am Bella, a singer at the Peacock Club. How did you get my
-    number?'
+  Speaker: {fileID: 11400000, guid: 3771aeaa17a95f44e8ccfacbe8385540, type: 2}
+  DialogueText: I am Bella, a singer at the Peacock Club. How did you get my number?
   ChoiceDialogs:
   - {fileID: 11400000, guid: 6f92890d95eb13f45bd91590e5390ae5, type: 2}
