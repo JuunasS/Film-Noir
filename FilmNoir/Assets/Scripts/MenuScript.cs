@@ -54,11 +54,13 @@ public class MenuScript : MonoBehaviour
 
     public void NewGame()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Intro");
     }
 
     public void QuitGame()
     {
+        Time.timeScale = 1;
         PlayerController.canMove = true;
         Application.Quit();
     }
@@ -70,7 +72,8 @@ public class MenuScript : MonoBehaviour
 
     public void LoadGame()
     {
-        if(GameManager.manager.CheckSave())
+        Time.timeScale = 1;
+        if (GameManager.manager.CheckSave())
         {
             PlayerController.canMove = true;
             GameManager.manager.LoadPrefs();
@@ -84,6 +87,7 @@ public class MenuScript : MonoBehaviour
 
     public void TitleReturn()
     {
+        Time.timeScale = 1;
         menu.SetActive(!menu.activeInHierarchy);
         if (settingsMenu.activeInHierarchy)
         {
