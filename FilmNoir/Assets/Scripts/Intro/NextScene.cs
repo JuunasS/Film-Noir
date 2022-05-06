@@ -12,13 +12,4 @@ public class NextScene : MonoBehaviour
     {
         SceneManager.LoadScene(nextScene);
     }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene(nextScene);
-        }
-
-    }
 }
