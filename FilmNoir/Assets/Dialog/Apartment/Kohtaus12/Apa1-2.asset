@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Apa1-2
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: fc4f7b6bad29cf543a08ca51cfd4c3be, type: 2}
-  DialogueText: 'S: I am [SINGER''S NAME], a singer at the Peacock Club. How did
-    you get my number?'
+  DialogueText: 'S: I am Bella, a singer at the Peacock Club. How did you get my
+    number?'
   ChoiceDialogs:
   - {fileID: 11400000, guid: 6f92890d95eb13f45bd91590e5390ae5, type: 2}
