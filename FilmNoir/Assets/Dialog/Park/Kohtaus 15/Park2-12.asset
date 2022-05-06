@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Park2-12
   m_EditorClassIdentifier: 
   Text: I think I know who's behind this, you will get the evidence later.
-  NextNode: {fileID: 0}
+  NextNode: {fileID: 11400000, guid: c39dbe0a4033e954e977d21541d59c49, type: 2}
   IsExit: 0
   JoiningNPC: 
+  ExitingNPC: 
   GivesItem: 0
   InventoryItem: {fileID: 0}

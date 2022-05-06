@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: idleDialogue
       value: 
       objectReference: {fileID: 11400000, guid: c7d4f5908853af8498031b545e902282, type: 2}
+    - target: {fileID: 903317715, guid: 9f76bbb79c57e864ab890dd59aebea1a, type: 3}
+      propertyPath: firstDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: ee1ae59488a1ebd479ecd8539dc41cdf, type: 2}
     - target: {fileID: 8387160341268961353, guid: 9f76bbb79c57e864ab890dd59aebea1a, type: 3}
       propertyPath: m_Name
       value: AntagonistNPC
