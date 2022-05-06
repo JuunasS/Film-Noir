@@ -4,6 +4,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "Inventory Object", menuName = "Inventory/Item")]
+[System.Serializable]
 public class InventoryObject : ScriptableObject
 {
     public Sprite sprite;
@@ -11,7 +12,6 @@ public class InventoryObject : ScriptableObject
     public string ItemName;
     [TextArea(5, 10)]
     public string Description;
-    public DialogCharacter Connection;
 
     public void DisplayDescription()
     {

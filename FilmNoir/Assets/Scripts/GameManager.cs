@@ -215,14 +215,16 @@ public class GameManager : MonoBehaviour
     public void SavePrefs()
     {
         Debug.Log("Saving GameSave...");
-        string savePath = persistentPath;
+        string savePath = path;
 
         this.GameSave.NewData();
 
         string json = JsonUtility.ToJson(GameSave);
 
-        using StreamWriter writer = new StreamWriter(savePath);
-        writer.Write(json);
+        //using StreamWriter writer = new StreamWriter(savePath);
+        //writer.Write(json);
+
+        File.WriteAllText(savePath, json);
 
         /*
         this.GameSave = new GameSave();
@@ -240,8 +242,10 @@ public class GameManager : MonoBehaviour
         Debug.Log("Loading GameSave...");
         PlayerInventory.Clear();
 
-        using StreamReader reader = new StreamReader(persistentPath);
-        string json = reader.ReadToEnd();
+        //using StreamReader reader = new StreamReader(path);
+        //string json = reader.ReadToEnd();
+
+        string json = File.ReadAllText(path);
 
         GameSave LoadGameSave = JsonUtility.FromJson<GameSave>(json);
 
