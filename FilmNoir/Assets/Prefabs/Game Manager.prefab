@@ -50,7 +50,7 @@ MonoBehaviour:
   GameMusic: {fileID: 2145357778}
   PlayerInventory: []
   HeldObject: {fileID: 0}
-  interactables: []
+  collectables: []
 --- !u!114 &333675144441149493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,7 +79,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
