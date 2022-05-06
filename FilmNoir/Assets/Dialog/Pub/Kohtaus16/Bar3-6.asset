@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
+  m_Name: Bar3-6
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 411020eb5c5daa14eaeec7bb700d4201, type: 2}
+  DialogueText: You are wrong. I don't have anyone but you to look after her. And
+    I don't want her dead.
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: c717ac0543bec60439d7271b4e7ace18, type: 2}

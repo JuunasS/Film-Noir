@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
+  m_Name: Office2-3-2
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 411020eb5c5daa14eaeec7bb700d4201, type: 2}
+  DialogueText: ' I lost something of mine, and I need you to find it.'
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: 8a2d8da1620590c428de074da04fdd01, type: 2}
+  - {fileID: 11400000, guid: a3918930f04ad614da0c11c6d1fd75d7, type: 2}
+  - {fileID: 11400000, guid: 2cb2e224c6756654388460acfbe601a4, type: 2}
+  - {fileID: 11400000, guid: 8833f5b492bd60248b682e4ad305ed19, type: 2}

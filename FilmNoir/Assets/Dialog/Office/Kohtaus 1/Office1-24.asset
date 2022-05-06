@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
+  m_Name: Office1-24
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: e01f9a13d7a6d584ba817b56fb91c123, type: 2}
+  DialogueText: Please.
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: 811a2e4a844de7a42969a128707b6a8f, type: 2}
