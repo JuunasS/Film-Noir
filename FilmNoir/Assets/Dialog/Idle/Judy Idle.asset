@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
   m_Name: Judy Idle
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 0}
-  DialogueText: 
-  ChoiceDialogs: []
+  Speaker: {fileID: 11400000, guid: e01f9a13d7a6d584ba817b56fb91c123, type: 2}
+  DialogueText: There is no time to waste.
+  ChoiceDialogs:
+  - {fileID: 11400000, guid: ead887d476112b544aebed82adbbf9b0, type: 2}
