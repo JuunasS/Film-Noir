@@ -32,12 +32,6 @@ public class InventoryController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public bool InventoryContains(InventoryObject obj)
     {
         foreach(InventoryObject invObj in GameManager.manager.PlayerInventory)
@@ -74,8 +68,12 @@ public class InventoryController : MonoBehaviour
         UpdateInventory();
     }
 
-    private void UpdateInventory()
+    public void UpdateInventory()
     {
+        foreach(GameObject panel in Panels)
+        {
+            panel.GetComponent<InventoryPanel>().ClearPanel();
+        }
         for (int i = 0; i < GameManager.manager.PlayerInventory.Count; i++)
         {
             Panels[i].GetComponent<InventoryPanel>().SetInventoryObject(GameManager.manager.PlayerInventory[i]);
