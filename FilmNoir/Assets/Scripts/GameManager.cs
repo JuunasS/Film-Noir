@@ -130,6 +130,7 @@ public class GameManager : MonoBehaviour
 
     public void ExitDialogue()
     {
+        PlayerController.canMove = true;
         Debug.Log("Gamemanager exit dialogue");
         DialogCanvas.GetComponent<DialogueController>().ExitDialogue();
     }
@@ -256,7 +257,6 @@ public class GameSave
         SceneName = GameManager.manager.currentSceneName;
         InventoryObjects = GameManager.manager.PlayerInventory;
     }
-
 
     public bool CheckVariables()
     {

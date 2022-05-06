@@ -24,13 +24,14 @@ public class NPCMotor : MonoBehaviour
     {
         if (!reachedDestination)
         {
+            PlayerController.canMove = false;
             if (!agent.pathPending)
             {
                 if (agent.remainingDistance <= agent.stoppingDistance)
                 {
                     if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                     {
-                        if(gameObject.GetComponent<NPCcontroller>().isExiting && hasDialogue && !hasSpoken)
+                        if (gameObject.GetComponent<NPCcontroller>().isExiting && hasDialogue && !hasSpoken)
                         {
                             hasSpoken = true;
                             gameObject.GetComponent<NPCcontroller>().StartDialogue();
@@ -53,7 +54,6 @@ public class NPCMotor : MonoBehaviour
 
         }
 
-
         if (target != null && !reachedDestination)
         {
             agent.SetDestination(target.position);
@@ -64,11 +64,13 @@ public class NPCMotor : MonoBehaviour
 
     public void MoveToPoint(Vector3 point)
     {
+        PlayerController.canMove = false;
         agent.SetDestination(point);
     }
 
     public void MoveToPointDialogue(Vector3 point)
     {
+        PlayerController.canMove = false;
         agent.SetDestination(point);
         hasDialogue = true;
     }
