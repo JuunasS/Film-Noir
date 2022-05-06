@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private string GAMESAVEKEY = "GAMESAVEPREF";
-    GameSave GameSave = new GameSave();
+    GameSave GameSave;
 
     public static GameManager manager;
 

@@ -12,7 +12,8 @@ public class SimpleDialogue : MonoBehaviour
     public NPCName nameOfNPC;
     public GameState newGameState;
 
-    public bool changesGameState = false;
+    public bool changesGameState;
+    public bool updatedGameState;
 
     bool hasBeenTalkedTo = false;
     int index;
@@ -22,14 +23,18 @@ public class SimpleDialogue : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
     }
 
+    private void Update()
+    {
+        if (changesGameState && hasBeenTalkedTo && !updatedGameState)
+        {
+            GameManager.manager.SetGameState(newGameState);
+            updatedGameState = true;
+        }
+    }
+
     private void OnDestroy()
     {
         GameManager.manager.NPCList[index].dialogueProgress = DialogueMode.FIRST_DIALOGUE;
-        if (changesGameState && hasBeenTalkedTo)
-        {
-            GameManager.manager.SetGameState(newGameState);
-        }
-        
     }
 
     public void DisplayDialogue()
@@ -50,6 +55,14 @@ public class SimpleDialogue : MonoBehaviour
 
             default:
                 break;
+        }
+    }
+
+    public void UpdateGameState()
+    {
+        if (changesGameState && hasBeenTalkedTo)
+        {
+            GameManager.manager.SetGameState(newGameState);
         }
     }
 
