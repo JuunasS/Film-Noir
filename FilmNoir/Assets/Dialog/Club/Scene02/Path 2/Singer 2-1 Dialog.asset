@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a3f0f25cc442a41bdd9638c3a64acc, type: 3}
-  m_Name: Singer 2-1 Dialog 1
+  m_Name: Singer 2-1 Dialog
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: 3771aeaa17a95f44e8ccfacbe8385540, type: 2}
   DialogueText: What? No that is not me! She asked the same.

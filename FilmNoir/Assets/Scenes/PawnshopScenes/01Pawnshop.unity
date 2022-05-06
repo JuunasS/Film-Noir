@@ -1927,11 +1927,13 @@ MonoBehaviour:
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
   endScene: {fileID: 0}
-  startDialogue: {fileID: 11400000, guid: d98af67888b2ba545899076e6c9db01a, type: 2}
+  startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
   joinsLater: 0
+  exitWaypoint: {fileID: 0}
+  isExiting: 0
   NPCBody: {fileID: 0}
-  styleOfDialogue: 2
+  styleOfDialogue: 1
   isItTheEndScene: 0
 --- !u!65 &1802880459
 BoxCollider:
@@ -1970,14 +1972,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1802880456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63fe38660459df14a8c5a0d3431966ee, type: 3}
+  m_Script: {fileID: 11500000, guid: b2e2241c39ccf8941b82c134d4781430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  haveItemDialogue: {fileID: 11400000, guid: d98af67888b2ba545899076e6c9db01a, type: 2}
-  dontHaveItemDialogue: {fileID: 11400000, guid: d98af67888b2ba545899076e6c9db01a, type: 2}
+  firstDialogue: {fileID: 11400000, guid: d98af67888b2ba545899076e6c9db01a, type: 2}
   idleDialogue: {fileID: 11400000, guid: 2738e4c678b55ad4a83f92b9d3392e18, type: 2}
-  wantedObject: {fileID: 11400000, guid: bc35e89f914f27d40ad0b37780ca86b5, type: 2}
   nameOfNPC: 0
   newGameState: {fileID: 11400000, guid: 704aec49dcf2dd5428305dc9f3381b29, type: 2}
   changesGameState: 1
