@@ -75,6 +75,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ApartmentScenes/ApartmentBase.unity
     guid: 724ac4b716c1b4841a68d80b559b21ca
   - enabled: 1
+    path: Assets/Scenes/ClubScenes/01Club.unity
+    guid: bf8e2aec88b481c48a2c2d623ba67fdc
+  - enabled: 1
     path: Assets/Scenes/ClubScenes/02Club.unity
     guid: f55725b87bf1ba946a88525d3eccb6e3
   - enabled: 1
