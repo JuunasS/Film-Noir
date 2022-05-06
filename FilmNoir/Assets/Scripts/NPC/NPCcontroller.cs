@@ -50,6 +50,11 @@ public class NPCcontroller : MonoBehaviour
             {
                 motor.MoveToPoint(waypoint.position);
             }
+            else if(startDialogue != null)
+            {
+                GameManager.manager.SetDialogue(startDialogue);
+            }
+
         }
 
         if (joinsLater)
