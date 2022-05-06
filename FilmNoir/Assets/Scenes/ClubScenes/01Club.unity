@@ -2068,6 +2068,8 @@ MonoBehaviour:
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
   joinsLater: 0
+  exitWaypoint: {fileID: 0}
+  isExiting: 0
   NPCBody: {fileID: 0}
   styleOfDialogue: 2
   isItTheEndScene: 0
@@ -4495,6 +4497,8 @@ MonoBehaviour:
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
   joinsLater: 0
+  exitWaypoint: {fileID: 0}
+  isExiting: 0
   NPCBody: {fileID: 0}
   styleOfDialogue: 0
   isItTheEndScene: 0

@@ -117,7 +117,6 @@ public class GameManager : MonoBehaviour
     public void NpcExitConversation(string npcName, DialogueNode nextNode)
     {
         GameObject.Find(npcName).GetComponent<NPCcontroller>().ExitConversation(nextNode);
-
     }
     public void SetDialogue(DialogueNode node)
     {
