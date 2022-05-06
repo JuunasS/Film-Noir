@@ -253,6 +253,7 @@ public class GameManager : MonoBehaviour
 }
 
 
+[System.Serializable]
 public class GameSave
 {
     public GameState GameState;
