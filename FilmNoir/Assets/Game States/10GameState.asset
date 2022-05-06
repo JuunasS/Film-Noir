@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 10GameState
   m_EditorClassIdentifier: 
   OfficeSceneName: OfficeBase
-  ApartmentAisleSceneName: HallwayBase
-  ApartmentSceneName: Opening Text 11
+  ApartmentAisleSceneName: Opening Text 11
+  ApartmentSceneName: KnockedOutCutscene
   PawnshopSceneName: PawnshopBase
   HairsaloonSceneName: HairdresserBase
   ClubSceneName: ClubBase

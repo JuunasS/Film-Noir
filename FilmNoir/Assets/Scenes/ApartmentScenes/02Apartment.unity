@@ -1011,7 +1011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 70092261}
-  start: {fileID: 0}
+  start: {fileID: 11400000, guid: 89092a229dadac54baf00c7fca697736, type: 2}
 --- !u!65 &481222484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2098,7 +2098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929605219}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.582979, y: 8.986708, z: -11.552099}
+  m_LocalPosition: {x: -14.03, y: 8.74, z: -11.552099}
   m_LocalScale: {x: 1.4133785, y: 0.95177, z: 0.12564316}
   m_Children:
   - {fileID: 1738973328}

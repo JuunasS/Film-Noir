@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 1790778657}
-  levelToLoad: Kaytava
+  levelToLoad: MapScene
   doesGameStateChange: 0
   newGameState: {fileID: 0}
 --- !u!65 &1224846037
