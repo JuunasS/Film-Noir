@@ -233,7 +233,10 @@ public class GameManager : MonoBehaviour
             }
             if(LoadGameSave.InventoryObjects.Count != 0)
             {
-                this.PlayerInventory = LoadGameSave.InventoryObjects;
+                foreach(InventoryObject inventoryObject in LoadGameSave.InventoryObjects)
+                {
+                    this.PlayerInventory.Add(inventoryObject);
+                }
                 Debug.Log("Found inventory objects");
             }
             if(LoadGameSave.SceneName != "")
