@@ -1394,6 +1394,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3081590700134832979, guid: 2abd5054799a1a242b9a90d889c995a8, type: 3}
+      propertyPath: styleOfDialogue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3081590700134832980, guid: 2abd5054799a1a242b9a90d889c995a8, type: 3}
       propertyPath: m_Name
       value: BarbaraNPC
