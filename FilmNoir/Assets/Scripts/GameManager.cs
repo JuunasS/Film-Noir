@@ -105,6 +105,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ToggleMusic()
+    {
+        GameMusic.mute = !GameMusic.mute;
+    }
+
     public void NpcJoinConversation(string npcName, DialogueNode nextNode)
     {
         GameObject.Find(npcName).GetComponent<NPCcontroller>().JoinConversation(nextNode);
