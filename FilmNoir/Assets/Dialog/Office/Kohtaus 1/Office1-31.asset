@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Office1-31
   m_EditorClassIdentifier: 
   Text: I'll get to it. I will contact you soon.
-  NextNode: {fileID: 0}
-  IsExit: 1
+  NextNode: {fileID: 11400000, guid: 3df1b717dff6b854194844a623bcb567, type: 2}
+  IsExit: 0
   JoiningNPC: 
+  ExitingNPC: ClientJudyNPC
   GivesItem: 1
   InventoryItem: {fileID: 11400000, guid: 3cf730639db03334cbd177f3e55a25aa, type: 2}

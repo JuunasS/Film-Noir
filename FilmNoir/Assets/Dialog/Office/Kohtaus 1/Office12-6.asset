@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f4136ed0106f74abbfa43ad98084f2, type: 3}
   m_Name: Office12-6
   m_EditorClassIdentifier: 
-  Text: 
+  Text: End Dialogue
   NextNode: {fileID: 0}
   IsExit: 1
   JoiningNPC: 
+  ExitingNPC: AntagonistNPC
   GivesItem: 0
   InventoryItem: {fileID: 0}

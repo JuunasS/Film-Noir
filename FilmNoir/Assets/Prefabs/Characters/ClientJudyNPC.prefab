@@ -60,7 +60,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 3474762379724210232}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.88
+  m_Radius: 0.35
   m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
@@ -88,12 +88,15 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  dialogGetItem: {fileID: 0}
+  endScene: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
   joinsLater: 1
+  exitWaypoint: {fileID: 0}
+  isExiting: 0
   NPCBody: {fileID: 4393749794504562243}
   styleOfDialogue: 1
+  isItTheEndScene: 0
 --- !u!114 &3474762379724210213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   hasDialogue: 0
+  hasSpoken: 0
   reachedDestination: 0
 --- !u!114 &3474762379724210215
 MonoBehaviour:
