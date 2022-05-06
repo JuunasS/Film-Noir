@@ -253,6 +253,7 @@ public class GameSave
 
     public void NewData()
     {
+        Debug.Log("Saving new save data");
         GameState = GameManager.manager.GameState;
         SceneName = GameManager.manager.currentSceneName;
         InventoryObjects = GameManager.manager.PlayerInventory;
@@ -260,10 +261,10 @@ public class GameSave
 
     public bool CheckVariables()
     {
-        if(GameState == null || InventoryObjects == null || SceneName == "")
+        if(GameState != null || InventoryObjects != null || SceneName != "")
         {
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 }

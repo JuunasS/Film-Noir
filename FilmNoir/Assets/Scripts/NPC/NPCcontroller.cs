@@ -91,6 +91,7 @@ public class NPCcontroller : MonoBehaviour
 
     public void DisableNPC()
     {
+        PlayerController.canMove = true;
         this.gameObject.SetActive(false);
     }
 
