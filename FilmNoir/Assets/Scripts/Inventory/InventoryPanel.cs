@@ -23,6 +23,12 @@ public class InventoryPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         this.GetComponentInChildren<Image>().sprite = obj.sprite;
     }
 
+    public void ClearPanel()
+    {
+        this.obj = null;
+        this.GetComponentInChildren<Image>().sprite = null;
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         Debug.Log("Panel entered");

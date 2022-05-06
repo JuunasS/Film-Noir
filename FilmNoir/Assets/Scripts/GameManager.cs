@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
     {
         CheckInteractables();
         currentSceneName = SceneManager.GetActiveScene().name;
+        InventoryCanvas.GetComponent<InventoryController>().UpdateInventory();
         PlayerController.canMove = true;
     }
 
@@ -209,16 +210,17 @@ public class GameManager : MonoBehaviour
     // Saves gamestate and player inventory to playerprefs in JSON format
     public void SavePrefs()
     {
+        this.GameSave = new GameSave();
         Debug.Log("Saving playerprefs...");
         this.GameSave.NewData();
         string GameSaveJson = JsonUtility.ToJson(this.GameSave);
-
         PlayerPrefs.SetString(GAMESAVEKEY, GameSaveJson);
     }
 
     // Loads gamestate and player inventory from playerprefs and converts them beck from JSON format
     public void LoadPrefs()
     {
+        PlayerInventory.Clear();
         Debug.Log("Loading playerprefs...");
         string GameSaveJson = PlayerPrefs.GetString(GAMESAVEKEY);
 
@@ -265,7 +267,11 @@ public class GameSave
         Debug.Log("Saving new save data");
         GameState = GameManager.manager.GameState;
         SceneName = GameManager.manager.currentSceneName;
-        InventoryObjects = GameManager.manager.PlayerInventory;
+        InventoryObjects.Clear();
+        foreach(InventoryObject inventoryObject in GameManager.manager.PlayerInventory)
+        {
+            InventoryObjects.Add(inventoryObject);
+        }
     }
 
 }
