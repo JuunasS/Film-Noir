@@ -273,7 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   interactionTransform: {fileID: 2063891051}
-  start: {fileID: 11400000, guid: b822934d31294694d9055a360f76c427, type: 2}
+  start: {fileID: 11400000, guid: e8b5e4300554673488c29a2daffdf770, type: 2}
 --- !u!65 &34946122
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -691,7 +691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 657130171}
-  start: {fileID: 11400000, guid: dc0d4bfcd98acf649bc0f7d482c5ee7b, type: 2}
+  start: {fileID: 11400000, guid: 7454c7ca967a4aa439e76893e428314d, type: 2}
 --- !u!65 &215274573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -802,7 +802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 657130171}
-  start: {fileID: 11400000, guid: dc0d4bfcd98acf649bc0f7d482c5ee7b, type: 2}
+  start: {fileID: 11400000, guid: 5ddf6a3ae1cc8ae47989a209f7e2a8f1, type: 2}
 --- !u!65 &358814405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 657130171}
-  start: {fileID: 11400000, guid: f3a0b023ae9398541ac3272030ae7d40, type: 2}
+  start: {fileID: 11400000, guid: 47469fa592b15a743bb733b6c96f6400, type: 2}
 --- !u!65 &1370442646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1926,7 +1926,6 @@ MonoBehaviour:
   animator: {fileID: 0}
   simpleDialogue: {fileID: 0}
   dialogWithItem: {fileID: 0}
-  dialogGetItem: {fileID: 0}
   endScene: {fileID: 0}
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
