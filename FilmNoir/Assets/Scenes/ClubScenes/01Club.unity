@@ -2068,8 +2068,10 @@ MonoBehaviour:
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
   joinsLater: 0
+  exitWaypoint: {fileID: 0}
+  isExiting: 0
   NPCBody: {fileID: 0}
-  styleOfDialogue: 2
+  styleOfDialogue: 1
   isItTheEndScene: 0
 --- !u!208 &879101490
 NavMeshObstacle:
@@ -2125,14 +2127,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 879101487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63fe38660459df14a8c5a0d3431966ee, type: 3}
+  m_Script: {fileID: 11500000, guid: b2e2241c39ccf8941b82c134d4781430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  haveItemDialogue: {fileID: 11400000, guid: e5f76d6de73c864458a6c4378949bf2e, type: 2}
-  dontHaveItemDialogue: {fileID: 11400000, guid: 367cc38a1638bea4e81534fe8d3c2254, type: 2}
+  firstDialogue: {fileID: 11400000, guid: 367cc38a1638bea4e81534fe8d3c2254, type: 2}
   idleDialogue: {fileID: 11400000, guid: 348a10b0c3442a24dabed3829fbf001a, type: 2}
-  wantedObject: {fileID: 11400000, guid: 9a356c5ec5f76904e9f7306ade5ce9ef, type: 2}
   nameOfNPC: 9
   newGameState: {fileID: 11400000, guid: 1cc4db809d98ad24a95651290cd3193b, type: 2}
   changesGameState: 1
@@ -2162,8 +2162,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: a8c501314f9265b45a7bb1fc43b406f8, type: 2}
   idleDialogue: {fileID: 11400000, guid: 7cc81913d79fd9f428275d8165defef2, type: 2}
   nameOfNPC: 8
-  newGameState: {fileID: 0}
-  changesGameState: 0
+  newGameState: {fileID: 11400000, guid: 1cc4db809d98ad24a95651290cd3193b, type: 2}
+  changesGameState: 1
 --- !u!4 &995998602 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4307925354956688326, guid: 4e33c7cb72ac99642b74a11f7e53090d, type: 3}
@@ -4495,6 +4495,8 @@ MonoBehaviour:
   startDialogue: {fileID: 0}
   waypoint: {fileID: 0}
   joinsLater: 0
+  exitWaypoint: {fileID: 0}
+  isExiting: 0
   NPCBody: {fileID: 0}
   styleOfDialogue: 0
   isItTheEndScene: 0
