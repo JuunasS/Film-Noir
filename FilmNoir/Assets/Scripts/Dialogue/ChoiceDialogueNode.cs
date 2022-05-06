@@ -10,8 +10,8 @@ public class ChoiceDialogueNode : ScriptableObject
     public string Text;
     public DialogueNode NextNode;
     public bool IsExit;
-    public string JoiningNPC;
-    public string ExitingNPC;
+    public string JoiningNPC = "";
+    public string ExitingNPC = "";
 
 
     public bool GivesItem;
